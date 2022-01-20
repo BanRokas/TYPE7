@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Įvadas</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <section class="slepti">
+    <!-- Klasių, ID ir tag'ų selektoriai -->
+    <h1>Klasių, ID ir tag'ų selektoriai</h1>
+    <div> <!-- class -->
+      <h3>Klasės</h3>
+      <p>
+        Norint kreiptis į klasę iš CSS'o - CSS reikia parašyti "." ženklą ir tos klasės vardą.
+        Viena klasė gali būti skirta daugeliui elementų. Vienas elementas gali turėti daug klasių.
+        Klasėse nurodytas vienodas stilius yra prioritizuojamas pagal tai, kelintas eilėje jis yra aprašytas CSS faile.
+        Tėvinio elemento vienodas CSS stilius yra prioritizuojamas senelinio (tėvinio tėvinio) elemento atžvilgiu.
+      </p>
+      <div class="
+        tekstasParyskintas
+        kvadratas
+        spalvaZalia
+        spalvaRaudona
+        tekstoDydisDidelis
+      ">
+        <div class="spalvaRaudona">
+          Klasė
+        </div>
+      </div>
+    </div>
+    <div> <!-- ID -->
+      <h3>ID</h3>
+      <p>
+        Norint kreiptis į ID iš CSS'o - CSS reikia parašyti "#" ženklą ir to ID vardą.
+        Vienas ID turi būti priskiriamas vienam elementui. Vienas elementas gali turėti tik vieną ID.
+        Tėvinio elemento vienodas CSS stilius yra prioritizuojamas senelinio (tėvinio tėvinio) elemento atžvilgiu.
+      </p>
+      <div id="kvadratas">
+        <div id="dydis">ID</div>
+      </div>
+      <div id="kvadratas">ID dar</div> <!-- Negalima -->
+    </div>
+    <div> <!-- Tag -->
+      <h3>Tag'ai</h3>
+      <p>
+        Norint kreiptis į tag'ą iš CSS'o - reikia parašyti jo vardą.
+      </p>
+      <div class="tagViduje">
+        <h4>H4 tag'as</h4>
+        <p>P tag'as</p>
+        <span>span tag'as</span><br>
+        <!-- <span><p>span viduj par</p></span> -->
+        <!-- <div>
+          <p>labas</p>
+        </div> -->
+        <a href="https://www.google.lt">a tag'as</a>
+      </div>
+    </div>
+    <div> <!-- ID ir Klasės -->
+      <h3> ID ir Klasės</h3>
+      <p>
+        ID turi prioritetą klasių atžvilgiu.
+      </p>
+      <div id="idIrClass" class="kvadratas classIrID">
+        Class + ID
+      </div>
+    </div>
+  </section>
+  <section class="slepti">
+    <!-- Display: inline|block|inline-block -->
+    <h1>Display</h1>
+    <div>
+      <h3>Inline</h3>
+      <div class="kvadratas inline">Inline</div>
+      <div class="kvadratas inline">Inline</div>
+      <div class="kvadratas inline">Inline</div>
+    </div>
+    <div>
+      <h3>Block</h3>
+      <div class="kvadratas block">Block</div>
+      <div class="kvadratas block">Block</div>
+      <div class="kvadratas block">Block</div>
+    </div>
+    <div>
+      <h3>Inline-Block</h3>
+      <div class="kvadratas inline-block">Inline-Block</div>
+      <div class="kvadratas inline-block">Inline-Block</div>
+      <div class="kvadratas inline-block">Inline-Block</div>
+    </div>
+  </section>
+  <section>
+    <div id="menu">
+      <div class="logo">
+        <img src="./images/logo.PNG" height="50px">
+      </div>
+      <div class="links">
+        <nav>
+          <a href="#hero">Pradžia</a>
+          <a href="#about">Apie</a>
+          <!--<a href="#contact">Kontaktai</a>-->
+        </nav>
+      </div>
+    </div>
+    <div id="hero">
+      <h1>pavadinimas</h1>
+      <p>trumpas aprašymas</p>
+      <img src="">
+    </div>
+    <div id="about">
+      <h1>pavadinimas</h1>
+      <p>aprašymas</p>
+
+      <p>pvz1</p>
+      <a>placiau</a>
+      <img src="">
+
+      <p>pvz2</p>
+      <img src="">
+    </div>
+    <!--<div id="contact">
+      <div> <h1> kotaktai </h1> </div>
+      <div class="kontaktai">
+        <div class="kontaktas">
+          <div class="kontaktoImg">
+            <img>
+          </div>
+          <div class="kontaktoInfo">
+            <p>info<p>
+          </div>
+        </div>
+        <div class="kontaktas"></div>
+        <div class="kontaktas"></div>
+      </div>
+    </div> -->
+    <footer>
+      <p>copyright, author, year</p>
+    </footer>
+  </section>
+</body>
+</html>

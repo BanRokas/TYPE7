@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model ir Position</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <section> <!-- Model Box -->
+    <div class="modelDezute">
+      <img src="images/image.jpg">
+    </div>
+  </section>
+  <section class="spalvos"> <!-- Spalvos -->
+    <div class="kvadratas spalvaSuPavadinimu1"></div>
+    <div class="kvadratas spalvaSuPavadinimu2"></div>
+    <div class="kvadratas spalvaPagalRBG1"></div>
+    <div class="kvadratas spalvaPagalRBG2"></div>
+    <div class="kvadratas spalvaPagalRBG3"></div>
+    <div class="kvadratas spalvaPagalRBG4"></div>
+    <div class="kvadratas spalvaPagalHex1"></div>
+    <div class="kvadratas spalvaPagalHex2"></div>
+    <div class="kvadratas spalvaPagalHex3"></div>
+    <div class="kvadratas spalvaPagalHex4"></div>
+    <div class="kvadratas spalvaPagalHSL1"></div>
+    <div class="kvadratas spalvaPagalHSL2"></div>
+  </section>
+  <section> <!-- Position -->
+    <h1>Positions</h1>
+    <div>
+      <h3>Static</h3>
+      <p>
+        Statinė pozicija nesuteikia jokio stiliaus. Dažniau naudojama tam, kad nuimti kažkurią poziciją nuo elemento.
+      </p>
+    </div>
+    <div>
+      <h3>Relative</h3>
+      <p>
+        Relatyvioji pozicija įgalina elementui top,right, bottom, left ir z-index stilius. Top, right, bottom ir left atstumia elementą nuo jo pradinės pozicijos.<br>Nurodo ribas sticky ir absolute pozicijoms.
+      </p>
+    </div>
+    <div>
+      <h3>Absolute</h3>
+      <p>
+        Absolučioji pozicija įgalina elementui top,right, bottom, left ir z-index stilius. Top, right, bottom ir left atstumia elementą nuo jo "tėvinio | tėvinio tėvinio | tėvinio tėvinio tėvinio | .... | .... | body" elemeto kraštų jeigu šis turi relative poziciją.
+      </p>
+    </div>
+    <div>
+      <h3>Fixed</h3>
+      <p>
+        Fiksuota pozicija įgalina elementui top,right, bottom, left ir z-index stilius. Top, right, bottom ir left atstumia elementą nuo svetainės ekrano kraštų.<br>
+        Jisai lieka fiksuotas ekrane net kai yra scroll'inama.
+      </p>
+    </div>
+    <div>
+      <h3>Sticky</h3>
+      <p>
+        Sticky pozicija įgalina elementui top, right, bottom, left ir z-index stilius. Top, right, bottom ir left nurodo kur elementas prie jo "tėvinio | tėvinio tėvinio | tėvinio tėvinio tėvinio | .... | .... | body" elemeto kraštų jeigu šis turi relative poziciją, kai iki jo bus atslenkama (at'scroll'inama).<br>
+        Jisai lieka prilipęs ekrane kol yra scroll'inama jo "tėvinio | tėvinio tėvinio | tėvinio tėvinio tėvinio | .... | .... | body" elemento, kuris turi relative poziciją, ribose.
+      </p>
+    </div>
+  </section>
+</body>
+</html>

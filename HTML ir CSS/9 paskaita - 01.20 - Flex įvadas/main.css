@@ -1,0 +1,55 @@
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+/* ------MENU------*/
+.menu{
+  height: 60px;
+  width: 100%;
+  background-color: honeydew;
+}
+
+.menu nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo{
+  margin-left: 20px;
+}
+
+.logo img{
+  height: 50px;
+  width: auto;
+}
+
+.links{
+  margin-right: 20px;
+  width: 50%;
+}
+
+.links ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links li{
+  list-style-type: none;
+}
+
+.links a{
+  text-decoration: none;
+  font-size: 30px;
+  padding: 5px 10px;
+  background-color: khaki;
+  border: 2px solid rgb(60, 230, 60);
+  border-radius: 30%;
+  font-weight: bold;
+}
+
+.links a:hover{
+  background-color: rgb(184, 176, 108);
+}

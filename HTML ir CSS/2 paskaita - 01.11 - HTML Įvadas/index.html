@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Įvadas</title>
+  <style>
+    .radioIntoCheck{
+      width: 20px;
+      height: 20px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav></nav>
+
+  <section> <!-- Blokiniai -->
+    <h1>Labas 1</h1>
+    <h2>Labas 2</h2>
+    <h3>Labas 3</h3>
+    <h4>Labas 4</h4>
+    <h5>Labas 5</h5>
+    <h6>Labas 6</h6>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea suscipit dignissimos omnis modi, aliquid maiores
+      praesentium officiis facilis maxime iusto quaerat assumenda a dolor tenetur, veritatis perspiciatis voluptatem
+      exercitationem repellendus.
+    </p>
+    <div>Div tag'as.</div>
+    <section>Sekcija</section>
+    <main>Pagrinde</main>
+    <article>Straipsnis</article>
+    <hr>
+  </section>
+  <section> <!-- Linijiniai -->
+    <a href="https://www.google.lt" target="_blank">Nuoroda</a>
+    <img src="https://miro.medium.com/max/3000/1*X7i0hGUE3hlsl9w6jMkGTw.png" alt="imgIšNeto" title="network"
+      height="auto" width="200px">
+    <img src="images/codeEditors.png" alt="imgIšPC" title="computer" height="100px" width="auto">
+    <video controls width="200px">
+      <source src="./videos/bunnyVideo.mp4" type="video/mp4">
+    </video>
+    <video controls width="200px" src="videos/bunnyVideo.mp4"></video>
+    <span>Labas span</span>
+    <i>Labas italic</i>
+    <em>Labas emphasized</em>
+    <br>
+    <b>Labas bold</b>
+    <strong>Labas strong</strong>
+    <button class="stilizuoti" id="" onclick="funkcijosVardas()">Labas button</button>
+    <hr>
+  </section>
+  <section id="" class=""> <!-- Apjungiame ką išmokome -->
+    <h1>Apjungiame ką išmokome</h1>
+    <div>
+      <h3>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">
+          Blokiniai elementai (block)
+        </a>
+      </h3>
+      <p>
+        <!-- SHIFT ALT F - formatuoja kodą -->
+        Blokiniai elementai yra tag'ai, kurie užima visą eilutę (bloką) ir neįsileidžia į ją kitų elementų.<br>
+        Tag'ų pavyzdžiai: h1-h6, p, section, div, main, article, nav, footer, table, dl, ol, ul, form...
+      </p>
+    </div>
+    <div>
+      <h3>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements" target="_blank">
+          Linijiniai elementai (inline)
+        </a>
+      </h3>
+      <p>
+        Linijiniai elementai yra tag'ai, kurie užima tik tiek vietos, kiek reikia jų viduje esančiai informacijai.
+      </p>
+      <span>Tag'ų pavyzdžiai:</span>
+      <ol style="margin-top: 0; margin-left: 100px">
+        <li>a</li>
+        <li>img</li>
+        <li>video</li>
+        <li>span</li>
+        <li>center</li>
+        <li>button</li>
+        <li>audio</li>
+        <li>em</li>
+        <li>i</li>
+        <li>input</li>
+        <li>label</li>
+        <li>select</li>
+        <li>strong</li>
+        <li>b</li>
+        <li>...</li>
+      </ol>
+    </div>
+  </section>
+  <section> <!-- Forma -->
+    <h1>Forma</h1>
+    <form>
+      <div>
+        <label for="vardas">Vardas</label>
+        <input type="text" name="vardas" id="vardas" required>
+      </div>
+      <div>
+        <label for="pavarde">Pavardė</label>
+        <input type="text" name="pavarde" id="pavarde" required>
+      </div>
+      <div>
+        <label for="mail">Elektroninis paštas</label>
+        <input type="email" name="mail" id="mail" required>
+      </div>
+      <div>
+        <label for="slaptazodis">Slaptažodis</label>
+        <input type="password" name="slaptazodis" id="slaptazodis" required>
+      </div>
+      <div>
+        <h3 style="display:inline; margin-right: 30px">Lytis</h3>
+        <label for="vyras">Vyras</label>
+        <input class="radioIntoCheck" type="radio" name="lytis" id="vyras">
+        <label for="moteris">Moteris</label>
+        <input class="radioIntoCheck" type="radio" name="lytis" id="moteris">
+        <label for="nonBinary">Non-binary</label>
+        <input class="radioIntoCheck" type="radio" name="lytis" id="nonBinary" checked>
+      </div>
+      <div>
+        <h3 style="display:inline; margin-right: 30px">Suprantu</h3>
+        <label for="htmlas">HTML</label>
+        <input type="checkbox" name="htmlas" id="htmlas" checked>
+        <label for="cssas">CSS</label>
+        <input type="checkbox" name="cssas" id="cssas">
+        <label for="jsas">JS</label>
+        <input type="checkbox" name="jsas" id="jsas">
+      </div>
+
+      <button>Submit</button> <span>arba</span>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <footer></footer>
+</body>
+</html>

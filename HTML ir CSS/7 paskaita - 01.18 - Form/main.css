@@ -1,0 +1,80 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+body{
+  height: 500vh;
+}
+
+
+.pirma form > div{
+  margin: 10px;
+}
+
+.checkBoxAi p, .radioCheckAi p{
+  margin-bottom: 0;
+}
+
+.checkBoxAi > div, .radioCheckAi > div{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.pirma textarea{
+  resize:none;
+}
+.pirma{
+  display: none;
+}
+
+.antra{
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 223, 223),
+    rgb(163, 157, 157)
+  );
+  padding-top: 100px;
+}
+
+.antra form{
+  width: 400px;
+  margin: 0 auto;
+  height: 500px;
+  background-color: purple;
+  color: white;
+}
+
+.antra form > div{
+  padding-top: 50px;
+}
+
+.antra .rooms select{
+  padding-left: 0px;
+  width: 100px;
+  height: 20px;
+}
+
+.antra .adults input, .antra .kids input{
+  padding-left: 0px;
+  width: 100px;
+  height: 20px;
+}
+
+.checkIn, .checkOut{
+  display: inline-block;
+}
+
+.roomAndPeople{
+  display: flex;
+  justify-content: space-around;
+}
+
+.roomAndPeople > div{
+  width: 30%;
+}
+
+.kainos2{
+  display: inline-block;
+  width: 40%;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}

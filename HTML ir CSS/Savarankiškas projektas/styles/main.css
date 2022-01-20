@@ -1,0 +1,24 @@
+@import url("spacing.css");
+
+/* BENDRI */
+body{
+  margin: 0;
+}
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* MENU */
+
+#about{
+  background-color: greenyellow;
+}
+#about *{
+  margin: 0;
+}
+
+.logo, .links{
+  display: inline-block;
+}
+
+/*  */

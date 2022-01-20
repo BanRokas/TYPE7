@@ -1,0 +1,52 @@
+.pav{
+  text-align: center;
+  color: yellowgreen;
+  background-color: grey;
+  font-size: 50px;
+  font-family: monospace;
+  border: 10px double black;
+  border-radius: 10px;
+}
+.pav:hover{
+  color: white;
+  background-color: black;
+  border: 5px dotted orange;
+}
+
+.detailedList{
+  column-count: 3;
+  border: 2px dashed black;
+  padding: 15px;
+}
+
+.table{
+  border-collapse: collapse;
+  width: 60%;
+  margin: 0 auto;
+}
+
+th, td{
+  border: 1px solid red;
+  text-align: center;
+  font-size: larger;
+}
+/*th{
+  border: 1px solid black;
+  text-align: center;
+  font-size: larger;
+}
+td{
+  border: 1px solid black;
+  text-align: center;
+  font-size: larger;
+}*/
+
+th{
+  font-size: 24px;
+  background-color: indigo;
+  color: lightgreen;
+}
+
+tbody tr:nth-child(2n+1){
+  background-color: lightgrey;
+}

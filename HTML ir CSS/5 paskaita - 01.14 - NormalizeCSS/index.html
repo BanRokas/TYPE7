@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Normalize CSS</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <section class="relative"> <!-- Positions -->
+    <div class="menu">
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div id="home"></div>
+    <div class="home">
+      <img src="images/gamesBG.jpg">
+      <div>
+        <h1>
+          This page is about great games that I admire!
+        </h1>
+      </div>
+    </div>
+    <div id="about">
+      <div>
+        <h1>Games</h1>
+      </div>
+      <div class="witcher">
+        <div class="gameText">
+          <h3>Witcher</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet expedita eveniet maiores deleniti voluptatibus et soluta aliquid, beatae officiis tempora odit necessitatibus aliquam sapiente iste, assumenda provident quia temporibus saepe cupiditate. Tempore eaque consequuntur neque molestias veniam dolor quos nobis blanditiis laborum? Error necessitatibus iste possimus inventore neque cumque quia animi delectus suscipit ad reprehenderit nihil obcaecati corrupti provident, odio molestiae ab minus ut commodi sequi. Aut deleniti consequuntur ipsam officia quae laboriosam repudiandae, quo facilis accusamus, at eius ipsum nemo! Explicabo neque esse, ducimus aliquid nesciunt nisi veniam necessitatibus consectetur, ut possimus officiis veritatis illum illo tempora quia odio.
+          </p>
+        </div>
+        <img src="images/witcher.png" class="floatRight">
+        <div class="clearFix"></div>
+      </div>
+      <div class="worldOfWarcraft">
+        <div class="gameText">
+          <h3>World of Warcraft</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet expedita eveniet maiores deleniti voluptatibus et soluta aliquid, beatae officiis tempora odit necessitatibus aliquam sapiente iste, assumenda provident quia temporibus saepe cupiditate. Tempore eaque consequuntur neque molestias veniam dolor quos nobis blanditiis laborum? Error necessitatibus iste possimus inventore neque cumque quia animi delectus suscipit ad reprehenderit nihil obcaecati corrupti provident, odio molestiae ab minus ut commodi sequi. Aut deleniti consequuntur ipsam officia quae laboriosam repudiandae, quo facilis accusamus, at eius ipsum nemo! Explicabo neque esse, ducimus aliquid nesciunt nisi veniam necessitatibus consectetur, ut possimus officiis veritatis illum illo tempora quia odio.
+          </p>
+        </div>
+        <img src="images/wow.jpg" class="floatLeft">
+        <div class="clearFix"></div>
+      </div>
+      <div class="leagueOfLegends">
+        <div class="gameText">
+          <h3>League of Legends</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet expedita eveniet maiores deleniti voluptatibus et soluta aliquid, beatae officiis tempora odit necessitatibus aliquam sapiente iste, assumenda provident quia temporibus saepe cupiditate. Tempore eaque consequuntur neque molestias veniam dolor quos nobis blanditiis laborum? Error necessitatibus iste possimus inventore neque cumque quia animi delectus suscipit ad reprehenderit nihil obcaecati corrupti provident, odio molestiae ab minus ut commodi sequi. Aut deleniti consequuntur ipsam officia quae laboriosam repudiandae, quo facilis accusamus, at eius ipsum nemo! Explicabo neque esse, ducimus aliquid nesciunt nisi veniam necessitatibus consectetur, ut possimus officiis veritatis illum illo tempora quia odio.
+          </p>
+        </div>
+        <img src="images/league.jpg" class="floatRight">
+        <div class="clearFix"></div>
+      </div>
+    </div>
+    <div id="contact">
+      <h1>
+        Contact us with suggestions which games to add to the page!
+      </h1>
+      <form>
+        <div>
+          <label for="gameName">Name of the Game: </label>
+          <input type="text" name="gameName" id="gameName" required>
+        </div>
+        <div>
+          <label for="gameWhy">Why you're suggesting this game?</label><br>
+          <textarea cols="" rows="" id="gameWhy" name="gameWhy" required></textarea>
+        </div>
+        <input type="submit">
+      </form>
+    </div>
+    <footer>
+      <div>
+        <h1>&#169 Rokas Banaitis 2022</h1>
+      </div>
+    </footer>
+  </section>
+</body>
+</html>

@@ -1,0 +1,108 @@
+.kvadratas{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 255, 166);
+  margin-bottom: 10px;
+
+  text-align: center;
+  line-height: 100px;
+}
+/* Linijiniai užima tik tiek vietos kiek reikia jų viduje esantiems elementams. Šitaip ignoruodami pločio bei aukščio nustatymus. Taip pat išsidėsto vienas šalia kito. */
+.inline{
+  display: inline;
+}
+/* Blokiniai užima visą eilutę. Gali priimti pločio ir aukščio nustatymus. Neįsileidžia kitų elementų į tą pačią eilutę. */
+.block{
+  display: block;
+}
+/* Inline-block užima tik tiek vietos kiek reikia jų viduje esantiems elementams. Gali priimti pločio ir aukščio nustatymus. Taip pat išsidėsto vienas šalia kito. */
+.inline-block{
+  display: inline-block;
+}
+
+.tekstoDydisDidelis{
+  font-size: 37px;
+}
+
+.tekstasParyskintas{
+  font-weight: bold;
+}
+
+.spalvaRaudona{
+  color: red /*!important*/;
+}
+
+.spalvaZalia{
+  color: green !important;
+}
+
+#kvadratas{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 255, 166);
+  margin-bottom: 10px;
+  color: red;
+  text-align: center;
+  line-height: 100px;
+}
+
+#dydis{
+  font-size: 50px;
+  color: green;
+}
+
+h4{
+  font-size: 30px;
+  color: brown;
+  font-family: cursive;
+}
+
+.tagViduje > p{
+  color: green;
+  font-size: 20px;
+}
+
+/*span p{
+  color: orange;
+}*/
+
+#idIrClass{
+  color: indigo;
+  font-size: 20px;
+}
+.classIrID{
+  color: red;
+  background-color: greenyellow;
+}
+
+.slepti{
+  display: none;
+}
+
+/* ---------Mini puslapis---------- */
+/*
+  background-color
+  width
+  height
+  border
+  display
+  color
+  font-size
+  font-family
+  line-height
+  font-weight
+  text-align
+  text-decoration
+*/
+
+
+#about{
+  background-color: greenyellow;
+}
+#about *{
+  margin: 0;
+}
+
+.logo, .links{
+  display: inline-block;
+}
