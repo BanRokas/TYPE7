@@ -1,0 +1,73 @@
+body{
+  margin: 0;
+}
+
+.grid1{
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  height: 50vh;
+
+  grid-template-columns: 1fr 1fr 1fr; /*repeat(3, 1fr)*/
+  grid-template-rows: repeat(5, 1fr); /*1fr 1fr 1fr 1fr 1fr*/
+}
+
+.pirm1{
+  background-color: grey;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  /*grid-row-start: 1;
+  grid-row-end: 2;*/
+}
+
+.antr1{
+  background-color: rgb(98, 189, 98);
+  grid-column: 1 / 4;
+  /*grid-row: 5 / 6;*/
+}
+
+.trec1{
+  background-color: hotpink;
+  /*grid-column: 1 / 2;*/
+  grid-row: 2 / 4;
+}
+
+.ketv1{
+  background-color: rgb(255, 0, 0);
+  grid-column: 2 / 4;
+  grid-row: 2 / 5;
+}
+
+.grid2{
+  height: 50vh;
+  width: 70%;
+  margin: 0 auto;
+
+  display: grid;
+  /*grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);*/
+  grid-template-areas: 
+    "header header  header"
+    "name   content content"
+    "name   content content"
+    ".      content content" /* " . " - tuščias */
+    "footer footer  footer";
+  gap: 10px 0px;
+}
+
+.pirm2{
+  background-color: grey;
+  grid-area: header;
+}
+.antr2{
+  background-color: rgb(98, 189, 98);
+  grid-area: footer;
+}
+.trec2{
+  background-color: hotpink;
+  grid-area: name;
+}
+.ketv2{
+  background-color: rgb(255, 0, 0);
+  grid-area: content;
+}
