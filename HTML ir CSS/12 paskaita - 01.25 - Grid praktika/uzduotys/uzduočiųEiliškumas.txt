@@ -1,0 +1,6 @@
+grid3.PNG - Nebūtinas.
+grid4.png - Nebūtinas.
+grid6.png - Nebūtinas, bet naudingas susipažinti su bootstrap'o grid'o sistema.
+gridOverlap.png - Reikia padaryti 11:30-12:00 arba pasibaigt popiet.
+gridFlexTask.jpg - Reikia padaryti visus su Grid ir kiek išeina su Flex savarankiško darbo metu.
+gridPeriodicTable.webp - daryti jei viską pasibaigėt ir norit pasižaisti.
