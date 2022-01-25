@@ -2,6 +2,7 @@
 
 body{
   margin: 0;
+  height: 500vh;
 }
 
 .kartu1{
@@ -56,4 +57,32 @@ body{
   background-color: rgba(135, 206, 250, 0.801);
   grid-column: 8 / 14;
   grid-row: 7 / 15;
+}
+
+.gridFlex{
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  gap: 20px;
+}
+.gridFlex2{
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gridFlex2 div{
+  background-color: lime;
+  width: 24%;
+  height: 24%;
+}
+.gridFlex div{
+  background-color: lime;
 }
