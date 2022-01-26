@@ -1,0 +1,17 @@
+
+.responsiveTekstas{
+  background-color: black;
+  color: orange;
+}
+
+@media (min-width: 678px){
+  .responsiveTekstas{
+    color: green;
+  }
+}
+
+@media (min-width: 992px){
+  .responsiveTekstas{
+    background-color: navy;
+  }
+}
