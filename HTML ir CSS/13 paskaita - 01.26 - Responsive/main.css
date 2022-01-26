@@ -1,17 +1,67 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 
-.responsiveTekstas{
-  background-color: black;
-  color: orange;
+
+/* Navigation / MENU */
+.mainMenu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  background-color: blue;
 }
 
-@media (min-width: 678px){
-  .responsiveTekstas{
-    color: green;
-  }
+.logo img{
+  height: 60px;
+  width: auto;
+  margin-left: 20px;
 }
 
-@media (min-width: 992px){
-  .responsiveTekstas{
-    background-color: navy;
-  }
+.burger{
+  margin-top: 10px;
+  height: 100%;
+}
+
+.burger i{
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+.burger:hover i{
+  border: 5px solid black;
+  border-radius: 20%;
+  margin-right: 15px;
+}
+
+.burger:hover ~ .links,
+.links:hover{
+  display: block;
+}
+.links{
+  width: 100%;
+  display: none;
+  
+}
+
+.links ul{
+  list-style-type: none;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.links li{
+  width: 50%;
+}
+.links a{
+  text-decoration: none;
+}
+
+.links a:visited,
+.links a:active,
+.links a:link{
+  color: white;
 }
