@@ -65,3 +65,21 @@
 .links a:link{
   color: white;
 }
+
+@media (min-width: 768px){
+  .burger{
+    display: none;
+  }
+  .links{
+    display: block;
+    width: 60%;
+  }
+  .links ul{
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .links li{
+    width: auto;
+  }
+}
