@@ -20,7 +20,6 @@
 
 .burger{
   margin-top: 10px;
-  height: 100%;
 }
 
 .burger i{
@@ -41,7 +40,6 @@
 .links{
   width: 100%;
   display: none;
-  
 }
 
 .links ul{
@@ -59,14 +57,42 @@
 .links a{
   text-decoration: none;
 }
-
 .links a:visited,
 .links a:active,
 .links a:link{
   color: white;
 }
 
+/* HOME */
+#home{
+  height: 60vh;
+  background-image: linear-gradient(
+    to top right,
+    rgb(150, 150, 255),
+    rgb(251, 218, 157),
+    rgb(246, 246, 152)
+  );
+}
+
+.svetainesPavadinimas{
+  width: 30%;
+  text-align: center;
+  transform: translate(20%, 100px);
+}
+.svetainesPavadinimas h1{
+  margin: 0;
+}
+.svetainesTrumpasAprasymas{
+  width: 60%;
+  transform: translate(20%, 100px);
+}
+.svetainesPaveiksliukas{
+  display: none;
+}
+
+
 @media (min-width: 768px){
+  /* MENU */
   .burger{
     display: none;
   }
@@ -81,5 +107,33 @@
   }
   .links li{
     width: auto;
+  }
+
+  /* HOME */
+  .svetainesPavadinimas{
+    transform: translate(20%, 200px);
+  }
+  .svetainesTrumpasAprasymas{
+    width: 50%;
+    transform: translate(350px, 150px);
+  }
+}
+
+@media (min-width: 1200px){
+  /* HOME */
+  #home{
+    position: relative;
+  }
+  .svetainesPavadinimas{
+    transform: translate(20%, 200px);
+  }
+  .svetainesTrumpasAprasymas{
+    width: 35%;
+    transform: translate(450px, 150px);
+  }
+  .svetainesPaveiksliukas{
+    display: inline-block;
+    position: absolute;
+    right: 50px;
   }
 }
