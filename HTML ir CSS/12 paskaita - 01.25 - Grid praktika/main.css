@@ -65,7 +65,7 @@ body{
   margin: 0 auto;
 
   display: grid;
-  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+  grid-template: repeat(4, 1fr) / repeat(5, 1fr);
   gap: 20px;
 }
 .gridFlex2{
@@ -80,7 +80,7 @@ body{
 
 .gridFlex2 div{
   background-color: lime;
-  width: 24%;
+  width: 19%;
   height: 24%;
 }
 .gridFlex div{
