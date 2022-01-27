@@ -1,0 +1,48 @@
+body{
+  margin: 0;
+}
+section{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 60px 1fr 2fr 60px;
+}
+
+.menu{
+  background-color: rgb(119, 63, 119);
+}
+.category{
+  background-color: yellow;
+}
+.main{
+  background-color: blue;
+}
+.footer{
+  background-color: green;
+}
+
+@media (min-width: 768px){
+  section{
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 250px 1fr;
+  }
+  .menu{
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  .footer{
+    grid-area: 3 / 1 / 4 / 3;
+  }
+}
+
+@media (min-width: 1024px){
+  section{
+    grid-template-columns: 300px 724px 1fr;
+  }
+  .menu{
+    /*grid-area: 1 / 1 / 2 / 4;*/
+    grid-column-end: 4;
+  }
+  .footer{
+    /*grid-area: 3 / 1 / 4 / 4;*/
+    grid-column-end: 4;
+  }
+}
