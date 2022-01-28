@@ -1,0 +1,17 @@
+.kvadratas{
+  height: 200px;
+  width: 200px;
+  background-color: blueviolet;
+  margin-bottom: 10px;
+
+  text-align: center;
+  line-height: 200px;
+  font-size: 20px;
+}
+
+h1{
+  font-size: 24px;
+}
+p{
+  font-size: 2rem;
+}
