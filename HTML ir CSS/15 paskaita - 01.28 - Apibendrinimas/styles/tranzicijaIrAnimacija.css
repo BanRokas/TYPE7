@@ -6,12 +6,54 @@
 
   text-align: center;
   line-height: 200px;
-  font-size: 20px;
+  font-size: 2.5rem;
+  color: white;
 }
 
-h1{
-  font-size: 24px;
+.kvadratas:hover{
+  width: 350px;
+  color: orange;
+  background-color: rgb(135, 222, 139);
+  font-size: 3rem;
 }
-p{
-  font-size: 2rem;
+
+.linear{
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: linear;
+  transition-delay: 0.5s; /*500ms*/
+}
+
+.ease{
+  transition: all 5s ease 0.5s;
+}
+.easeIn{
+  transition: all 5s ease-in 0.5s;
+}
+.easeOut{
+  transition: all 5s ease-out 0.5s;
+}
+.easeInOut{
+  transition: all 5s ease-in-out 0.5s;
+}
+
+.randomTiming{
+  transition: all 5s cubic-bezier(0.35, -2.79, 0.68, 3.96) 0s;
+}
+
+.widthT{
+  transition: width 5s linear 0s;
+}
+
+.widthAndColor{
+  transition: width 5s linear 0s,
+              color 5s linear 0s;
+}
+
+.hardTransition{
+  transition:
+    color 3s linear 0s,
+    width 3s linear 3s,
+    font-size 2s linear 6s,
+    background-color 1s linear 8s;
 }
