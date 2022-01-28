@@ -1,0 +1,56 @@
+body{
+  height: 400vh;
+}
+
+section > div{
+  margin-bottom: 5px;
+  border: 5px solid black;
+}
+
+.kvadratas{
+  height: 150px;
+  width: 150px;
+  background-color: blueviolet;
+  margin-bottom: 10px;
+
+  text-align: center;
+  line-height: 100px;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.relative{
+  background-color: crimson;
+  position: relative;
+}
+.absolute{
+  background-color: goldenrod;
+  position: absolute;
+}
+.fixed{
+  background-color: hotpink;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}
+.sticky{
+  background-color: green;
+  position: sticky;
+  top: 150px;
+  z-index: 8;
+}
+
+.top100{
+  top: 100px;
+}
+.left100{
+  left: 100px;
+}
+.bottom100{
+  bottom: 100px;
+}
+.right100{
+  right: 100px;
+}

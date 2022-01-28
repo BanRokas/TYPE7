@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position</title>
+  <link rel="stylesheet" href="../styles/position.css">
+</head>
+<body>
+  <section>
+    <div> <!-- relative -->
+      <div class="kvadratas top100">Static</div>
+      <div class="kvadratas top100">Static</div>
+      <div class="kvadratas top100 relative">Relative</div>
+      <div class="kvadratas top100">Static</div>
+    </div>
+    <div class="relative"> <!-- absolute -->
+      <div class="kvadratas left100">Static</div>
+      <div class="kvadratas left100 top100 absolute">Absolute</div>
+      <div class="kvadratas left100">Static</div>
+      <div class="kvadratas left100">Static</div>
+    </div>
+    <div class="relative"> <!-- Fixed -->
+      <div class="kvadratas bottom100 fixed">Fixed</div>
+      <div class="kvadratas bottom100">Static</div>
+      <div class="kvadratas bottom100">Static</div>
+      <div class="kvadratas bottom100">Static</div>
+    </div>
+    <div> <!-- sticky -->
+      <div class="kvadratas  sticky">Sticky</div>
+      <div class="kvadratas right100">Static</div>
+      <div class="kvadratas right100">Static</div>
+      <div class="kvadratas right100">Static</div>
+    </div>
+  </section>
+</body>
+</html>
