@@ -77,12 +77,38 @@ body{
   flex-wrap: wrap;
   gap: 10px;
 }
+.gridFlex > div{
+  background-color: lime;
+}
 
-.gridFlex2 div{
+.gridFlex2 > div{
   background-color: lime;
   width: 19%;
   height: 24%;
+  display: flex;
+  flex-wrap: wrap;
 }
-.gridFlex div{
-  background-color: lime;
+
+.kv33x33{
+  width: 33%;
+  height: 33%;
+}
+
+.kv66x33{
+  width: 66%;
+  height: 33%;
+}
+
+.kv33x66{
+  width: 33%;
+  height: 66%;
+}
+
+.gridFlex2 > div div{
+  background-image: url("./images/behind.PNG");
+  background-size: cover;
+}
+
+.stulpeliu{
+  flex-direction: column;
 }
