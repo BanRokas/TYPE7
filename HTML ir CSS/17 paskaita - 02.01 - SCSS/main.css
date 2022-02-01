@@ -1,0 +1,28 @@
+div {
+  background-color: #662a2a;
+}
+
+div h1 {
+  color: #84ee89;
+}
+
+div h1:hover {
+  color: red;
+}
+
+div h1::after {
+  content: "HA ";
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=main.css.map */

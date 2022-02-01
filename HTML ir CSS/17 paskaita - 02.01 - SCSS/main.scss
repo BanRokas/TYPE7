@@ -1,0 +1,22 @@
+$primary-color: rgb(132, 238, 137);
+$secondary-color: rgb(102, 42, 42);
+
+div{
+  background-color: $secondary-color;
+  h1{
+    color: $primary-color;
+  }
+  h1:hover{
+    color: red;
+  }
+  h1::after{
+    content: "HA ";
+  }
+}
+
+nav{
+  display: flex;
+  ul{
+    display: flex;
+  }
+}
