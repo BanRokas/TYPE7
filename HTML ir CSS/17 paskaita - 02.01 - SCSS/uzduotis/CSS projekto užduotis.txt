@@ -1,0 +1,27 @@
+a. Sugalvoti puslapio temą ir dizainą
+  - Puslapio tema/tikslas?
+  - Sekcijos, jų kiekis, paskirtis.
+  - Puslapio/sekcijų komponentai, jų paskirtis.
+  - Sudėtinių komponentų(pvz. koretelės) dizaino eskizai(galima per paint ar kokią kitą programą pasipiešti kaip atrodytų) visiems ekrano dydžiams.
+  - Sekcijų dizaino eskizai (galima per paint ar kokią kitą programą pasipiešti kaip atrodytų) visiems ekrano dydžiams.
+  - Darbų eiliškumo planas (siūlyčiau pasirašyti į kokį word'o failą arba bent jau txt). 
+
+b. Padaryti puslapį, kuris korektiškai atvaizduotų turinį pagal ekrano dydį [3 ekrano dydžiai].
+
+Puslapio kriterijai:
+  1. Tvarkinga puslapio failų struktūra. Failai turi būti skirstomi pagal jūsų sugalvotą logiką, temas ir/ar paskirtį. 
+  2. Naršymo meniu viršuje arba šone ekrano. Mažėjant ekrano pločiui turi pakisti navigacijos meniu vaizdas. 
+  3. Perpanaudojamų CSS klasių kūrimas. 
+  4. Bent 2 sudėtiniai komponentai su skirtingu dizainu visiems ekrano dydžiams. 
+  5. CSS kintamųjų naudojimas.
+  6. Grid ir/arba flex panaudojimas. 
+  7. Turinį sufleruojančių HTML elementų panaudojimas: 
+    - header
+    - nav
+    - footer
+    - section
+    - main
+    - aside
+    - h1-h6
+    - p
+    - article
