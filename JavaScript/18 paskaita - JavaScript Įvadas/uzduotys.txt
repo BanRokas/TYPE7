@@ -6,3 +6,12 @@
 2) Susikurti konteinerius ir juos užpildyti reikšmėmis (bent po 1 kiekvieno tipo).
 2.1) Masyvas bent 6 ilgio. []
 2.2) Objektas bent 6 ilgio. {}
+
+2.3) Masyvas bent 4 ilgio, kurio viduje būtų kitas masyvas bent 4 ilgio.
+2.4) Masyvas bent 4 ilgio, kurio viduje būtų objektas bent 4 ilgio.
+2.5) Objektas bent 4 ilgio, kurio viduje būtų masyvas bent 4 ilgio.
+2.6) Objektas bent 4 ilgio, kurio viduje būtų objektas bent 4 ilgio.
+
+3) Į konsolę išvesti:
+3.1) Bent po 2 reikšmes iš 2.1 ir 2.2 konteinerių.
+3.2) Bent po 3 reikšmes iš 2.3-2.6 konteinerių su bent 1 reikšme esančia konteinerio konteineryje.
