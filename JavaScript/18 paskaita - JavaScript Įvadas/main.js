@@ -1,5 +1,5 @@
 console.log("Ate :) ");
-
+console.log("---------------");
 /*    Kintamieji
   A) Tipai:
     1) Skaitinis - Number | Integer/Int | Float
@@ -30,3 +30,27 @@ console.log("Ate :) ");
       const PI = 3.14;
 
 */
+
+/*let tekstas = 'Mano mėgstamiausias serialas yra "Friends".';*/
+
+let vardas = "Rokas";
+let amzius = 25;
+let alkanas = true;
+
+let megstamiSerialai = ["Dr.House", "SuperNatural", 'Friends', "The Office"];
+
+let codeAcademyGrupe = {
+  pavadinimas : "TypeScript7",
+  seniunas : "Tomašas Dudovičius",
+  destytojas : "Rokas Banaitis",
+  studentuKiekis : 20
+};
+
+console.log(vardas);
+console.log(amzius);
+console.log(alkanas);
+
+console.log(megstamiSerialai);
+console.log(megstamiSerialai[0]);
+console.log(codeAcademyGrupe);
+console.log(codeAcademyGrupe.pavadinimas);
