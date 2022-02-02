@@ -28,15 +28,27 @@ console.log("---------------");
       let kintamasis = true;
     3) const - konstanta (constant)
       const PI = 3.14;
-
 */
 
 /*let tekstas = 'Mano mėgstamiausias serialas yra "Friends".';*/
 
+//          Paprasti kintamieji
 let vardas = "Rokas";
 let amzius = 25;
 let alkanas = true;
 
+console.log(vardas);
+console.log(amzius);
+console.log(alkanas);
+
+//          Kitos reikšmės
+/*
+        1) Undefined - Neaprašytas / neegzistuojantis
+        2) Null - Tuščias
+        3) NaN - Ne skaičius (Not a Number)
+*/
+
+//             Konteineriai
 let megstamiSerialai = ["Dr.House", "SuperNatural", 'Friends', "The Office"];
 
 let codeAcademyGrupe = {
@@ -46,11 +58,83 @@ let codeAcademyGrupe = {
   studentuKiekis : 20
 };
 
-console.log(vardas);
-console.log(amzius);
-console.log(alkanas);
-
 console.log(megstamiSerialai);
 console.log(megstamiSerialai[0]);
 console.log(codeAcademyGrupe);
 console.log(codeAcademyGrupe.pavadinimas);
+
+//          Konteinerių nestinimas
+// vieno konteinerio viduje kitas konteineris ir t.t.
+
+let masyvasMasyve = ["reikšmės", 54, ["dar reikšmių", false], "kitkas", "Labas", true, ["masyvas ir vėl", ["dar giliau"]], 1];
+console.log(masyvasMasyve);
+console.log(masyvasMasyve[6][1][0]);
+
+let objektasObjekte = {
+  raktas1 : "Labas",
+  raktas2 : "ate",
+  gilusRaktas : {
+    gilus1 : 54,
+    gilus2 : 32,
+    gilus3 : true,
+    gilus4 : "haha",
+    darGilesnis : {
+      darDarDar : "me ded..."
+    },
+    gilus6 : "paprasčiau"
+  },
+  raktas4 : "labas vėl"
+};
+console.log(objektasObjekte);
+console.log(objektasObjekte.gilusRaktas.darGilesnis.darDarDar);
+
+let masinos = [
+  {
+    marke: "Audi",
+    modelis : "TT",
+    metai : 2010,
+    spalva : "rgb(205, 0, 100)",
+    naudota : true,
+    duruSkaicius : 5,
+    savininkai: [
+      {
+        vardas : "Petras",
+        ikiKadaNaudojo : 2015
+      },{
+        vardas : "Kazys",
+        ikiKadaNaudojo : 2018
+      }
+    ],
+    explotacija: ["Vokietija", "Lenkija", "Lietuva", "Latvija"]
+  },{
+    marke: "BMW",
+    modelis : "6",
+    metai : 2010,
+    spalva : "rgb(205, 0, 100)",
+    naudota : false,
+    duruSkaicius : 5,
+    savininkai: [
+
+    ],
+    explotacija: []
+  },{
+    marke: "Fiat",
+    modelis : "Punto",
+    metai : 2001,
+    spalva : "rgb(0, 0, 255)",
+    naudota : true,
+    duruSkaicius : 3,
+    savininkai: [
+      {
+        vardas : "Petras",
+        ikiKadaNaudojo : 2015
+      },{
+        vardas : "Kazys",
+        ikiKadaNaudojo : 2018
+      }
+    ],
+    explotacija: ["Vokietija", "Lenkija", "Lietuva"]
+  }
+];
+
+console.log(masinos[0].explotacija[masinos[0].explotacija.length-1]);
