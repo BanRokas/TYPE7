@@ -104,8 +104,8 @@ console.log("ar sk1 mažiau arba lygus sk3: ", sk1 <= sk3); // > tikrina ar pirm
 console.groupEnd();
 console.groupCollapsed("Palyginimo operandai");
 // && - AND - IR
-// || - OR - ARBA
-// ! - NOT - NE
+// || - OR  - ARBA
+// !  - NOT - NE
 let tiesa = true; let melas = false;
 console.log(tiesa);
 console.log(melas);
@@ -118,6 +118,72 @@ console.log("melas arba melas",melas || melas); // false
 console.log("NE melas ir melas", !(melas && melas)); // true
 console.log("NE tiesa arba melas",!(tiesa || melas)); // false
 console.groupEnd();
+//console.groupCollapsed("Sąlygos");
+if("salyga"){
+  "jeigu salyga tiesa - vygdo IF'o vidini kodą"
+}
+"jeigu salyga yra melas - eina kodu toliau"
 
+if("salyga"){
+  "jeigu salyga tiesa - vygdo IF'o vidini kodą"
+} else {
+  "jeigu salyga yra melas - vygdo else'o vidinį kodą"
+}
+
+if("salyga1"){
+  "jeigu salyga1 tiesa - vygdo IF'o vidini kodą"
+} else if("salyga2") {
+  "jeigu salyga2 tiesa, o sąlyga1 netiesa - vygdo IF'o(antro) vidini kodą"
+} else if("salyga3") {
+  "jeigu salyga3 tiesa, o salyga2 ir salyga1 netiesa - vygdo IF'o(trečio) vidini kodą"
+} else {
+  "jeigu visos salygos yra melas - vygdo else'o vidinį kodą"
+}
+
+let pilnametyste = 18;
+let paauglyste = 13;
+let vaikyste = 7;
+let amzius = prompt("Koks tavo amžius?");
+if(amzius >= pilnametyste){
+  //alert("Esi pilnametis!");
+  //console.log("Esi pilnametis!");
+  if(amzius > 18 && amzius < 20){
+    console.log("Negali net alaus pirkti... yikes...");
+  } else if(amzius >= 20 && amzius < 30){
+    console.log("Esi savo trečiajame dešimtmetyje (geriausi metai tbh).");
+  }
+} else if(amzius >= paauglyste){
+  console.log("Esi paauglys.");
+} else if(amzius >= vaikyste){
+  console.log("Esi vaikas.");
+  let mokykla = prompt("Ar jau eini į mokyklą? (Taip/Ne)");
+  if(mokykla == "Taip"){
+    console.log("Smagaus mokyklinio gyvenimo.");
+  } else if(mokykla == "Ne") {
+    console.log("Jau greitai reiks keliauti į mokyklą.");
+  } else {
+    console.log("Prašau parašyti Taip arba Ne");
+  }
+} else {
+  console.log("Esi jaunesnis negu 7 metai.");
+}
+console.log("vygdosi kodas toliau");
+
+let skaicius = 5;
+if(skaicius >= 8){
+  console.log("8 - 99999999");
+} else /*if(skaicius < 8)*/{
+  console.log("-9999999 - 8");
+}
+
+let spalva = "  Mėlyna";//prompt("Kokia tavo mėgstamiausia spalva?");
+spalva = spalva.trim(); // string metodas, kuris iš abiejų pusių ištrina tarpus
+spalva = spalva.toLowerCase(); // string metodas, kuris sumažina visas raides
+if(spalva == "raudona"){
+  console.log("Raudona it rožės žiedlapis.");
+} else if(spalva == "mėlyna"){
+  console.log("Mėlyna kaip jūrų platybės.");
+}
+//console.groupEnd();
 
 //console.groupEnd();
