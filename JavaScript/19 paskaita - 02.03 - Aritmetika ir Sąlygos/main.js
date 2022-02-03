@@ -1,5 +1,6 @@
 //                Aritmetika
-console.groupCollapsed("Aritmetika su string'ais");
+console.groupCollapsed("Aritmetika");
+console.groupCollapsed("Su string'ais");
 //   string + string
 let tekstas1 = "Šešios žąsys su šešiais žąsyčiais";
 let tekstas2 = "ėjo keliu į 'Kentucky Fried Chicken' užkandinę.";
@@ -23,7 +24,7 @@ console.log(14 + 15 + "15");
 console.groupEnd();
 
 //  Actual aritmetika
-console.groupCollapsed("Aritmetika su number'iais");
+console.groupCollapsed("Su number'iais");
 let x = 7; //Number(prompt("Įveskite x"));
 let y = 3; //Number(prompt("Įveskite y"));
 console.log("x: " + x + " y: " + y);
@@ -54,7 +55,7 @@ console.log("Iš x traukiant y laipsnio šaknį gauname " + saknis);
 console.groupEnd();
 
 // Artimetikos trumpiniai
-console.groupCollapsed("Aritmetikos trumpiniai");
+console.groupCollapsed("Trumpiniai");
 let i = 0;
 console.log(i);
 
@@ -81,3 +82,42 @@ i++; // padidina vienetu
 ++i;
 console.log(i);
 console.groupEnd();
+console.groupEnd();
+
+//console.groupCollapsed("Sąlygos");
+/*    Truthy and Falsy
+    Truthy: true, skaičius kuris yra ne 0, "netuščias", objektas, masyvas, funkcija
+    Falsy:  false, 0, "", NaN, undefined, null
+*/
+console.groupCollapsed("Palyginimo operatoriai");
+let sk1 = 5; let sk2 = 5; let sk3 = 8; let zod1 = "5";
+console.log("sk1: " + sk1 + "; sk2: " + sk2 + "; sk3: " + sk3 + "; zod1: '" + zod1 + "'");
+console.log("ar sk1 lygus sk2: ", sk1 == sk2); // == tikrina ar lygios reikšmės
+console.log("ar sk1 nelygus sk2: ", sk1 != sk2); // != tikrina ar nelygios reikšmės
+console.log("ar sk1 lygus zod1: ", sk1 == zod1); // == tikrina ar lygios reikšmės
+console.log("ar sk1 lyyygus zod1: ", sk1 === zod1); // === tikrina ar lygios reikšmės ir tipai
+console.log("ar sk1 lyyygus zod1: ", sk1 !== zod1); // !== tikrina ar nelygios reikšmės ir tipai
+console.log("ar sk1 daugiau nei sk2: ", sk1 > sk2); // > tikrina ar pirmasis daugiau už antrąjį
+console.log("ar sk1 mažiau nei sk3: ", sk1 < sk3); // < tikrina ar pirmasis mažiau už antrąjį
+console.log("ar sk1 daugiau arba lygus sk2: ", sk1 >= sk2); // > tikrina ar pirmasis daugiau arba lygus antrąjam
+console.log("ar sk1 mažiau arba lygus sk3: ", sk1 <= sk3); // > tikrina ar pirmasis mažiau arba lygus antrąjam
+console.groupEnd();
+console.groupCollapsed("Palyginimo operandai");
+// && - AND - IR
+// || - OR - ARBA
+// ! - NOT - NE
+let tiesa = true; let melas = false;
+console.log(tiesa);
+console.log(melas);
+console.log("tiesa ir melas",tiesa && melas); // false
+console.log("tiesa ir tiesa",tiesa && tiesa); // true
+console.log("melas ir melas",melas && melas); // false
+console.log("tiesa arba melas",tiesa || melas); // true
+console.log("tiesa arba tiesa",tiesa || tiesa); // true
+console.log("melas arba melas",melas || melas); // false
+console.log("NE melas ir melas", !(melas && melas)); // true
+console.log("NE tiesa arba melas",!(tiesa || melas)); // false
+console.groupEnd();
+
+
+//console.groupEnd();
