@@ -138,3 +138,37 @@ let masinos = [
 ];
 
 console.log(masinos[0].explotacija[masinos[0].explotacija.length-1]);
+/*let mE = masinos[0].explotacija;
+console.log(mE[mE.length-1]);
+
+
+let skMas = [5,8,4,6,1,6,51,5,8,4,61,1];
+
+console.log(skMas[3],skMas[4],skMas[5],skMas[6]);
+
+console.log(skMas[3]);
+console.log(skMas[4]);
+console.log(skMas[5]);
+console.log(skMas[6]);*/
+
+let stringas = "zodis";
+let numberis = 54.6;
+let booleanas = true;
+
+let masyvai = ["nulintas", "pirmas", 2, 3, "ketvirtas", false, true, ["dar", 7], 
+  {
+    objMasyveReiksmePirma : "baisu",
+    transportoPriemone : "Troleibusas",
+    nelaimingasSkaicius : 2
+}];
+let objektai = {
+  raktinisZodis : "reikšmė",
+  laimingiSkaiciai : [7, 13, 66, 69, 96],
+  gyvenamojiVieta : {
+    planeta : "Žemė",
+    zemynas : "Europa",
+    salis : "Lietuva",
+    miestas : "Kaunas",
+    gatve : "Chicken street"
+  }
+};
