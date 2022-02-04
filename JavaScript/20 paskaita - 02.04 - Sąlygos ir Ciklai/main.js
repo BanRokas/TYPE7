@@ -51,3 +51,29 @@ skaicius < 25 ? console.log("Vidutiniškai") :
 skaicius < 100 ? console.log("Daug") : console.log("Labai daug");
 
 console.groupEnd();
+// Ciklai
+
+/*
+  Ciklai skirti atkartoti kažkokią veiksmų seką kažkokį tais kiekį kartų.
+    1) for(){} - žinai / galiApskaičiuoti kiek kartų reikės vykdyti ciklą.
+        for(1;2;3){veiksmai} 1-SukuriamasSkaitliukas; 2-Sąlyga; 3-SąlygosKitimas
+      array.forEach() - naudojamas masyvui
+      for in - naudojamas objektui
+      for of - naudojamas objektui
+    2) while(){} - nežinai kiek kartų reikės vykdyti ciklą.
+        while(1){veiksmai} 1-Sąlyga
+      do{}while() - nežinai kiek kartų reikės vykdyti ciklą, bet atlieki veiksmą bent vieną kartą.
+*/
+for(let i = 0; i < 5; i++){ // i++ <= i += 1 <= i = i + 1
+  console.log(i);
+}
+
+let masyvas = [];
+for(let i = 0; i < 9854; i+= 65){
+  masyvas.push(Math.floor(i*Math.random()));
+}
+
+for(let i = 0; i < masyvas.length; i++){
+  //console.log(masyvas[i] + ' yra masyvo "masyvas" ' + i + "'asis elementas.");
+  console.log(`${masyvas[i]} yra masyvo "masyvas" ${i}'asis elementas.`);
+}
