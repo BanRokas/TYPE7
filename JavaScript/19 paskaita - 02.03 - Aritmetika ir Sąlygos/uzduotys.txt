@@ -13,7 +13,7 @@ Užduotys
             3) alert/console.log - grąžintų atsakymus.
             4) if/elseIf/else - kas be ko...
 
-    3) Parašyti if'ą, kuris tikrintų kokia tavo lytis (tikrinimas turi vykti iš object kintamojo (object kintamasis turi turėti bent 4 kintamuosiuos savo viduje)).
+    3) Parašyti if'ą, kuris tikrintų kokia tavo lytis (tikrinimas turi vykti iš objekto "Asmuo" kintamojo (objektas turi turėti bent 4 kintamuosiuos savo viduje)).
         Naudoti:
             1) let/const - kurti kintamuosius (objektą/us)
             optional) prompt - vartotojas priskirtų objektui reikšmes

@@ -118,7 +118,8 @@ console.log("melas arba melas",melas || melas); // false
 console.log("NE melas ir melas", !(melas && melas)); // true
 console.log("NE tiesa arba melas",!(tiesa || melas)); // false
 console.groupEnd();
-//console.groupCollapsed("Sąlygos");
+
+console.groupCollapsed("Sąlygos");
 if("salyga"){
   "jeigu salyga tiesa - vygdo IF'o vidini kodą"
 }
@@ -184,6 +185,45 @@ if(spalva == "raudona"){
 } else if(spalva == "mėlyna"){
   console.log("Mėlyna kaip jūrų platybės.");
 }
-//console.groupEnd();
+console.groupEnd();
+
+console.groupCollapsed("Tikrinimasis");
+if(amzius >= 18){
+  console.log("Tu jau esi pilnametis.");
+  let teises = prompt("Ar jau išsilaikei automobilio teises? (Taip/Ne)");
+  if(teises == "Taip"){
+    let arTuriMasina = prompt("Ar turi automobilį? (Taip/Ne)");
+    if(arTuriMasina == "Taip"){
+      console.log("Sėks ir važiuok.");
+    } else if(arTuriMasina == "Ne"){
+      console.log("Tai taupykis arba prašyk tėvų.");
+    } else {
+      console.log("Prašome įvesti Taip arba Ne");
+    }
+  } else if (teises == "Ne"){
+    console.log("Negali vairuoti");
+  } else {
+    console.log("Prašome įvesti Taip arba Ne");
+  }
+} else {
+  console.log("Nesi pilnametis negali vairuot");
+}
+console.groupEnd();
+
+console.groupCollapsed("Tikrinimasis");
+let asmuo = {
+  vardas : prompt("Koks jūsų vardas?"),
+  pavarde : prompt("Kokia jūsų pavardė?"),
+  amzius : amzius,
+  lytis : prompt("Kokia jūsų lytis?")
+}
+if(asmuo.lytis == "Vyras"){
+  console.log("Niekada nesubresi CHA CHA");
+} else if(asmuo.lytis == "Moteris"){
+  console.log("Moteris");
+} else {
+  console.log("Welcome to 21'st century");
+}
+console.groupEnd();
 
 //console.groupEnd();
