@@ -1,7 +1,7 @@
 console.groupCollapsed("Sąlygos");
 // switch
 let vaisius = "Obuolys";
-switch(vaisius){
+switch (vaisius) {
   case "Obuolys":
   case "Kriaušė":
     console.log("Lietuviškas vaisius.");
@@ -24,6 +24,30 @@ switch(vaisius){
 }*/
 console.log("-----------------");
 // ternary
+let salyga = true;
+if (salyga) {
+  console.log("if tiesa")
+} else {
+  console.log("if melas")
+}
+salyga ? console.log("ter tiesa") : console.log("ter melas"); // ternary su if ir else
 
+console.log("-------");
+
+let skaicius = 100;
+
+if (skaicius < 10) {
+  console.log("Mažai");
+} else if (skaicius < 25) {
+  console.log("Vidutiniškai");
+} else if (skaicius < 100) {
+  console.log("Daug");
+} else {
+  console.log("Labai daug");
+}
+
+skaicius < 10 ? console.log("Mažai") :
+skaicius < 25 ? console.log("Vidutiniškai") :
+skaicius < 100 ? console.log("Daug") : console.log("Labai daug");
 
 console.groupEnd();
