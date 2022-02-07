@@ -1,0 +1,25 @@
+0) Parašyti switch'ą, kuris tikrintų koks dabar mėnuo / metų laikas.
+  Naudoti:
+    1) let/const - kurti kintamuosius.
+    2) prompt - gauti mėnesį.
+    3) alert/console.log - grąžinti galimus atsakymus.
+    4) switch - kas be ko...
+pvz: duomenys: 9 => ats: Rugsėjis, Ruduo
+               1 =>      Sausis, Žiema
+               Lapkritis => 11, Ruduo
+
+
+1) Parašyti ciklą, kuris išspausdintų kiekvieną masyvo elementą.
+2) Parašyti ciklą, kuris išspausdintų kas trečią masyvo elementą.
+3) Parašyti ciklą, kuris išspausdintų kas antrą masyvo elementą nuo galo.
+4) Parašyti ciklą, kuris iš masyvo išspausdintų tik elementus, kurių reikšmė didesnė negu 54.
+5) Parašyti ciklą, kuris iš masyvo išspausdintų tik lyginius/nelyginius skaičius. (2ciklai)
+
+extra 1) Parašyti ciklą, kuris atlieka Fizz Buzz testą nuo 0 iki 100.
+         Fizz - jeigu skaičius yra 3 kartotinis/daliklis/dalijasi iš 3 be liekanos.
+         Buzz - jeigu skaičius yra 5 kartotinis/daliklis/dalijasi iš 5 be liekanos.
+         FizzBuzz - jeigu skaičius yra 3 ir 5 kartotinis/daliklis/dalijasi iš 3 ir 5 be liekanos.
+         skaičius - kitais atvejais.
+EXTRA 2) Parašyti ciklą, kuris atrinktų ir į konsolę išspausdintų tik pirminius skaičius intervale nuo 0 iki 100.
+        Pirminis skaičius - dalinasi TIK iš savęs paties ir iš 1 be liekanos.
+        pvz(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101)
