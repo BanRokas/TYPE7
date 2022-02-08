@@ -1,0 +1,24 @@
+.darbuSarasas{
+  width: 300px;
+  padding: 25px 10px;
+  margin: 50px auto 0;
+  background-color: antiquewhite;
+  border-radius: 10%;
+  text-align: center;
+}
+.darbas{
+  margin: 0 auto;
+  padding: 5px 10px;
+  width: 70%;
+  text-align: left;
+  background-color: rgb(173, 248, 223);
+}
+.darbas:nth-child(2n){
+  background-color:rgb(155, 240, 240);
+}
+.darbas:first-child{
+  border-radius: 15px 15px 0 0;
+}
+.darbas:last-child{
+  border-radius: 0 0 15px 15px;
+}
