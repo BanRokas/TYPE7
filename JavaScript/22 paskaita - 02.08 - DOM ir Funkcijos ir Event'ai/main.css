@@ -13,7 +13,7 @@
   text-align: left;
   background-color: rgb(173, 248, 223);
 }
-.darbas:nth-child(2n){
+.darbas:nth-child(3n+1){
   background-color:rgb(155, 240, 240);
 }
 .darbas:first-child{
