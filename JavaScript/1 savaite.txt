@@ -1,1 +1,21 @@
 Pabandyti atlikti užduotis iš šitos dalies: https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php
+
+Sąlygos:
+https://youtu.be/IsG4Xd6LlsM
+https://youtu.be/qK3yEwXqaAc
+https://youtu.be/N4V0FZASK60
+https://www.codemahal.com/video/using-andor-operators-in-if-statements-with-javascript/
+
+Ciklai:
+https://youtu.be/s9wW2PpJsmQ
+https://youtu.be/Qg7H3b1xBfs
+https://youtu.be/LuAWFium1nk
+https://youtu.be/Kn06785pkJg
+
+DOM:
+https://youtu.be/H63dVFDuJDM (teorija)
+https://youtu.be/_GxpmQ54aqg (teorija)
+https://youtu.be/y17RuWkWdn8
+
+Funkcijos:
+https://youtu.be/N8ap4k_1QEQ
