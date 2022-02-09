@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>23 paskaita - Event + Forma</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div>
+    <h1 class="magic">I make Magic :)</h1>
+  </div>
+  <br>
+  <form class="forma">
+    <div class="field">
+      <label for="name">Vardas</label>
+      <input type="text" name="name" id="name">
+    </div>
+    <div class="field">
+      <label for="age">Amžius</label>
+      <input type="number" name="age" id="age">
+    </div>
+    <div class="field">
+      <label for="mail">El. Paštas</label>
+      <input type="email" name="mail" id="mail">
+    </div>
+    <div class="field">
+      <label for="pass">Slaptažodis</label>
+      <input type="password" name="pass" id="pass">
+    </div>
+    <input type="submit">
+  </form>
+  <div id="output"></div>
+  <br>
+  <div>
+    <label>Atlikime sudėtį: </label>
+    <input type="number" id="sudNr1" style="width: 100px">
+    <span> + </span>
+    <input type="number" id="sudNr2" style="width: 100px">
+    <button onclick=sudetiesFunkcija(event)>=</button>
+    <span id="sudAts"></span>
+  </div>
+  <br>
+</body>
+</html>
