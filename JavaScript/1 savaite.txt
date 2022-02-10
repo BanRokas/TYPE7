@@ -1,5 +1,8 @@
 Pabandyti atlikti užduotis iš šitos dalies: https://www.w3resource.com/javascript-exercises/javascript-conditional-statements-and-loops-exercises.php
 
+Motyvacija:
+https://youtu.be/NtfbWkxJTHw
+
 Sąlygos:
 https://youtu.be/IsG4Xd6LlsM
 https://youtu.be/qK3yEwXqaAc
