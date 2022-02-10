@@ -35,11 +35,13 @@ document.querySelector("form").addEventListener("submit", formosFunkcija);
 function formosFunkcija(e){
   e.preventDefault();
   console.log(e);
+  //let vardas = e.target[0].value;
   let vardas = e.target.querySelector("#name").value;
   let pastas = e.target.querySelector("#mail").value;
-  let pass = e.target.querySelector("#pass").value;
-  let amzius = e.target.querySelector("#age").value;
-  console.log("vardas",e.target[0].value);
+  //let pass = e.target.querySelector("#pass").value;
+  let pass = e.target.elements.pass.value;
+  //let amzius = e.target.querySelector("#age").value;
+  let amzius = e.target.elements.age.value;
   console.log("Vardas", vardas);
   console.log("Amžius", amzius);
   console.log("Paštas", pastas);

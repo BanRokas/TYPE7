@@ -1,7 +1,7 @@
 Atlikti vakar dienos uždavinius, 
 FizzBuzz ir 
-pradėti gliaudėti pirminius skaičius
++ pradėti gliaudėti pirminius skaičius
 
 Parašyti atimties, daugybos ir dalybos formeles.
 
-Sudėties, atimties, daugybos ir dalybos Formeles apjungti į vieną. Matematinį veiksmą parinkti su select'u.
++ Sudėties, atimties, daugybos ir dalybos Formeles apjungti į vieną. Matematinį veiksmą parinkti su select'u.
