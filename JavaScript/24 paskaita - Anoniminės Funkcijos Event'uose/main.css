@@ -1,0 +1,16 @@
+.shoeDiv{
+  position: relative;
+  height: 220px;
+  width: 500px;
+}
+
+.shoeDiv img{
+  width: 100%;
+  height: 100%;
+}
+
+.shoeDiv span{
+  position: absolute;
+  left: 45px;
+  top: 60px;
+}

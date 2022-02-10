@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>24 paskaita - Anoniminės Funkcijos Event'uose</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <section id="batuParduotuve">
+    <h1>Batų parduotuvė</h1>
+    <form>
+      <div class="formosLaukelis">
+        <label for="type">Tipas</label>
+        <select name="type" id="type">
+          <option value="">---</option>
+          <option value="Sportiniai">Sportiniai</option>
+          <option value="Laisvalaikio">Laisvalaikio</option>
+          <option value="Šokių">Šokių</option>
+          <option value="Žygio">Žygio</option>
+          <option value="Šlepetės">Šlepetės</option>
+        </select>
+      </div>
+      <div class="formosLaukelis">
+        <label for="size">Dydis</label>
+        <input type="number" name="size" id="size" min="35" max="45">
+      </div>
+      <div class="formosLaukelis">
+        <label for="color">Spalva</label>
+        <input type="color" name="color" id="color">
+      </div>
+      <input type="submit">
+    </form>
+    <div id="bootsOutput"></div>
+  </section>
+
+</body>
+</html>

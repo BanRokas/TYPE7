@@ -1,0 +1,11 @@
+1) Naujoje sekcijoje:
+  1.1) Sukurti lėktuvo/traukinio/autobuso/darKažko bilieto pirkimo formą ir paruošti output vietą(HTML).
+  1.2) Ją stilizuoti (CSS) (nebūtinai).
+  1.3) Iš formos pasiimti įvestus duomenis.
+  1.4) Į HTML'ą išvesti pasiimtus duomenis bilieto pavidalu.
+    1.4.a) Galima įkelti bilieto paveiksliuką ir su CSS nutaikyti kuriose vietose įkelti reikšmes (kaip darėm su batais). (lengvesnis - prastesnis)
+    1.4.b) Galima gražiai aprašyti HTML (JS'o viduje) ir jį stilizuoti (su CSS naudojant klases, kurias priskiri rašydamas HTML JS'o viduje). O galiausiai atitinkamose vietose sukelti reikšmes. (sunkesnis - geresnis)
+
+2) Daryti buvusias ciklų/funkcijų užduotis.
+3) Peržiūrėti "1 savaite.txt" video (tų dalykų, kurie sunkiau suprantami).
+4) Kas be ko - daryti CAO užduotis.
