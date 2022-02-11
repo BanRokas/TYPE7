@@ -3,6 +3,11 @@ Pabandyti atlikti užduotis iš šitos dalies: https://www.w3resource.com/javasc
 Motyvacija:
 https://youtu.be/NtfbWkxJTHw
 
+Kintamieji:
+https://codeburst.io/everything-you-should-know-about-javascript-variables-bd573ed6c811
+https://youtu.be/Fo5FyZkmpIM
+https://youtu.be/L9-3VBOjNH4
+
 Sąlygos:
 https://youtu.be/IsG4Xd6LlsM
 https://youtu.be/qK3yEwXqaAc
@@ -19,6 +24,12 @@ DOM:
 https://youtu.be/H63dVFDuJDM (teorija)
 https://youtu.be/_GxpmQ54aqg (teorija)
 https://youtu.be/y17RuWkWdn8
+https://youtu.be/9LZmo4Cvn5k
+https://youtu.be/hRaDYCHqFQQ
 
 Funkcijos:
 https://youtu.be/N8ap4k_1QEQ
+https://youtu.be/WOmlERydNBk
+https://youtu.be/d7cfhgfojLA
+https://youtu.be/h33Srr5J9nY
+https://youtu.be/22fyYvxz-do
