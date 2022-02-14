@@ -1,0 +1,24 @@
+.redBg{
+  background-color: red;
+}
+
+#yellowText{
+  color: yellow;
+}
+
+/* Nuotrauku galerija */
+
+#galerija{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foto{
+  position: absolute;
+  height: 200px;
+  width: auto;
+}

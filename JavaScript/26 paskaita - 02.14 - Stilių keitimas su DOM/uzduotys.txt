@@ -1,0 +1,4 @@
+1) Tęsti/tobulinti(kam buvo kokių bėdų) skaičiuotuvą.
+2) Padaryti CAO užduotis.
+3) Pabaigi nuotraukų galeriją (jei kas nebaigė).
+4) Padaryti šviesios/tamsios svetainės toggle mygtuką, kurį paspaudus pakeistų svetainės stilius iš šviesių į tamsius ir atvirkščiai. https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/toggle
