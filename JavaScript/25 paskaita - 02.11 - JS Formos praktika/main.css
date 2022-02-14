@@ -3,11 +3,36 @@
 }
 
 #calculator{
+  background-color: blue;
+  width: 500px;
+  height: 800px;
+  border-radius: 3%;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: repeat(7,1fr);
 }
 
+#calculator > div{
+  margin: 0 auto;
+  margin-top: 0.6rem;
+  height: 80%;
+  width: 80%;
+  color: white;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#calculator > div:not(#ekranas){
+  border-radius: 10%; 
+}
+
+#calculator > div:not(.blank){
+  background-color: black;
+}
+
 #ekranas{
   grid-area: 1 / 1 / 2 / 5;
 }
+
