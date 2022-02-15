@@ -68,3 +68,46 @@ let asmenys = [
     }
   }
 ];
+
+let figuros = [
+  {
+    pavadinimas : "Kvadratas",
+    plotis: 20,
+    aukstis : 20,
+    info : function(){
+      return `Figūra - ${this.pavadinimas}. Jos aukštis yra ${this.aukstis}cm, o plotis ${this.plotis}cm.`;
+    },
+    plotas : function(){
+      return `Figūros plotas yra: ${this.plotis * this.aukstis}cm^2.`;
+    },
+    perimetras : function(){
+      return `Figūros perimetras yra: ${this.plotis*2 + this.aukstis*2}cm.`;
+    }
+  },{
+    pavadinimas : "Statusis trikampis",
+    plotis: 3,
+    statinis : 4,
+    info : function(){
+      return `Figūra - ${this.pavadinimas}. Jos statinis yra ${this.statinis}cm, o plotis ${this.plotis}cm.`;
+    },
+    plotas : function(){
+      return `Figūros plotas yra: ${(this.plotis * this.statinis)/2}cm^2.`;
+    },
+    perimetras : function(){
+      return `Figūros perimetras yra: ${this.plotis + this.statinis + this.izambine()}cm.`;
+    },
+    izambine : function(){
+      return (this.statinis**2 + this.plotis**2)**(1/2);
+      // return Math.sqrt(this.statinis**2 + this.plotis**2);
+    }
+  }
+]
+/*       Uzduotis
+  Papildyti kintamąjį figuros šiomis figūromis:
+    1) Stačiakampis.
+    2) Statusis trikampis.
+    3) Apskritimas.
+    4) Beleką.
+    5) ... .
+    +6) 3D figūrą.
+*/
