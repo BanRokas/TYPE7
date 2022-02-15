@@ -111,3 +111,19 @@ let figuros = [
     5) ... .
     +6) 3D figūrą.
 */
+
+// -------------------------------------
+//            kvadratai
+document.querySelector("#kiekKvadratu").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const kiek = Number(e.target.elements.kiekKv.value);
+  const kvadratai = document.querySelector("#kvadratai");
+  kvadratai.innerHTML = "";
+  for(let i = 1; i <= kiek; i++){
+    kvadratai.innerHTML += `
+      <div class="kvadratas">
+        ${(i%3?'':'Fizz')+(i%5?'':'Buzz')||i}
+      </div>
+    `;
+  }
+});
