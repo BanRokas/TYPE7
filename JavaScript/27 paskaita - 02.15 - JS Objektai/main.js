@@ -130,3 +130,57 @@ document.querySelector("#kiekKvadratu").addEventListener("submit", (e) => {
 
 // -------------------------------------
 //            paveikslai
+console.log(data_paintings);
+const paveikslai = document.querySelector("#paveikslai");
+paveikslai.innerHTML += `
+  <div class="pirmojiUzd">
+    <h1>${data_paintings[0].title}</h1>
+    <p>${data_paintings[0].paragraph}</p>
+    <img src="${data_paintings[0].image}" height="200px">
+  </div>
+`;
+paveikslai.innerHTML += `
+  
+`;
+
+/*
+  Kas baigėte su paveikslais darykite filtravimą su data[2]
+  1) Sukurti formą, kuri priims teksto gabaliuką.
+  2) Pagal gautąjį teksto gabaliuką turi išfiltruoti, kuris pirmasis paveikslo pavadinimas atitinka tą teksto gabaliuką.
+  3) Į ekraną išvesti išfiltruotą elementą.
+*/
+
+paveikslai.innerHTML += `
+  <form id="ieskotPaveikslu">
+    <label for="paieskosZodis">Ieškoti paveikslo pagal įvestį: </label>
+    <input type="text" name="paieskosZodis" id="paieskosZodis">
+    <input type="submit">
+  </form>
+`;
+document.querySelector("#ieskotPaveikslu").addEventListener("submit", e =>{
+  e.preventDefault();
+  console.dir(e.target.elements.paieskosZodis.value);
+  let ivestis = e.target.elements.paieskosZodis.value;
+  let ieskom = data_paintings[2].imagesTitles;
+  let rado = false;
+  for(let i = 0; i < ieskom.length; i++){
+    if(ieskom[i].includes(ivestis)){
+      rado = true;
+      paveikslai.innerHTML += `
+        <div>
+          <h1>${data_paintings[2].imagesTitles[i]}</h1>
+          <img src="${data_paintings[2].images[i]}" height="200px">
+          <p>${data_paintings[2].paragraphs[i]}</p>
+        </div>
+      `;
+      break;
+    } 
+  }
+  if(!rado){
+    paveikslai.innerHTML += `
+      <div>
+        Neradom.
+      </div>
+    `;
+  }
+});
