@@ -127,3 +127,6 @@ document.querySelector("#kiekKvadratu").addEventListener("submit", (e) => {
     `;
   }
 });
+
+// -------------------------------------
+//            paveikslai
