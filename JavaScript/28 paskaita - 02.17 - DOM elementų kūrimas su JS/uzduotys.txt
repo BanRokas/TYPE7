@@ -1,0 +1,10 @@
+1) body gale pridėti sekciją, kurioje būtų h1, img ir p
+  Visą tai daryti kuriant Node'us | naudojant JS ir nerašant jame HTML kodo.
+
+2) JS'u naujoje sekcijoje sukurkite x stulpelių ir y eilučių (x ir y nurodomas formoje) lentelę kai bus paspaudžiamas mygtukas.
+  Lentelei nekurkite thead ir tbody.
+  Kiekvienam td duokite informacijos gabaliuką (tam kad matytųsi lentelės elementai)
+  Galite dar duoti rėmelius (tam, kad dar geriau matytųsi lentelės elementai)
+  Kam sunkiai sekasi, galite susikurti viską iki lentelės naudodami HTML.
+
+3) Susikurti puslapio Menu (su bent 3'jomis nuorodomis ir logotipu) tvarkingai (bet ne super gražiai) stilizuotą ir sukurtą vien su JS'u nerašant HTML kodo.

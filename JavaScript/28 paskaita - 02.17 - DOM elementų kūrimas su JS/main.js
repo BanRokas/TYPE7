@@ -48,7 +48,35 @@ let img = document.createElement("img");
 img.setAttribute("src", "images/nature5.jpg");
 img.style.height = "200px";
 app.appendChild(img);
-
 /*
   body gale pridėti sekciją, kurioje būtų h1, img ir p
+  Visą tai daryti kuriant Node'us | naudojant JS ir nerašant jame HTML kodo.
+*/
+
+const sekcijaSav1 = document.createElement("section");
+let heading = document.createElement("h1");
+text = document.createTextNode("Sveiki gyvi, kas dar gyvi :) ");
+heading.appendChild(text);
+img = document.createElement("img");
+img.setAttribute("src", "images/nature5.jpg");
+img.style.height = "200px";
+p = document.createElement("p");
+text = document.createTextNode("  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero tempore nostrum atque repudiandae ullam consequatur pariatur magni reprehenderit molestiae! Voluptatibus atque assumenda odit totam explicabo accusantium dolor maxime ea. Provident?");
+p.appendChild(text);
+sekcijaSav1.append(heading, img, p);
+document.body.appendChild(sekcijaSav1);
+
+/*
+  JS'u naujoje sekcijoje sukurkite x stulpelių ir y eilučių (x ir y nurodomas formoje) lentelę paspaudžiant ant mygtuko.
+  Lentelei nekurkite Thead ir Tbody.
+  Kiekvienam td duokite informacijos gabaliuką (tam kad matytųsi lentelės elementai)
+  Galite dar duoti rėmelius (tam, kad dar geriau matytųsi lentelės elementai)
+  Kam sunkiai sekasi, galite susikurti viską iki lentelės naudodami HTML.
+*/
+
+let input = document.createElement("input");
+input.setAttribute("type", "submit");
+
+/*
+  Susikurti puslapio Menu (su bent 3'jomis nuorodomis ir logotipu) tvarkingai (bet ne super gražiai) stilizuotą ir sukurtą vien su JS'u nerašant HTML kodo.
 */
