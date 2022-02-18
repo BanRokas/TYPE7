@@ -47,6 +47,7 @@ document.querySelector("#skaiciuok1").addEventListener("click", e => {
 
 let ekranoSkaicius = null;
 let atmintiesSkaicius = null;
+let veiksmas = null;
 let ekranoVaizdas = document.querySelector("#ekranas");
 
 document.querySelector("#clear").addEventListener("click", clearScreen); // CE - išvalyti tai kas parašyta ekrane
@@ -58,23 +59,73 @@ document.querySelector("#reset").addEventListener("click", resetCalculator); // 
 function resetCalculator(){
   ekranoSkaicius = null;
   atmintiesSkaicius = null;
+  veiksmas = null;
   atvaizduoti();
 }
 document.querySelector("#zenklas").addEventListener("click", changeSign); // keisti teigiama / neigiama
 function changeSign(){
-  if(ekranoSkaicius.charAt(0) == "-"){
-    ekranoSkaicius = ekranoSkaicius.slice(1, ekranoSkaicius.length);
-  } else {
-   ekranoSkaicius = "-".concat(ekranoSkaicius);
+  if(ekranoSkaicius !== null){
+    ekranoSkaicius = ekranoSkaicius.toString();
+    if(ekranoSkaicius.charAt(0) == "-"){
+      ekranoSkaicius = ekranoSkaicius.slice(1, ekranoSkaicius.length);
+    } else {
+     ekranoSkaicius = "-".concat(ekranoSkaicius);
+    }
   }
-  atvaizduoti()
+  atvaizduoti();
 }
-/*
+
 document.querySelector("#lygu").addEventListener("click", calculate); // suskaičiuoti
+function calculate(){
+  if(ekranoSkaicius !== null && atmintiesSkaicius !== null){
+    ekranoSkaicius = Number(ekranoSkaicius);
+    atmintiesSkaicius = Number(atmintiesSkaicius);
+    if (veiksmas == "sudėti") {
+      ekranoSkaicius = atmintiesSkaicius + ekranoSkaicius;
+    } else if (veiksmas == "atimti") {
+      ekranoSkaicius = atmintiesSkaicius - ekranoSkaicius;
+    } else if (veiksmas == "dauginti") {
+      ats.innerHTML = x * y;
+    } else if (veiksmas == "dalinti") {
+      ats.innerHTML = x / y;
+    } else if (veiksmas == "gautiLiekaną") {
+      ats.innerHTML = x % y;
+    } else if (veiksmas == "pakeltiLaipsniu") {
+      ats.innerHTML = x ** y;
+    } else if (veiksmas == "ištrauktiŠaknį") {
+      ats.innerHTML = x ** (1 / y);
+    }
+    atmintiesSkaicius = null;
+    veiksmas = null;
+    atvaizduoti();
+  }
+}
 
 document.querySelector("#sudetis").addEventListener("click", sudeti);
+function sudeti(){
+  if(ekranoSkaicius !== null || atmintiesSkaicius !== null){
+    if(veiksmas === null || veiksmas !== null && ekranoSkaicius === null){
+      veiksmas = "sudėti";
+      if(ekranoSkaicius !== null){
+        atmintiesSkaicius = ekranoSkaicius;
+        ekranoSkaicius = null;
+      }
+    }
+  }
+}
 document.querySelector("#atimtis").addEventListener("click", atimti);
-document.querySelector("#daugyba").addEventListener("click", dauginti);
+function atimti(){
+  if(ekranoSkaicius !== null || atmintiesSkaicius !== null){
+    if(veiksmas === null || veiksmas !== null && ekranoSkaicius === null){
+      veiksmas = "atimti";
+      if(ekranoSkaicius !== null){
+        atmintiesSkaicius = ekranoSkaicius;
+        ekranoSkaicius = null;
+      }
+    }
+  }
+}
+/*document.querySelector("#daugyba").addEventListener("click", dauginti);
 document.querySelector("#dalyba").addEventListener("click", dalinti);
 document.querySelector("#liekana").addEventListener("click", gautiLiekana);
 document.querySelector("#laipsnis").addEventListener("click", pakeltiLaipsniu);
@@ -105,6 +156,7 @@ function writeTaskas(){
   if(ekranoSkaicius == null){
     ekranoSkaicius = "0.";
   } else {
+    ekranoSkaicius = ekranoSkaicius.toString();
     if(!ekranoSkaicius.includes(".")){
       ekranoSkaicius += ".";
     } else if(ekranoSkaicius.charAt(ekranoSkaicius.length-1) == "."){
