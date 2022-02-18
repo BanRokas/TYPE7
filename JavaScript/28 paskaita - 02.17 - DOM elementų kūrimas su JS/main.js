@@ -77,6 +77,19 @@ document.body.appendChild(sekcijaSav1);
 let input = document.createElement("input");
 input.setAttribute("type", "submit");
 
+/*for (let i = 0; i < eiluciuSkaicius; i++) {
+  const eilute = document.createElement("tr");
+  lentele.appendChild(eilute);
+  eilute.style.border = "3px solid grey";
+  for (let j = 0; j < stulpeliuSkaicius; j++) {
+    const stulpelis = document.createElement("td");
+    stulpelis.textContent = "BB"
+    eilute.append(stulpelis);
+    stulpelis.style.border = "3px solid grey";
+    stulpelis.style.color = "green"
+  }
+}*/
+
 /*
   Susikurti puslapio Menu (su bent 3'jomis nuorodomis ir logotipu) tvarkingai (bet ne super gražiai) stilizuotą ir sukurtą vien su JS'u nerašant HTML kodo.
 */
