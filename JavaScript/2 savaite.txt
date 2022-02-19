@@ -8,3 +8,9 @@ DOM:
 	https://youtu.be/TrGI9Yki-24
 	https://youtu.be/XMjs2jQ9SXU
 	https://youtu.be/VW8kNAous88
+
+EventListeners:
+	https://youtu.be/Psbk4bVM3cQ
+	https://youtu.be/XF1_MlZ5l6M
+	https://youtu.be/F3odgpghXzY
+	https://youtu.be/pAnh6GaaAv4
