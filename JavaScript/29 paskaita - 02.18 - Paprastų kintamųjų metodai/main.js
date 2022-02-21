@@ -52,7 +52,7 @@ console.log("toString",skaicius.toString());
 "   labas   ".trim(); // "labas"
 "labas".charAt(2); // "b" 
 "labas rytas".endsWith("ytas"); // true
-"Labas rytas Lietuva!".include("rytas L"); // true
+"Labas rytas Lietuva!".includes("rytas L"); // true
 "labas rytas".indexOf("a"); // 1
 "labas rytas".replaceAll("a", "c"); // "lcbcs rytcs"
 "as ".repeat(3); // "as as as "
