@@ -1,0 +1,95 @@
+FindIndex
+  Syntax:
+    findIndex((element, index, array) => { ... } )
+  Pvz:
+    const isLargeNumber = array1.findIndex(element => element > 13);
+  Ką daro:
+    Suranda ir grąžina indeksą to elemento esančio masyve, kuris pirmasis tenkina pateiktą salygą.
+  Link:
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
+
+Find
+  Syntax:
+    find((element, index, array) => { ... } )
+  Pvz:
+    const found = array1.find(element => element > 10);
+  Ką daro:
+    Suranda ir grąžina tą masyvo elementą, kuris pirmasis tenkina pateiktą salygą.
+  Link:
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
+  Video:
+    https://youtu.be/sBVaoFg2ww4
+
+Some
+  Syntax:
+    some((element, index, array) => { ... } )
+  Pvz:
+    const even = array1.some(element => element % 2 === 0);
+  Ką daro:
+    Tikrina ar bent vienas elementas masyve tenkina pateiktą salygą.
+  Link:
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
+  Video:
+    https://youtu.be/RrvhtJYYKcw
+
+Every
+  Syntax:
+    every((element, index, array) => { ... } )
+  Pvz:
+    const isBelowThreshold = array1.every(element => element < 40);
+  Ką daro:
+    Tikrina ar visi elementas masyve tenkina pateiktą salygą.
+  Link:
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
+  Video:
+    https://youtu.be/PJM3BaWu5Jw
+
+Filter
+  syntax:
+    filter((element, index, array) => { ... });
+  pvz:
+    items.filter( item => item > 10);
+  Ką daro:
+    Pereina per kiekvieną masyvo elementą ir jį prafiltruoja (taip kaip nurodyta iškviečiamojoje funkcijoje) ir sugrąžina tik tuos item, kurie atitiko filtrą.
+  Link:
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+  Videos:
+    https://youtu.be/8kyLmsMYBBI
+    https://youtu.be/Q85O152q6UI
+    https://youtu.be/4_iT6EGkQfk
+    https://youtu.be/qmnH5MT_luk - ilgi bet, tikrai informatyvūs su paprastais paaiškinimais ir pavyzdžiais video pas šitą žmogelį.
+
+Reduce
+  syntax:
+    reduce((previousValue, currentValue, currentIndex, array) => { ... }, initialValue);
+  pvz:
+    items.reduce((total, current) => {total + current}, 0);
+  Ką daro:
+    Sudeda visus masyvo elementus rekursijos būdu. Galima nustatyti pradinę reikšmę(nuo kokio skaičiaus skaičiuos).
+  Link:
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+  Videos:
+    https://youtu.be/tVCYa_bnITg
+    https://youtu.be/g1C40tDP0Bk
+    https://youtu.be/PAwd4gjb7aI
+    https://youtu.be/wM6WkVNMDuI
+
+ForEach
+  syntax:
+    forEach((element, index, array) => { ... });
+  pvz:
+    items.forEach(item => { console.log(item)});
+  Ką daro:
+    Pereina per kiekvieną masyvo elementą atlikdamas veiksmus (kurie nurodyti iškviečiamojoje funkcijoje), bet nieko negrąžina.
+  Link:
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+
+Map
+  syntax:
+    map((element, index, array) => { ... });
+  pvz:
+    items.map( item => ({value : item}));
+  Ką daro:
+    Pereina per kiekvieną masyvo elementą, jį transformuoja (taip kaip nurodyta iškviečiamojoje funkcijoje) ir sugrąžina kitą tokio pat ilgio masyvą su pakeitimais nepakeisdamas pradinio masyvo.
+  Link:
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
