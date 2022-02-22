@@ -43,3 +43,22 @@ let findIndex6 = (mas, didMaz, ilgesnisUz, trumpesnisUz) => {
 console.log("Pirmasis žodis prasidedantis didžiąja raide ir yra ilgenis už 5, bet trumpesnis už 15 masyve yra:",findIndex6(masyvasStr, true, 5, 15),"pozicijoje.");
 console.groupEnd();
 
+/*
+  Map ir ForEach 4.1:
+  from this:
+  let data = [
+    {
+        id:0, name:"Burgeris", inStock:true, primeCost:0.3, cost:1
+    },{
+        id:1, name:"Cola", inStock:true, primeCost:0.05, cost:1.2
+    }
+  ]
+  to this:
+  let newData = [
+    {
+        id:0, name:"Burgeris", profit:0.7
+    },{
+        id:1, name:"Cola", profit:1.15
+    }
+  ]
+*/
