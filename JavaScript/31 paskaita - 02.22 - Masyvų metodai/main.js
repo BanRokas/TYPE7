@@ -31,12 +31,12 @@ console.log("Pirmasis skaičius didesnis už 10, bet mažesnis už 25 masyve yra
 let findIndex6 = (mas, didMaz, ilgesnisUz, trumpesnisUz) => {
   return mas.findIndex(zodis => {
     if(zodis.length > ilgesnisUz && zodis.length < trumpesnisUz){
-      return didMaz ? zodis[0] === zodis[0].toUpperCase() : zodis[0] === zodis[0].toLowerCase();
-      /*if(didMaz === true){
+      //return didMaz ? zodis[0] === zodis[0].toUpperCase() : zodis[0] === zodis[0].toLowerCase();
+      if(didMaz === true){
         return zodis[0] === zodis[0].toUpperCase();
       } else {
         return zodis[0] === zodis[0].toLowerCase();
-      }*/
+      }
     }
   });
 }
@@ -142,6 +142,23 @@ console.groupCollapsed(" --- task 4 ---");
   console.groupEnd();
 console.groupEnd();
 
+//      --- task 5 ---
+console.groupCollapsed(" --- task 5 ---");
+  let mas5 = [];
+  mas.forEach(value =>{
+    if( value.id > 4 && value.cost >= 1 && value.cost < 10 ){
+      mas5.push(value);
+    }
+  });
+  console.log(mas5);
+console.groupEnd();
 
+//      --- task 6 ---
+console.groupCollapsed(" --- task 6 ---");
+  let sarasas = `<ul> ${mas.map( value => `<li> Prekė: ${value.name}; Kaina: ${value.cost} </li>`).join("")} </ul>`;
+  //let sarasas = mas4_0.map( value => `<li> Prekė: ${value.name}; Kaina: ${value.cost} </li>`);
+  //sarasas = `<ul> ${sarasas.join("")} </ul>`;
+  document.querySelector("#menu").innerHTML = sarasas;
+console.groupEnd();
 
 console.groupEnd();
