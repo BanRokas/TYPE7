@@ -1,6 +1,6 @@
 FindIndex
   Syntax:
-    findIndex((element, index, array) => { ... } )
+    findIndex((element, index, array) => { ... })
   Pvz:
     const isLargeNumber = array1.findIndex(element => element > 13);
   Ką daro:
@@ -10,7 +10,7 @@ FindIndex
 
 Find
   Syntax:
-    find((element, index, array) => { ... } )
+    find((element, index, array) => { ... })
   Pvz:
     const found = array1.find(element => element > 10);
   Ką daro:
@@ -22,7 +22,7 @@ Find
 
 Some
   Syntax:
-    some((element, index, array) => { ... } )
+    some((element, index, array) => { ... })
   Pvz:
     const even = array1.some(element => element % 2 === 0);
   Ką daro:
@@ -34,7 +34,7 @@ Some
 
 Every
   Syntax:
-    every((element, index, array) => { ... } )
+    every((element, index, array) => { ... })
   Pvz:
     const isBelowThreshold = array1.every(element => element < 40);
   Ką daro:
@@ -83,7 +83,7 @@ Filter
     https://youtu.be/8kyLmsMYBBI
     https://youtu.be/Q85O152q6UI
     https://youtu.be/4_iT6EGkQfk
-    https://youtu.be/qmnH5MT_luk - ilgi bet, tikrai informatyvūs su paprastais paaiškinimais ir pavyzdžiais video pas šitą žmogelį.
+    https://youtu.be/qmnH5MT_luk
 
 Reduce
   syntax:

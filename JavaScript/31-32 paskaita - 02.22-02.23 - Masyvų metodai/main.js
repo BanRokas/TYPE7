@@ -162,3 +162,50 @@ console.groupCollapsed(" --- task 6 ---");
 console.groupEnd();
 
 console.groupEnd();
+
+console.groupCollapsed("Filter ir Reduce");
+console.groupCollapsed("random reduce");
+let skaiciuMasReduce = [1,2,3,4,5];
+let stringMasReduce = ["en-US","docs","MDN","Contribute","Getting_started"];
+let skPoReduce = (skaiciuMasReduce.reduce((buvo, yra) => {
+  return buvo + yra;
+}, 0))/skaiciuMasReduce.length;
+//let skPoReduce = skaiciuMasReduce.reduce((buvo, yra) => buvo + yra)/skaiciuMasReduce.length;
+console.log("sk po red:", skPoReduce);
+let strPoReduce = stringMasReduce.reduce((buvo, yra) => {
+  return buvo + "/" + yra;
+}, "developer.mozilla.org");
+console.log("str po red:", strPoReduce);
+console.groupEnd();
+console.groupCollapsed("3 uzd");
+// Sukurti funkciją, kuri sukurtų A ilgio skaičių masyvą, B ir C intervale. (A - kokio ilgio masyvo norite, B - mažiausias galimas masyvo skaičius, C - didžiausias galimas masyvo skaičius).
+let skaiciuMasyvoGeneratorius = (ilgis, nuo, iki) => {
+  let masToReturn = [];
+  for(let i = 0; i < ilgis; i++){
+    let skaicius = Math.floor(Math.random()*(iki-nuo+1)+nuo); // nuo + iki-nuo
+    masToReturn.push(skaicius);
+  }
+  return masToReturn;
+}
+console.log(skaiciuMasyvoGeneratorius(100, -5, 12));
+console.groupEnd();
+console.groupCollapsed("4 uzd");
+//  4) Sukurti funkciją, kuri iš jai paduoto string'o sukurtų string'ų masyvą atskirdama kiekvieną žodį. (tarpai ir skiriamieji ženklai neturi būti įtraukti).
+let string4 = " . Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum, fugiat perferendis aut atque vel, tenetur dicta dolores laborum quasi iusto nulla ipsa excepturi ad ips!um nobis !animi explicabo praesentium eius consectetur qui sequi velit .exercitationem quas. Non, et porro sunt recusandae neque at iste fugiat dolor?emque nam perf.erendis est lauda.ntium, amet facilis quisquam veritatis odio, odit labore similique ullam inventore enim. Exercitationem facilis modi, dolorem hic ,beatae ullam. Officiis exercitationem voluptatibus molestias aut temporibus culpa ?omnis sapiente et dolore? Nostrum, expedita reprehenderit? Aperiam, aspernatur? Cum exercitationem . et voluptatibus adipisci sint corrupti ipsa, dignissimos, laborum quidem rem eaque aliquid consequatur.";
+let isskirstytiStringaIMasyva = (stringas) =>{
+  return stringas.split(/[.,?!\s]+/).filter(element => element);
+  /*let skiriamieji = [",",".","!","?"];
+  let notFinished = stringas.split(" ");
+  notFinished.forEach(zodis => {
+    skiriamieji.forEach(skiriamasis => {
+      if(zodis.includes(skiriamasis)){
+        zodis = zodis.slice(0,zodis.indexOf(skiriamasis)) + zodis.slice(zodis.indexOf(skiriamasis)+1, zodis.length);
+      }
+    });
+  });*/
+};
+let masyvasStringu4 = isskirstytiStringaIMasyva(string4);
+console.log(masyvasStringu4);
+console.groupEnd();
+
+console.groupEnd();
