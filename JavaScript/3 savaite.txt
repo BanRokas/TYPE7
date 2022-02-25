@@ -11,4 +11,3 @@ ArrayIterationMethods:
 OOP (klasės):
 	https://youtu.be/Ug4ChzopcE4
 	https://youtu.be/HboT8g_QSGc
-
