@@ -1,0 +1,12 @@
+video: https://youtu.be/xGmXxpIj6vs
+
+1) Obuolys pranyksta per anksti
+2) Obuolys gali atsirasti ant gyvatėlės kūno
+3) Neleisti gyvatėlei daryti 180*
+4) Pagerinti kodą.
+Toliau nebūtini:
+  Pakeisti pralaimėjimą
+  Neiti kiaurai sienas (jei nori)
+  Keisti kvadratėlius nuotraukomis
+  Pridėti galimybę keisti greitį
+  Pridėti UI kuriame yra įvairūs pasirinkimai žaidimo 
