@@ -1,0 +1,14 @@
+.kartu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#formIrOutput{
+  display: flex;
+  justify-content: center;
+}
+
+#output{
+  min-width: 200px;
+}
