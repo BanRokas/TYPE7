@@ -1,12 +1,8 @@
 https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event
 
-Kartu:
-Padaryti localStorage kūrimo ir trynimo formą. Po ta forma išvesti visą local storage.
-
-
 Savarankiškai:
-  Idėja - Naudojant local storage išsaugoti pildomos formos informaciją, net jei yra perkraunama svetainė.
+  Naudojant local storage išsaugoti pildomos formos informaciją, net jei yra perkraunama svetainė.
 
   Sukurti lėktuvo bilieto'ų pirkimo formą. (arba betkokią kitą formą)
   Perkraunant puslapį formoje surašyta informacija turi išlikti.
