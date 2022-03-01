@@ -9,4 +9,5 @@ Toliau nebūtini:
   Neiti kiaurai sienas (jei nori)
   Keisti kvadratėlius nuotraukomis
   Pridėti galimybę keisti greitį
-  Pridėti UI kuriame yra įvairūs pasirinkimai žaidimo 
+  Pridėti UI kuriame yra įvairūs žaidimo pasirinkimai
+  Pridėti blogų obuolių (kurie suteiktų neigiamus efektus)

@@ -2,13 +2,13 @@
 const CANVAS = document.querySelector("#snake");
 const CONTEXT = CANVAS.getContext("2d");
 
-let ox = oy = 15; // obuolio x ir y pozicija
-let gx = gy = 10; // gyvatėlės galvos x ir y pozicijos
+let ox = oy = 2; // obuolio x ir y pozicija
+let gx = gy = 3; // gyvatėlės galvos x ir y pozicijos
 let tail = 5;   // gyvatėlės ilgis
 let trail = []; // gyvatėlės kūno pozicijos
 let vx = vy = 0;  // gyvatėlės judėjimo kryptis
-let gameSpeed = 15; // žaidimo greitis
-let ts = 10;    // tile size
+let gameSpeed = 5; // žaidimo greitis
+let ts = 40;    // tile size
 let tc = CANVAS.width / ts; // tile count
 
 const APPLE_IMG = new Image();
@@ -33,6 +33,7 @@ function game() {
   CONTEXT.fillRect(0, 0, CANVAS.width, CANVAS.height);
 
   CONTEXT.fillStyle = "green";
+  CONTEXT.fillRect(gx*ts, gy*ts, ts-1, ts-1);
   trail.forEach(element => {
     CONTEXT.fillRect(element.x*ts, element.y*ts, ts-1, ts-1);
     if(element.x === gx && element.y === gy){
@@ -52,27 +53,47 @@ function game() {
     tail++;
     ox = Math.floor(Math.random()*tc);
     oy = Math.floor(Math.random()*tc);
+    appleOnSnake();
   }
 
   CONTEXT.fillStyle = "red";
   CONTEXT.drawImage(APPLE_IMG, ox*ts, oy*ts, ts, ts);
 }
 
+function appleOnSnake(){
+  trail.forEach(element => {
+    while(element.x === ox && element.y === oy){
+      console.log("apple on snake x", element.x,ox);
+      console.log("apple on snake y", element.y,oy);
+      ox = Math.floor(Math.random()*tc);
+      oy = Math.floor(Math.random()*tc);
+      appleOnSnake();
+    }
+  });
+}
+
 document.addEventListener("keydown", keyPress);
 function keyPress(e) {
   switch (e.keyCode) {
     case 65: // a
-      vx = -1; vy = 0;
+      if(vx !== 1){
+        vx = -1; vy = 0;
+      }
       break;
     case 87: // w
-      vy = -1; vx = 0;
+      if(vy !== 1){
+        vy = -1; vx = 0;
+      }
       break;
     case 83: // s
-      vy = 1; vx = 0;
+      if(vy !== -1){
+        vy = 1; vx = 0;
+      }
       break;
     case 68: // d
-      vx = 1; vy = 0;
+      if(vx !== -1){
+        vx = 1; vy = 0;
+      }
       break;
   }
 }
-
