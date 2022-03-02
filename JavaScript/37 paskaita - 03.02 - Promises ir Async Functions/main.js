@@ -13,7 +13,38 @@ const sandelys = {
   ledoIndeliai : ["puodukas", "ragelis", "lazdelė"],
   priedai : ["riešutai", "karamelė", "likeris", "pabarstukai", "šokoladas"]
 };
+let parduotuveAtidaryta = false;
 
+
+//              Promises
+const uzsakymas = (laikas, veiksmas) => {
+  return new Promise( (resolve, reject) => {
+    if(parduotuveAtidaryta){
+      if(!isNaN(laikas)){
+        setTimeout(()=>{
+          resolve(veiksmas());
+        }, laikas);
+      } else {
+        reject(console.log("Nepasirinktas darbo laikas."));
+      }
+    } else {
+      reject(console.log("Parduotuvė uždaryta. Ateik rytoj."));
+    }
+  });
+}
+
+uzsakymas(2000, () => console.log(`Kviečiame produkciją. Perduodame jiems: ${sandelys.vaisiai[0]}, ${sandelys.ledoPagrindai[1]}, ${sandelys.ledoIndeliai[1]}, ${sandelys.priedai[4]}.`))
+  .then( () => uzsakymas(0, () => console.log(`Pradedame gaminti ledus su ${sandelys.vaisiai[0]}.`)))
+  .then( () => uzsakymas(2000, () => console.log(`Susmulkiname ${sandelys.vaisiai[0]}.`)))
+  .then( () => uzsakymas(5500, () => console.log(`Sudedame ${sandelys.ledoPagrindai[1]} į ledų aparatą ir laukiame kol pabaigs ruošti.`)))
+  .then( () => uzsakymas(3000, () => console.log(`Paimame ${sandelys.ledoPagrindai[1]} masę iš ledų aparato, sumaišome ją su susmulkintais ${sandelys.vaisiai[0]} ir sudedame mišinį į ${sandelys.ledoIndeliai[1]}.`)))
+  .then( () => uzsakymas(1000, () => console.log(`Paruoštus ledus pagardiname ${sandelys.priedai[4]}.`)))
+  .then( () => uzsakymas(500, () => console.log(`Grąžiname užsakymą.`)))
+  .catch( () => console.log("Klientas nuėjo."))
+  .finally( () => console.log("Veiksmas baigėsi."));
+
+/*
+//          Callbacks into callback hell
 const uzsakymas = (vaisius, ledoPagrindas, ledoIndelis, priedas, kviesti_produkcija) =>{
   console.log("Įvyko užsakymas.");
     setTimeout(() => {
@@ -44,4 +75,4 @@ const produkcija = (vaisius, pagrindas, indelis, priedas) =>{
 };
 
 uzsakymas(0, 1, 1, 4, produkcija);
-
+*/
