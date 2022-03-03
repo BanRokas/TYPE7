@@ -1,0 +1,20 @@
+LocalStorage, SessionStorage ir Cookies:
+  https://youtu.be/GihQAC1I39Q
+  https://youtu.be/AwicscsvGLg
+
+Promises:
+  https://youtu.be/RvYYCGs45L4
+  https://youtu.be/DHvZLI7Db8E
+  https://youtu.be/OXpZfyVXeI8
+  https://youtu.be/a_8nrslImo4
+
+Async functions:
+  https://youtu.be/PoRJizFvM7s
+  https://youtu.be/V_Kr9OSfDeU
+  https://youtu.be/T4ql-QWKlwk
+  https://www.freecodecamp.org/news/javascript-async-await-tutorial-learn-callbacks-promises-async-await-by-making-icecream/
+
+Fetch:
+  https://youtu.be/cuEtnrL9-H0
+  https://youtu.be/Oive66jrwBs
+  https://youtu.be/tc8DU14qX6I
