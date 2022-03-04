@@ -12,19 +12,32 @@ fetch("data/data.json")
       </div>
     `;
   });
-  
+
 //  uzduotis 2
 fetch("data/data.json")
   .then(res => res.json())
   .then(data => data[1])
   .then(data => {
     console.log(data);
+    /*
     document.querySelector("#uzd2").innerHTML = `
-      <h1> </h1>
+      <h1> ${data.title} </h1>
       <div>
         ${
-          data.images.map(img => ``)
+          data.images.map(img => `<img src="${img}">`)
         }
       </div>
     `;
-  })
+    */
+    let heading = document.createElement("h1");
+    heading.append(data.title);
+    
+    let divas = document.createElement("div");
+    data.images.forEach(data => {
+      let image = document.createElement("img");
+      image.setAttribute("src", data);
+      divas.appendChild(image);
+    });
+
+    document.querySelector("#uzd2").append(heading, divas);
+  });
