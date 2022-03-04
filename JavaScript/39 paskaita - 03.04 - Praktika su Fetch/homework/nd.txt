@@ -1,0 +1,12 @@
+1) Naudodamiesi data[0] duomeninis atlikite šiuos veiksmus:
+	1.1) JS'u 1 sekcijoje sukurkite antraštę su 1 paveiksliuku po ja.
+	1.2) JS'u 1 sekciją papildykite likusiais paveiksliukais.
+	1.3) JS'u padarykite, kad paspaudus ant vieno iš paveiksliukų įkeltų 1.2 dalyje, jis būtų rodomas 1.1 dalyje esančio paveiksliuko vietoje.
+	1.4) JS'u 1 sekciją stilizuokite priskirdami klases.
+
+2) Naudodamiesi data[1] duomenimis atlikite šiuos veiksmus:
+	2.1) JS'u 2 sekcijoje sukurkite paveiksliuką.
+	2.2) JS'u padarykite, kad spaudžiant "f" mygtuką klaviatūroje - paveiksliukas rotuotų aplink Y ašį 180 laipsnių.
+	2.3) JS'u padarykite, kad spaudžiant rodyklių mygtukus klaviatūroje - paveiksliukas judėtų (keistų savo poziciją) puslapyje. 
+	(https://keycode.info/)
+	extra - 2.4) Nupieškite ekrane (su stiliais arba JS'u) kliūčių ruožą, per kurį paveiksliukas turi pereiti. Palietus kliūtį - paveiksliukas nukeliamas į jo pradinę vietą.
