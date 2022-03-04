@@ -1,0 +1,8 @@
+.imagePlusPar{
+  display: flex;
+  gap: 10px;
+}
+.imagePlusPar > img{
+  height: 300px;
+  width: auto;
+}
