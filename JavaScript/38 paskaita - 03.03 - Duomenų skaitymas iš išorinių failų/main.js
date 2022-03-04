@@ -120,3 +120,23 @@ let fillOutput = (data) =>{
   });
   return returnInfo;
 }
+
+//            CAO 21 2
+fetch("https://boiling-reaches-93648.herokuapp.com/week-3/party")
+  .then(res => res.json())
+  .then(data => filterVipsFromArray(data))
+  .then(vips => outputVips(vips))
+  .catch(err => document.querySelector("#vips").innerHTML = `Error: ${err}`)
+  .finally(alert("Execution is over."));
+
+let filterVipsFromArray = (array) =>{
+  return array.filter(item => item.vip);
+}
+
+let outputVips = (vips) =>{
+  vips.forEach(vip => {
+    document.querySelector("#vips").innerHTML += `
+      <h3>${vip.name}</h3>
+    `;
+  });
+}
