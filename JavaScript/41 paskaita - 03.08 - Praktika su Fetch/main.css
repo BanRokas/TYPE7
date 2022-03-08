@@ -1,0 +1,42 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+section{
+  padding: 30px;
+  background-color: aliceblue;
+  border: 5px dashed brown;
+}
+
+.grupe{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.menas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#kuriniai{
+  display: flex;
+  flex-wrap: wrap;
+}
+.menoDirbinys{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menoDirbinys > div{
+  display: flex;
+}
+.menoDirbinys p{
+  padding-left: 10px;
+  margin: 0;
+}
+
+@media (min-width: 1300px){
+  .menoDirbinys{
+    width: 50%;
+  }
+}

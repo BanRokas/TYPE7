@@ -1,13 +1,13 @@
+/* grupe */
+
 fetch("http://localhost:3000/destytojas")
   .then(res => res.json())
   .then(data => {
-    console.log(data);
     grupesIsvedimasILentele(data);
   })
   .then(() => fetch("http://localhost:3000/studentai")
     .then(res => res.json())
     .then(data => {
-      console.log(data);
       data.forEach(studentas => {
         grupesIsvedimasILentele(studentas);
       })
@@ -38,5 +38,48 @@ document
         'Content-Type': 'application/json'
       },
       body : JSON.stringify({vardas: vardas, pavarde: pavarde})
+    })
+  });
+
+/* menas */
+
+fetch("http://localhost:3001/beautifulPiecesOfArtAndStuffMaybeIDoNotKnowDoNotTakeMyWordForIt")
+  .then(res => res.json())
+  .then(data => {
+    data.forEach(element => isvestiMenoDirbinius(element));
+  })
+
+let isvestiMenoDirbinius = (dirbinys) =>{
+  document.querySelector("#kuriniai").innerHTML += `
+    <div class="menoDirbinys">
+      <h1>${dirbinys.title}</h1>
+      <div>
+        <img src="${dirbinys.image}" height="200px">
+        <p>${dirbinys.paragraph}</p>
+      </div>
+    </div>
+  `;
+}
+
+document
+  .querySelector(".menas form")
+  .addEventListener("submit", e =>{
+    e.preventDefault();
+    console.dir(e.target);
+    let pav = e.target.elements.menoPav.value;
+    let apr = e.target.elements.menoApras.value;
+    let link = e.target.elements.menoUrl.value;
+    console.log(pav, apr, link);
+    fetch("http://localhost:3001/beautifulPiecesOfArtAndStuffMaybeIDoNotKnowDoNotTakeMyWordForIt",{
+      method: "POST",
+      headers : {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body : JSON.stringify({
+        title : pav,
+        paragraph : apr,
+        image : link
+      })
     })
   });
