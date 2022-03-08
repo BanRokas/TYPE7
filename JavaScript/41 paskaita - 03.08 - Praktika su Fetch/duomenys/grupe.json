@@ -1,0 +1,38 @@
+{
+  "destytojas": {
+    "id": 0,
+    "vardas": "Rokas",
+    "pavarde": "Banaitis",
+    "amzius": 25
+  },
+  "studentai": [
+    {
+      "id": 1,
+      "vardas": "Arnolas",
+      "pavarde": "Matijošius"
+    },
+    {
+      "id": 2,
+      "vardas": "Benediktas",
+      "pavarde": "Kertenis"
+    },
+    {
+      "vardas": "Petras",
+      "pavarde": "Petrauskas",
+      "id": 3
+    },
+    {
+      "vardas": "Tomašas",
+      "pavarde": "Dudovičius",
+      "id": 7
+    },
+    {
+      "vardas": "Rokas",
+      "pavarde": "Skarakodas",
+      "id": 8
+    }
+  ],
+  "dalykas": [
+    "JavaScript"
+  ]
+}
