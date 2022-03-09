@@ -1,0 +1,19 @@
+.filmas{
+  position: relative;
+}
+
+.filmas img{
+  height: 400px;
+  width: auto;
+}
+
+#movies{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.trintiBtn{
+  position: absolute;
+  top: 70px;
+  right: 80px;
+}

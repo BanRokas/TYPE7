@@ -1,0 +1,182 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "aktoriai": [
+        "Robert Downey Jr.",
+        "Terrence Howard",
+        "Jeff Bridges",
+        "Gwynth Paltrow",
+        "Leslie Bibb"
+      ],
+      "IMDB": 7.9,
+      "leidimoMetai": 2008,
+      "pavadinimas": "IronMan",
+      "rezisierius": "Jon Favreau",
+      "tipas": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "trukme": 126,
+      "paveiksliukas": "https://pics.filmaffinity.com/Ironman-108960873-large.jpg",
+      "aprasymas": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil."
+    },
+    {
+      "id": 2,
+      "aktoriai": [
+        "Chris Hemsworth",
+        "Natalie Portman",
+        "Tom Hiddleston",
+        "Anthony Hopkins",
+        "Stellan Skarsgard"
+      ],
+      "IMDB": 7,
+      "leidimoMetai": 2011,
+      "pavadinimas": "Thor",
+      "rezisierius": "Kenneth Branagh",
+      "tipas": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "trukme": 115,
+      "paveiksliukas": "https://m.media-amazon.com/images/I/91P1wWqX63L._SL1500_.jpg",
+      "aprasymas": "The powerful but arrogant god Thor is cast out of Asgard to live amongst humans in Midgard (Earth), where he soon becomes one of their finest defenders."
+    },
+    {
+      "id": 4,
+      "aktoriai": [
+        "Tobey Maguire",
+        "Willem Dafoe",
+        "Kirsten Dunst",
+        "James Franco",
+        "Cliff Robertson"
+      ],
+      "IMDB": 7.3,
+      "leidimoMetai": 2002,
+      "pavadinimas": "SpiderMan",
+      "rezisierius": "Sam Raimi",
+      "tipas": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "trukme": 121,
+      "paveiksliukas": "https://m.media-amazon.com/images/I/51kzFX8Zr8L._AC_.jpg",
+      "aprasymas": "When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family."
+    },
+    {
+      "id": 5,
+      "aktoriai": [
+        "Ryan Reynolds",
+        "Karan Soni",
+        "Ed Skrein",
+        "Michael Benyaer",
+        "Brianna Hildebrand"
+      ],
+      "IMDB": 8,
+      "leidimoMetai": 2016,
+      "pavadinimas": "Deadpool",
+      "rezisierius": "Tim Miller",
+      "tipas": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "trukme": 108,
+      "paveiksliukas": "https://chickflickingreviews.files.wordpress.com/2016/02/deadpool-valentinesday_.jpg",
+      "aprasymas": "A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out to track down the man who ruined his looks."
+    },
+    {
+      "id": 6,
+      "aktoriai": [
+        "Hugh Jackman",
+        "Kate Beckinsale",
+        "Richard Roxburgh",
+        "David Wenham",
+        "Shuler Hensley"
+      ],
+      "IMDB": 6.1,
+      "leidimoMetai": 2004,
+      "pavadinimas": "Van Helsing",
+      "rezisierius": "Stephen Sommers",
+      "tipas": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "trukme": 131,
+      "paveiksliukas": "https://m.media-amazon.com/images/I/71DHEagosIL._AC_SY679_.jpg",
+      "aprasymas": "The famed monster hunter is sent to Transylvania to stop Count Dracula, who is using Dr. Frankenstein's research and a werewolf for nefarious purposes."
+    },
+    {
+      "pavadinimas": "Free Guy",
+      "paveiksliukas": "https://m.media-amazon.com/images/M/MV5BOTY2NzFjODctOWUzMC00MGZhLTlhNjMtM2Y2ODBiNGY1ZWRiXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_QL75_UY562_CR5,0,380,562_.jpg",
+      "aprasymas": "A bank teller discovers that he's actually an NPC inside a brutal, open world video game.",
+      "leidimoMetai": "2021",
+      "trukme": "115",
+      "IMDB": "7.2",
+      "tipas": [
+        "Action"
+      ],
+      "rezisierius": "Shawn Levy",
+      "aktoriai": [
+        "Ryan Reynolds"
+      ],
+      "id": 7
+    },
+    {
+      "pavadinimas": "a",
+      "paveiksliukas": "https://m.media-amazon.com/images/I/91P1wWqX63L._SL1500_.jpg",
+      "aprasymas": "asdasd",
+      "leidimoMetai": "2",
+      "trukme": "-2",
+      "IMDB": "-0.1",
+      "tipas": [
+        "Action,Comedy,Adventure"
+      ],
+      "rezisierius": "Shawn Levy",
+      "aktoriai": [
+        "abc"
+      ],
+      "id": 8
+    },
+    {
+      "pavadinimas": "a",
+      "paveiksliukas": "https://m.media-amazon.com/images/I/91P1wWqX63L._SL1500_.jpg",
+      "aprasymas": "123123",
+      "leidimoMetai": "11",
+      "trukme": "2",
+      "IMDB": "3",
+      "tipas": [
+        "Action",
+        "Comedy",
+        "Adventure"
+      ],
+      "rezisierius": "Shawn Levy",
+      "aktoriai": [
+        "abc"
+      ],
+      "id": 9
+    },
+    {
+      "pavadinimas": "The Batman",
+      "paveiksliukas": "https://m.media-amazon.com/images/M/MV5BMDdmMTBiNTYtMDIzNi00NGVlLWIzMDYtZTk3MTQ3NGQxZGEwXkEyXkFqcGdeQXVyMzMwOTU5MDk@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "aprasymas": "When the Riddler, a sadistic serial killer, begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.",
+      "leidimoMetai": "2022",
+      "trukme": "175",
+      "IMDB": "8.5",
+      "tipas": [
+        "Action",
+        "Drama",
+        "Triller"
+      ],
+      "rezisierius": "Matt Reeves",
+      "aktoriai": [
+        "Robert Pattinson"
+      ],
+      "id": 10
+    }
+  ]
+}
