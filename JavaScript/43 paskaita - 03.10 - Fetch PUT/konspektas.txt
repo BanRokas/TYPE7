@@ -1,0 +1,4 @@
+C - create - POST   - fetch(url,{method:POST})
+R - read   - GET    - fetch(url) - visą / fetch(url/id) - specifinį
+U - update - PUT    - fetch(url/id,{method:PUT})
+D - delete - DELETE - fetch(url/id,{method:DELETE})

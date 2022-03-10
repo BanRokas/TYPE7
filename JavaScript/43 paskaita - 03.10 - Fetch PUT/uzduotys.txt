@@ -1,0 +1,6 @@
+1) Pasidaryti CRUD projektuką su meno dirbiniais.
+2) Pasidaryti CAO užduotis.
++3) Patobulinti filmų CRUD projektuką.
+4) Pasidaryti youtubeTutorials.txt CRUD projektą.
+5) Perduoti Tomašui ką norite pirmadienį ir antradienį kartotis.
+Tomašui) Iki sekmadienio ryto pateikti dėstytojui info apie tai ką norite kartotis.
