@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>42 paskaita - Fetch DELETE</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <section>
+    <div>
+      <h1>Papildykite mūsų filmų sąrašą:</h1>
+      <form id="addMovie">
+        <div>
+          <label for="filmoPav">Pavadinimas</label>
+          <input type="text" name="filmoPav" id="filmoPav">
+        </div>
+        <div>
+          <label for="filmoImg">Filmo plakatas</label>
+          <input type="url" name="filmoImg" id="filmoImg">
+        </div>
+        <div>
+          <label for="filmoApras">Aprašymas</label>
+          <textarea name="filmoApras" id="filmoApras"></textarea>
+        </div>
+        <div>
+          <input type="number" name="filmoMetai" id="filmoMetai" placeholder="Leidimo metai...">
+          <input type="number" name="filmoTrukme" id="filmoTrukme" placeholder="Filmo trukmė minutėmis...">
+          <input type="number" step="0.1" name="filmoBalas" id="filmoBalas" placeholder="IMDB balas...">
+        </div>
+        <div>
+          <label for="filmoZanras">Filmo žanras/ai:</label>
+          <input type="text" name="filmoZanras" id="filmoZanras" placeholder="zanras1,zanras2,...">
+        </div>
+        <div>
+          <label for="filmoRezisierius">Režisierius</label>
+          <input type="text" name="filmoRezisierius" id="filmoRezisierius">
+        </div>
+        <div>
+          <label for="filmoAktorius">Aktorius/iai:</label>
+          <input type="text" name="filmoAktorius" id="filmoAktorius" placeholder="aktorius1,aktorius2,...">
+        </div>
+        <input type="submit" value="Pateikti filmą">
+      </form>
+    </div>
+    <div>
+      <h1>Mūsų žiūrimiausi filmai:</h1>
+      <div id="movies"></div>
+    </div>
+  </section>
+</body>
+</html>
