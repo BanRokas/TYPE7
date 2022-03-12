@@ -1,0 +1,11 @@
+FETCH:
+  https://youtu.be/cuEtnrL9-H0
+  https://youtu.be/tVQgfKqbX3M
+  https://youtu.be/tc8DU14qX6I
+  https://youtu.be/Oive66jrwBs
+  https://youtu.be/23hrM4saaMk
+REST:
+  https://youtu.be/SLwpqD8n3d0
+CRUD:
+  https://youtu.be/qFHZsgW7nYI
+  https://youtu.be/MKD0Vsu0Ikw

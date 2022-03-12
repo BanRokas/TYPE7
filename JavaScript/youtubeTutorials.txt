@@ -5,3 +5,5 @@ DOM:
   https://www.youtube.com/watch?v=i37KVt_IcXw&ab_channel=TraversyMedia
 Viskas ką ėjome so far:
   https://youtu.be/q8SHaDQdul0?list=PLRqwX-V7Uu6YgpA3Oht-7B4NBQwFVe3pr
+CRUD: 
+  https://youtu.be/JaMCxVWtW58 (daryti saugojimą JS faile, o ne LocalStorage)
