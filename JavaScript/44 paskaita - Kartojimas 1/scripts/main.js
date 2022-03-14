@@ -50,16 +50,47 @@ document
   .querySelector("#figurosForma")
   .addEventListener("submit", e => {
     e.preventDefault();
+    let figura;
     if(e.target.elements.figura.value === "stac"){
       let plotis = e.target.elements.plotis.valueAsNumber;
       let aukstis = e.target.elements.aukstis.valueAsNumber;
-      let figura = new Staciakampis(plotis, aukstis);
+      figura = new Staciakampis(plotis, aukstis);
     } else if(e.target.elements.figura.value === "trik"){
       let plotis = e.target.elements.plotis.valueAsNumber;
       let aukstis = e.target.elements.aukstis.valueAsNumber;
-      let figura = new Trikampis(plotis, aukstis);
+      figura = new Trikampis(plotis, aukstis);
     } else if(e.target.elements.figura.value === "apsk"){
       let spindulys = e.target.elements.spindulys.valueAsNumber;
-      let figura = new Apskritimas(spindulys);
+      figura = new Apskritimas(spindulys);
     }
+    createCanvas(figura);
   });
+
+let createCanvas = (figura) => {
+  let canvas = document.createElement("canvas");
+  canvas.setAttribute("width","400px");
+  canvas.setAttribute("height","400px");
+  canvas.style.border = "1px solid black";
+  let context = canvas.getContext("2d");
+  if(figura.pavadinimas === "Stačiakampis"){
+    context.beginPath();
+    context.rect(30, 30, figura.plotis, figura.aukstis);
+    context.stroke();
+  } else if(figura.pavadinimas === "Statusis trikampis"){
+    context.beginPath();
+    /*
+      moveTo(x,y) - nukelia pieštuką į poziciją
+      lineTo(x,y) - piešia nuo esamos pozicijos iki nurodytos
+      closePath() - sujungia linijas
+    */
+    context.stroke();
+  } else if(figura.pavadinimas === "Apskritimas"){
+    context.beginPath();
+    /*
+      arc() - piešia apskritimą
+    */
+    context.stroke();
+  }
+
+  document.querySelector("#figuruIsvedimas").appendChild(canvas);
+}
