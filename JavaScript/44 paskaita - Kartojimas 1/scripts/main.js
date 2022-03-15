@@ -72,9 +72,10 @@ let createCanvas = (figura) => {
   canvas.setAttribute("height","400px");
   canvas.style.border = "1px solid black";
   let context = canvas.getContext("2d");
+
   if(figura.pavadinimas === "Stačiakampis"){
     context.beginPath();
-    context.rect(30, 30, figura.plotis, figura.aukstis);
+    context.rect(30, 30, figura.plotis+30, figura.aukstis+30);
     context.stroke();
   } else if(figura.pavadinimas === "Statusis trikampis"){
     context.beginPath();
@@ -83,12 +84,17 @@ let createCanvas = (figura) => {
       lineTo(x,y) - piešia nuo esamos pozicijos iki nurodytos
       closePath() - sujungia linijas
     */
+    context.moveTo(30, 30);
+    context.lineTo(30, figura.aukstis+30);
+    context.lineTo(figura.plotis+30, figura.aukstis+30);
+    context.closePath();
     context.stroke();
   } else if(figura.pavadinimas === "Apskritimas"){
     context.beginPath();
     /*
-      arc() - piešia apskritimą
+      arc(centrasx,centrasy,radius,startingPosition,endingPosition,clockwise?) - piešia apskritimą
     */
+    context.arc(canvas.width/2, canvas.height/2, figura.spindulys, 0, 2*Math.PI);
     context.stroke();
   }
 
