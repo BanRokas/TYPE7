@@ -2,13 +2,15 @@ import Person, { sakykVarda as sayName, arPilnametis as isLegalAge } from "./mod
 import Staciakampis from "./moduliai/staciakampis.js";
 import Trikampis from "./moduliai/trikampis.js";
 import Apskritimas from "./moduliai/apskritimas.js";
+import Paragrafas from "./moduliai/paragafas.js";
 
+// Susipažinimas su Moduliais
 let zmogus0 = new Person("Rokas", 25);
 console.log(zmogus0);
 sayName(zmogus0);
 isLegalAge(zmogus0);
 
-
+// Figuros su Moduliais
 document // figuros pasirinktimas
   .querySelector("#figura")
   .addEventListener("change", e => {
@@ -93,3 +95,10 @@ let createCanvas = (figura) => {
 
   document.querySelector("#figuruIsvedimas").appendChild(canvas);
 }
+
+// Paragrafo komponentas
+const app = document.querySelector("#mokinamesKomponentus");
+let mazasisPrincas = `„Mažasis princas“ – tai pasakojimas apie berniuką iš kitos planetos ir jo tarpplanetines keliones, o ir sykiu išmintingas pasakojimas apie žmogaus lemtį, draugystę, vienatvę ir vienišumą.`;
+
+new Paragrafas(app, mazasisPrincas, "stiliusA", "stiliusB");
+new Paragrafas(app, "peeka buuu");
