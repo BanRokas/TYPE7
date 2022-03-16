@@ -3,6 +3,7 @@ import Staciakampis from "./moduliai/staciakampis.js";
 import Trikampis from "./moduliai/trikampis.js";
 import Apskritimas from "./moduliai/apskritimas.js";
 import Paragrafas from "./moduliai/paragafas.js";
+import Heading from "./moduliai/heading.js";
 
 // Susipažinimas su Moduliais
 let zmogus0 = new Person("Rokas", 25);
@@ -102,3 +103,5 @@ let mazasisPrincas = `„Mažasis princas“ – tai pasakojimas apie berniuką 
 
 new Paragrafas(app, mazasisPrincas, "stiliusA", "stiliusB");
 new Paragrafas(app, "peeka buuu");
+
+new Heading(app, "Labas", 3);
