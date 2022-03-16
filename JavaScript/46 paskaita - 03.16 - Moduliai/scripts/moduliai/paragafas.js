@@ -8,7 +8,7 @@ export default class Paragrafas{
   constructor(lokacija, tekstas, ...klases){
     this.output = lokacija;
     this.text = tekstas;
-    this.classList = klases;
+    this.classes = klases;
     this.render();
   }
   render = () => {
@@ -18,8 +18,9 @@ export default class Paragrafas{
     /*par.append(this.text);*/
     /*par.textContent = this.text;*/
     par.innerHTML = this.text;
-    this.classList.forEach(klase => par.classList.add(klase));
-    //par.innerHTML = `<p class="${this.classList.map(klase => klase)}">${this.text}</p>`;
+    console.dir(par);
+    this.classes.forEach(klase => par.classList.add(klase));
+    //par.innerHTML = `<p class="${this.classes.map(klase => klase)}">${this.text}</p>`;
     this.output.appendChild(par);
   }
 }
