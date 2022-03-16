@@ -1,0 +1,9 @@
+1) Pasidaryti komponentus (be stilių priėmimo, bet su išvedimu į ekraną):
+  1.1) Heading (su galimybe nurodyti kuris heading (1-6))
+  1.2) Image
+  1.3) Nuoroda
+2) Patobulinti komponentus, kad šie priimtų klases ir id.
+
+3) Peržiūrėti cao pateiktą video.
+4) Perskaityti cao pateiktą info (įskaitant nuorodoje esančius 1 ir 2 punktus).
+5) Padaryti cao uzduotis.
