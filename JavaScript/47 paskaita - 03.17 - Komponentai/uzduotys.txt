@@ -1,0 +1,23 @@
+Lengvesnės:
+  Sukurti komponentus:
+    1) Label
+    2) Button
+    2.5) (jeigu reikia papildomai lengvesnių) tr, th, td, option
+    3) Video | Audio (galimybė nurodyti kurį)
+    4) Input (galimybė nurodyti kokio tipo input'as ir duoti atitinkamus atributus)
+    
+    Reikia, kad visi elementai priimtų klases, ir kur logiška, kad priimtų ID
+Sunkesnės:
+  Sukurti komponentus:
+    1) Select
+      Turi turėti option'us.
+      Turi būti name, id, class (select)
+                value (option)
+    2) Lentelė
+      Turi būti Thead
+        Thead viduje vienas tr
+          tr viduje daug th
+      Turi būti Tbody
+        Tbody viduje daug tr
+          tr viduje daug td
+      Turi turėti atitinkamus atributus (id, class)
