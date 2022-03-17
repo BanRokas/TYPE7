@@ -1,4 +1,6 @@
 import Sarasas from "./komponentai/sarasas.js";
+import Input from "./komponentai/input.js";
+
 
 let sarasoApp = document.querySelector("#sarasas");
 
@@ -42,3 +44,11 @@ new Sarasas(
     ]
   }
 );
+
+new Input(
+  sarasoApp,
+  "checkbox",
+  [
+    {name:"checked", value:""}
+  ]
+)
