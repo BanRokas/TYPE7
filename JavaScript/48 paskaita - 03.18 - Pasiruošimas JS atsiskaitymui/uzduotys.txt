@@ -9,3 +9,5 @@
 5) Parašyti JS kodą, kuris turėtų funkciją. Funkcija kaip argumentą priima masyvą. Funkcija grąžina naują masyvą su išfiltruotais/atrinktais duomenimis. Funkcija turi atrinkti asmenis, kurie turi mašinas.
 
 6) Parašyti JS kodą, kuris turėtų funkciją. Funkcija kaip argumentą priima masyvą. Funkcija grąžina skaičių. Funkcija turi suskaičiuoti, koks yra vartotojų mašinų gamybos metų vidurkis.
+
+7) Parašykite JS kodą, kuris turėtų funkciją. Funkcija kaip argumentą priima objektą. Funkcija grąžina masyvą. Funkcija iš gauto objekto turi atrinkti raktažodžius (Object.keys) ir sudėti juos į masyvą.
