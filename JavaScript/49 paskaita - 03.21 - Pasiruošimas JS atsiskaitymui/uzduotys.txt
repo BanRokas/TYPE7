@@ -2,4 +2,11 @@
 
 9) Sukurkite kalsę, kuri priima 4 savybes ir turi 2 metodus. Savybės: masinosMarke, masinosModelis, masinosKaina, masinosGamybosMetai. 1 metodas tikrina ar mašina brangesnė negu 10 000 eurų ir grąžina true|false. 2 metodas tikrina ar mašina senesnė negu 2010 ir grąžina mašinos amžių ir tekstą "Antikvaras"|"Šviežiena".
 
-10) Sutvarkykite 10 užduoties failų kodą taip, kad veiktų main.js parašytas kodas. 
+10) Sutvarkykite 10 užduoties failų kodą taip, kad veiktų main.js parašytas kodas.
+
+extra:
+Pasidaryti paruoštuką iš 1-10 užduoties:
+  Kokios užduotys.
+  Kokio JS funkcionalumo reikalauja.
+  Kokias temas apima.
+  Lengviausių -> sunkiausių sąrašą.
