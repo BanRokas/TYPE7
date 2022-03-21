@@ -1,0 +1,6 @@
+1) Atsisiūsti zip'ą iš assignments.
+2) Išskleisti jį ne git repozitorijos viduje. Ten kur atlikinėsite užduotis.
+3) Susikurti git repozitoriją ir ją patalpinti github'e.
+4) Daryti užduotis norima eilės tvarka.
+5) Commit'inti užduotis atskirai. (kad nebūtų viename commit'e daugiau nei su 1 užduotimi susijusių failų pakitimų)
+6) Atlikus visas užduotis - assignments dalyje įkelti github nuorodą ir submit'inti atsiskaitymą.
