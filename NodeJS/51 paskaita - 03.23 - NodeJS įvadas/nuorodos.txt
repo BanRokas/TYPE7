@@ -1,0 +1,6 @@
+Node svetainė: https://nodejs.org/en/
+NPMJS svetainė: https://www.npmjs.com/
+Populiarūs moduliai: https://www.esparkinfo.com/blog/node-js-packages.html
+package.json: https://docs.npmjs.com/cli/v7/configuring-npm/package-json
+
+Mosh tutorial apie nodejs: https://youtu.be/TlB_eWDSMt4
