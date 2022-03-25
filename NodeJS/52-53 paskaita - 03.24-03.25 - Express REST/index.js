@@ -3,6 +3,10 @@ const path = require("path");
 
 const app = express();
 
+// Body parse'inimas naudojant Middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
 // Vartotojų API Routes
 app.use("/api/vartotojai", require("./routes/api/vartotojai"));
 
