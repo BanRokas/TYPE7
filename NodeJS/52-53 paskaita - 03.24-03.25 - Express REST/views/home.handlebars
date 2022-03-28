@@ -1,0 +1,29 @@
+<h1 class="text-center">{{title}}</h1>
+<form action="/api/vartotojai" method="post">
+  <div class="form-group">
+    <label for="vardas">Vardas</label>
+    <input type="text" name="vardas" id="vardas" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="pavarde">Pavardė</label>
+    <input type="text" name="pavarde" id="pavarde" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="email">El. Paštas</label>
+    <input type="email" name="email" id="email" class="form-control">
+  </div>
+  <div class="d-grid gap-2 mt-2">
+    <input type="submit" value="Pridėti vartotoją" class="btn btn-primary">
+  </div>
+</form>
+<h3>Vartotojai</h3>
+<ul class="list-group">
+  {{#each vartotojai}}
+    <div class="d-flex justify-content-center align-items-center">
+      <li class="list-group-item mt-1">{{this.vardas}} | {{this.pavarde}} | {{this.email}}</li>
+      <button class="btn btn-danger">DELETE</button>
+    </div>
+  {{/each}}
+</ul>
+
+<a href="/api/vartotojai" class="btn btn-light mt-4">Vartotojų info</a>

@@ -34,7 +34,8 @@ router.post("/", (req, res) =>{
   }
 
   vartotojai.push(naujasVartotojas);
-  res.send(vartotojai);
+  //res.send(vartotojai);
+  res.redirect("/");
 });
 
 // Redaguojame pasirinktą vartotoją
@@ -64,16 +65,17 @@ router.delete("/:id", (req, res) => {
   const rastasID = vartotojai.some(vartotojas => vartotojas.id.toString() === req.params.id.toString());
 
   if(rastasID){
-    res.json({
+    /*res.json({
       msg : `Buvo ištrintas vartotojas su id ${req.params.id.toString()}`,
       vartotojas : vartotojai.filter(vartotojas => vartotojas.id.toString() === req.params.id.toString())
-    });
+    });*/
     //vartotojai.splice(vartotojai.filter(vartotojas => vartotojas.id.toString() !== req.params.id.toString()), 1)
     vartotojai.forEach((vartotojas, i) => {
       if(vartotojas.id.toString() === req.params.id.toString()){
         vartotojai.splice(i, 1);
       }
     })
+    res.redirect("/");
   } else {
     res.status(400).json({ msg: `Nebuvo rastas vartotojas su id ${req.params.id.toString()}` });
   }
