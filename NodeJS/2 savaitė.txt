@@ -1,0 +1,6 @@
+MongoDB:
+  https://youtu.be/1VM6AvRgmfY - teorija
+    https://youtu.be/Www6cTUymCY - praktika su Docker
+    https://youtu.be/ny-rU3jyt1E - teorija + praktika tik su command line
+    https://youtu.be/-56x56UppqQ - Traversy Media video
+  https://youtu.be/ofme2o29ngU - WebDevSimplified (MongoDB 5 versija)
