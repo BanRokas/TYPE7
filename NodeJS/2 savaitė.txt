@@ -4,3 +4,6 @@ MongoDB:
     https://youtu.be/ny-rU3jyt1E - teorija + praktika tik su command line
     https://youtu.be/-56x56UppqQ - Traversy Media video
   https://youtu.be/ofme2o29ngU - WebDevSimplified (MongoDB 5 versija)
+  https://youtu.be/2QQGWYe7IDU - Su DB cloude
+  https://youtu.be/ExcRbA7fy_A?list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA - ongoing tutorial
+
