@@ -1,0 +1,21 @@
+{
+  "name": "58-paskaita---04.01---mongodb-in-our-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type" : "module",
+  "scripts": {
+    "dev" : "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongodb": "^4.4.1"
+  }, 
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "dotenv": "^16.0.0"
+  }
+}
