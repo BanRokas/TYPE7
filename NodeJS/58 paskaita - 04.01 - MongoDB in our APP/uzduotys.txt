@@ -1,0 +1,15 @@
+Susikurti didesnį kiekį informacijos (apie ką nori).
+  naujas DB -> viena arba kelios Collection.
+Savo aplikacijoje (kode, VSC):
+  Praktikuotis išsifiltruoti (gal dar rikiuoti).
+    pvz:
+      Pagal pirmą raidę.
+      Pagal žodžio ilgį.
+      Pagal žodžio gabaliuką (ar yra dokumento elemente toks žodžio gabaliukas).
+      Pagal true/false.
+  Praktikuotis filtravimą pagal kelis kriterijus.
+  Praktikuotis, kad grąžintų ne visą dokumentą, bet to dokumento nurodytus gabaliukus.
+
+
+Pasidaryti CAO (iki 8 paskaitos).
+Peržiūrėti 2 savaitės tutorial video (jei bus keli, tai bent vieną) ir pasidaryti kartu.
