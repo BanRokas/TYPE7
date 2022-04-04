@@ -1,0 +1,4 @@
+pets.json
+  Turi būti bent 30 augintinių.
+index.html
+  Sukurti filtravimo / rikiavimo UI.
