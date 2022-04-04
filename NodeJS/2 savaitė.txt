@@ -7,3 +7,5 @@ MongoDB:
   https://youtu.be/2QQGWYe7IDU - Su DB cloude
   https://youtu.be/ExcRbA7fy_A?list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA - ongoing tutorial
 
+Tutorial:
+  https://youtu.be/_GpQvC6HAuw - ilgas išsamus ir geras beginner friendly tutorial
