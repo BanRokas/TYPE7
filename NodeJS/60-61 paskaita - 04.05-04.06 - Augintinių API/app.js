@@ -4,6 +4,7 @@ import path from 'path';
 import cors from 'cors';
 import router from './routes/api/augintiniai.js';
 import { engine } from 'express-handlebars';
+import { MongoClient, ServerApiVersion } from 'mongodb';
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -11,6 +12,13 @@ const corsOptions = {
   origin: `localhost:${PORT}`,
   optionsSuccessStatus: 200
 };
+const client = new MongoClient(process.env.DB_URI, { 
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  serverApi: ServerApiVersion.v1
+});
+const augintiniuDuomenys = client.db('augintiniu_api').collection('augintiniai');
+client.connect();
 
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
@@ -22,10 +30,10 @@ app.use(express.urlencoded({
   extended : false
 }));
 
-app.get('/', (req, res) => {
+app.get('/', async (req, res) => {
   res.render('home', {
-    title: "Bandymas",
-    data : ['pirmas', 'antras', 'trecias']
+    title: "Augintiniai",
+    pets: await augintiniuDuomenys.find().toArray()
   });
 });
 
