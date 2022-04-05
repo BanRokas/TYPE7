@@ -22,8 +22,11 @@ app.use(express.urlencoded({
   extended : false
 }));
 
-app.get('/', (req, res) =>{
-  res.render('home');
+app.get('/', (req, res) => {
+  res.render('home', {
+    title: "Bandymas",
+    data : ['pirmas', 'antras', 'trecias']
+  });
 });
 
 app.use('/api/augintiniai', router);
