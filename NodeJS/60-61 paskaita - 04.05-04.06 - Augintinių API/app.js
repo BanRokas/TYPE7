@@ -34,6 +34,9 @@ app.use(express.urlencoded({
 }));
 
 app.get('/', async (req, res) => {
+  res.render('home');
+});
+app.get('/augintiniai', async (req, res) => {
   res.render('augintiniai', {
     title: "Augintiniai",
     pets: await augintiniuDuomenys.find().toArray()
