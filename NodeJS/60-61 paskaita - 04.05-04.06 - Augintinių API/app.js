@@ -2,7 +2,8 @@ import 'dotenv/config';
 import express from 'express';
 import path from 'path';
 import cors from 'cors';
-import router from './routes/api/augintiniai.js';
+import routerAug from './routes/api/augintiniai.js';
+import routerSei from './routes/api/seimininkai.js';
 import { engine } from 'express-handlebars';
 import { MongoClient, ServerApiVersion } from 'mongodb';
 
@@ -17,13 +18,15 @@ const client = new MongoClient(process.env.DB_URI, {
   useUnifiedTopology: true,
   serverApi: ServerApiVersion.v1
 });
-const augintiniuDuomenys = client.db('augintiniu_api').collection('augintiniai');
 client.connect();
+const augintiniuDuomenys = client.db('augintiniu_api').collection('augintiniai');
+const seimininkuDuomenys = client.db('augintiniu_api').collection('seimininkai');
 
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
 app.set('views', './views');
 
+app.use(express.static(path.resolve('public')));
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({
@@ -31,16 +34,19 @@ app.use(express.urlencoded({
 }));
 
 app.get('/', async (req, res) => {
-  res.render('home', {
+  res.render('augintiniai', {
     title: "Augintiniai",
     pets: await augintiniuDuomenys.find().toArray()
   });
 });
+app.get('/seimininkai', async (req, res) => {
+  res.render('seimininkai', {
+    title: "Šeimininkai",
+    seimininkai: await seimininkuDuomenys.find().toArray()
+  });
+});
 
-app.use('/api/augintiniai', router);
-
-// app.use(express.static(path.resolve('public'), {
-//   extensions: ['html']
-// }));
+app.use('/api/augintiniai', routerAug);
+app.use('/api/seimininkai', routerSei);
 
 app.listen(PORT, () => console.log(`Application is running on PORT ${PORT}`));

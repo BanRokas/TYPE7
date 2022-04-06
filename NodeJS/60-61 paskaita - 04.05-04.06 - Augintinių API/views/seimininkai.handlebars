@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<ul>
+  {{#each seimininkai}}
+    <li> {{this.vardas}} </li>
+    <li>
+      <ul>
+        {{#each this.augintiniai}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </li>
+  {{/each}}
+</ul>
