@@ -1,5 +1,11 @@
-1) Jeigu neveikia augintinių išvedimas į ekraną - peržiūrėti kodą ir sutaisyti.
-2) Padaryti augintinių UI (galima imti pvz iš 59 paskaitoje esančios foto).
-3) Sukurti šeimininkų kolekciją ir duomenis tame pačiame DB. (arba kažkokią kitą kolekciją, kuri galėtų sietis su augintiniais)
-  3.1) Sukurti šeimininkų(arba kitos kolekcijos) duomenis (dar nereikia sieti šeimininkų su augintiniais (galite pamėginti))
-4) Pasirašyti routes/api viduje naujos kolekcijos išvedimą.
+Antradienis:
+  1) Jeigu neveikia augintinių išvedimas į ekraną - peržiūrėti kodą ir sutaisyti.
+  2) Padaryti augintinių UI (galima imti pvz iš 59 paskaitoje esančios foto).
+  3) Sukurti šeimininkų kolekciją ir duomenis tame pačiame DB. (arba kažkokią kitą kolekciją, kuri galėtų sietis su augintiniais)
+    3.1) Sukurti šeimininkų(arba kitos kolekcijos) duomenis (dar nereikia sieti šeimininkų su augintiniais (galite pamėginti))
+  4) Pasirašyti routes/api viduje naujos kolekcijos išvedimą.
+Trečiadienis:
+  1) Sutvarkyti home, augintiniai, seimininkai UI (jei reikia).
+  2) Sukurti vietą formoms, kad pridėti naują augintinį ir šeiminką (augintinių ir šeimininkų puslapiuose arba sukurti atskirus puslapius vien formoms).
+  3) Sukurti post metodus, kurie pridėtų naujus duomenis prie atitinkamų DB kolekcijų (galima prasitestuoti su Postman prieš pradedant UI dalį).
+  +4) Peržiūrėti tutorials jeigu yra tam reikalo.
