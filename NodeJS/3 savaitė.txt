@@ -1,3 +1,6 @@
 for fun:
   Šaknies traukimo algoritmas:  https://youtu.be/p8u_k2LIZyo
   Matematinė 3N+1 problema: https://youtu.be/094y1Z2wpJg
+MongoDB Crud: https://youtu.be/3eZoiJczT1I
+Handlebars: https://stackabuse.com/guide-to-handlebars-templating-engine-for-node/
+No sound, big decent app: https://youtu.be/yQRNqodA0_M
