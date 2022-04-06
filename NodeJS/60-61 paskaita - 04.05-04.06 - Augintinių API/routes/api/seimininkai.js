@@ -20,4 +20,19 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.post("/", async (req, res) =>{
+  try{
+    console.log(req.body);
+    const naujasSeimininkas = {
+      vardas : req.body.vardas,
+      augintiniai : req.body.augintiniai.split(',')
+    }
+    console.log(naujasSeimininkas);
+    await seimininkuDuomenys.insertOne(naujasSeimininkas);
+    res.redirect('/seimininkai');
+  } catch(err) {
+    res.status(500).send({ err });
+  }
+});
+
 export default router;

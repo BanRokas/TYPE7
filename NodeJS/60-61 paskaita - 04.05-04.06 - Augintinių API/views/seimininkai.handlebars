@@ -1,8 +1,7 @@
 <h1>{{title}}</h1>
 <ul>
   {{#each seimininkai}}
-    <li> {{this.vardas}} </li>
-    <li>
+    <li> {{this.vardas}}
       <ul>
         {{#each this.augintiniai}}
           <li>{{this}}</li>
@@ -11,3 +10,17 @@
     </li>
   {{/each}}
 </ul>
+
+<form action="/api/seimininkai" method="post">
+  <div class="form-group">
+    <label for="vardas">Vardas</label>
+    <input type="text" name="vardas" id="vardas" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="augintiniai">Augintiniai</label>
+    <input type="text" name="augintiniai" id="augintiniai" class="form-control">
+  </div>
+  <div class="d-grid gap-2 mt-2">
+    <input type="submit" value="Pridėti vartotoją" class="btn btn-primary">
+  </div>
+</form>
