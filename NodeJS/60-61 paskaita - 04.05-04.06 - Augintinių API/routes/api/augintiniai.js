@@ -1,4 +1,4 @@
-import { MongoClient, ServerApiVersion } from 'mongodb';
+import { MongoClient, ObjectId, ServerApiVersion } from 'mongodb';
 import express from 'express';
 
 const router = express.Router();
@@ -18,6 +18,26 @@ router.get('/', async (req, res) => {
     const data = await augintiniuDuomenys.find().toArray();
     res.send(data);
   } catch (err) {
+    res.status(500).send({ err });
+  }
+});
+
+router.post("/", async (req, res) =>{
+  try{
+    const naujasAugintinis = {
+    }
+    await augintiniuDuomenys.insertOne(naujasAugintinis);
+    res.redirect('/augintiniai');
+  } catch(err) {
+    res.status(500).send({ err });
+  }
+});
+
+router.get('/delete/:id', async (req,res) => {
+  try{
+    await augintiniuDuomenys.deleteOne({"_id":ObjectId(req.params.id)});
+    res.redirect('/augintiniai');
+  } catch(err) {
     res.status(500).send({ err });
   }
 });

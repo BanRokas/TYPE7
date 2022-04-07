@@ -1,6 +1,23 @@
 <h1>{{title}}</h1>
 <ul>
   {{#each pets}}
-    <li> {{this.tipas}} | {{this.vardas}} | {{this.amzius}} | {{this.skiepytas}} </li>
+    <li> 
+      {{this.tipas}} |
+      {{this.vardas}} |
+      {{this.amzius}} |
+      {{this.skiepytas}} |
+      {{!-- <button id="{{this._id}}">Delete</button> --}}
+      <a href='/api/augintiniai/delete/{{this._id}}'><button>Delete</button></a>
+    </li>
   {{/each}}
 </ul>
+<script>
+  /*document.querySelectorAll("button")
+  .forEach(button =>
+    button.addEventListener("click", e =>
+      fetch(`/api/augintiniai/${e.target.id}`, {
+        method: "DELETE"
+      })
+    )
+  );*/
+</script>
