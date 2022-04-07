@@ -7,3 +7,6 @@ https://stackabuse.com/guide-to-handlebars-templating-engine-for-node - handleba
 https://youtu.be/yQRNqodA0_M - No sound, big decent app
 
 https://youtu.be/w-7RQ46RgxU?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp - geras from scratch NodeJS tutorial kur ir praktikos ir teorijos nemažai. Vienintelis minusas - ganėtinai senas.
+
+https://youtu.be/ItokNqOprfA - CRUD/Filtering/Sorting/Paginating
+https://youtu.be/1TZObMg4A7s - Filtering, Sorting, and Pagination
