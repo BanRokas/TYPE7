@@ -9,3 +9,20 @@ Trečiadienis:
   2) Sukurti vietą formoms, kad pridėti naują augintinį ir šeiminką (augintinių ir šeimininkų puslapiuose arba sukurti atskirus puslapius vien formoms).
   3) Sukurti post metodus, kurie pridėtų naujus duomenis prie atitinkamų DB kolekcijų (galima prasitestuoti su Postman prieš pradedant UI dalį).
   +4) Peržiūrėti tutorials jeigu yra tam reikalo.
+Ketvirtadienis:
+  1) Prie kiekvieno seimininko/augintinio pridėti po mygtuką, kuris turėtų to dokumento id.
+  2) Paspaudus ant mygtuko - triname dokumentą.
+  3) Rikiavimo mygtukų įgalinimas front'e arba back'e.
+    3.1) Back'e:
+      app.get dalyje nusirodome, kad priimame įvairius parametrus, juos išsiskirstome į kintamuosius ir grąžiname atitinkamą informaciją.
+    3.2) Front'e:
+      handlebars dalyje rikiuoti su helpers komanda (nesiūloma)
+  4) Filtravimo formos įgalinimas front'e arba back'e.
+    4.1) Back'e:
+      app.get dalyje nusirodome, kad priimame įvairius parametrus, juos išsiskirstome į kintamuosius ir grąžiname atitinkamą informaciją.
+    4.2) Front'e:
+      handlebars dalyje filtruojame su helpers komanda (nesiūloma)
+
+
+
+  trinimo / rikiavimo / filtravimo / ribotas info atvaizdavimas ekrane

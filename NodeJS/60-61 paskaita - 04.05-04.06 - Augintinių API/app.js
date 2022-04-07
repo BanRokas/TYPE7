@@ -37,9 +37,10 @@ app.get('/', async (req, res) => {
   res.render('home');
 });
 app.get('/augintiniai', async (req, res) => {
+  console.log(req.query);
   res.render('augintiniai', {
     title: "Augintiniai",
-    pets: await augintiniuDuomenys.find().toArray()
+    pets: await augintiniuDuomenys.find().sort().toArray()
   });
 });
 app.get('/seimininkai', async (req, res) => {
