@@ -22,6 +22,36 @@ Ketvirtadienis:
       app.get dalyje nusirodome, kad priimame įvairius parametrus, juos išsiskirstome į kintamuosius ir grąžiname atitinkamą informaciją.
     4.2) Front'e:
       handlebars dalyje filtruojame su helpers komanda (nesiūloma)
+Penktadienis:
+  Rikiavimas:
+    1) Susigalvoti kokie gali būti rikiavimo kriterijai.
+      pvz: Pets(vardas,tipas,amzius,skiepytas) -> rikiavimas:vardas
+    2) Darytis rikiavimą 3 žingsniais:
+      2.1) Kode hardcode'inti rikiavimą.
+      2.2) Per postman paduoti užklausas ir rikiuoti kintamjųjų pagalba.
+      2.3) Sukurti užklausas per UI.
+  Filtavimas:
+    3) Susigalvoti kokie gali būti filtravimo kriterijai.
+      pvz: Pets(vardas,tipas,amzius,skiepytas) -> filtravimas:{vardas:string,tipas:select,amzius:{gt:?,lt:?},skiepytas:bool}
+    4) Darytis filtravimą 3 žingsniais:
+      4.1) Kode hardcode'inti filtravimą.
+      4.2) Per postman paduoti užklausas ir filtruoti kintamjųjų pagalba.
+      4.3) Sukurti užklausas per UI.
+  Puslapiavimas:
+    5) Darytis limit() 3 žingsniais:
+      5.1) Kode hardcode'inti.
+      5.2) Per postman paduoti užklausas ir kintamjųjų pagalba.
+      5.3) Sukurti užklausas per UI.
+    6) Darytis skip() 3 žingsniais:
+      6.1) Kode hardcode'inti.
+      6.2) Per postman paduoti užklausas ir kintamjųjų pagalba.
+      6.3) Sukurti užklausas per UI.
+
+  kiekSkip = 0;
+  kiekRodyti = 10;
+  kiekSkip += kiekRodyti
+  kiekSkip -= kiekRodyti
+  limit(kiekRodyti).skip(kiekSkip)
 
 
 
