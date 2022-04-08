@@ -10,3 +10,4 @@ https://youtu.be/w-7RQ46RgxU?list=PL4cUxeGkcC9gcy9lrvMJ75z9maRw4byYp - geras fro
 
 https://youtu.be/ItokNqOprfA - CRUD/Filtering/Sorting/Paginating
 https://youtu.be/1TZObMg4A7s - Filtering, Sorting, and Pagination
+https://youtu.be/ZX3qt0UWifc - Pagination (WebDevSimplified)
