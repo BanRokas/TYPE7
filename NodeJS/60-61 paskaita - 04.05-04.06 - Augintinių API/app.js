@@ -21,6 +21,10 @@ const client = new MongoClient(process.env.DB_URI, {
 client.connect();
 const augintiniuDuomenys = client.db('augintiniu_api').collection('augintiniai');
 const seimininkuDuomenys = client.db('augintiniu_api').collection('seimininkai');
+const rikiavimas = {
+  sort : new Object(),
+  ascDesc : 1
+}
 
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
@@ -38,9 +42,32 @@ app.get('/', async (req, res) => {
 });
 app.get('/augintiniai', async (req, res) => {
   console.log(req.query);
+  if(req.query.sort){
+    console.log("rikiuojame");
+    if(Object.keys(rikiavimas.sort).length === 0){
+      console.log("pirmą kartą");
+      rikiavimas.ascDesc = 1;
+      rikiavimas.sort[req.query.sort] = rikiavimas.ascDesc;
+    } else if(Object.keys(rikiavimas.sort)[0] === req.query.sort){
+      console.log("tą patį");
+      rikiavimas.ascDesc = rikiavimas.ascDesc * -1;
+      rikiavimas.sort[req.query.sort] = rikiavimas.ascDesc;
+    } else if(Object.keys(rikiavimas.sort)[0] !== req.query.sort){
+      console.log("naują");
+      rikiavimas.ascDesc = 1;
+      //rikiavimas.sort = {};
+      //rikiavimas.sort = new Object;
+      delete rikiavimas.sort[Object.keys(rikiavimas.sort)[0]];
+      rikiavimas.sort[req.query.sort] = rikiavimas.ascDesc;
+    }
+  }
+  console.log(rikiavimas.sort);
   res.render('augintiniai', {
     title: "Augintiniai",
-    pets: await augintiniuDuomenys.find().sort().toArray()
+    pets: await augintiniuDuomenys
+    .find()
+    .sort(rikiavimas.sort)
+    .toArray()
   });
 });
 app.get('/seimininkai', async (req, res) => {
