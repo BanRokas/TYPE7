@@ -6,6 +6,7 @@ import routerAug from './routes/api/augintiniai.js';
 import routerSei from './routes/api/seimininkai.js';
 import { engine } from 'express-handlebars';
 import { MongoClient, ServerApiVersion } from 'mongodb';
+import { connect } from 'http2';
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -25,6 +26,17 @@ const rikiavimas = {
   sort : new Object(),
   ascDesc : 1
 }
+const filtravimas = {
+  // vardas : {
+  //   $regex : /kr/i
+  // },
+  // tipas : 'šuo',
+  // amzius : {
+  //   $gt : 3,
+  //   $lt : 10
+  // },
+  // skiepytas : true
+};
 
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
@@ -41,31 +53,41 @@ app.get('/', async (req, res) => {
   res.render('home');
 });
 app.get('/augintiniai', async (req, res) => {
+  await client.connect();
   console.log(req.query);
+  // rikiavimas
   if(req.query.sort){
-    console.log("rikiuojame");
-    if(Object.keys(rikiavimas.sort).length === 0){
-      console.log("pirmą kartą");
-      rikiavimas.ascDesc = 1;
-      rikiavimas.sort[req.query.sort] = rikiavimas.ascDesc;
-    } else if(Object.keys(rikiavimas.sort)[0] === req.query.sort){
-      console.log("tą patį");
-      rikiavimas.ascDesc = rikiavimas.ascDesc * -1;
-      rikiavimas.sort[req.query.sort] = rikiavimas.ascDesc;
-    } else if(Object.keys(rikiavimas.sort)[0] !== req.query.sort){
-      console.log("naują");
-      rikiavimas.ascDesc = 1;
-      //rikiavimas.sort = {};
-      //rikiavimas.sort = new Object;
-      delete rikiavimas.sort[Object.keys(rikiavimas.sort)[0]];
-      rikiavimas.sort[req.query.sort] = rikiavimas.ascDesc;
-    }
+    rikiuoti(req.query.sort);
   }
-  console.log(rikiavimas.sort);
+  // filtravimas
+  if(Object.keys(req.query).length !== 0 && !req.query.sort){
+    console.log('filtruojame');
+    if(req.query.vardas){
+      let regexas = new RegExp(req.query.vardas, 'i');
+      filtravimas.vardas = { $regex : regexas }
+    }
+    if(req.query.tipas){
+      filtravimas.tipas = req.query.tipas;
+    }
+    if(req.query.amzius_gt){
+      filtravimas.amzius.$gt = req.query.amzius_gt;
+    }
+    if(req.query.amzius_lt){
+      filtravimas.amzius.$lt = req.query.amzius_lt;
+    }
+    if(req.query.skiepytas){
+      filtravimas.skiepytas = req.query.skiepytas;
+    }
+  } else {
+    console.log('nefiltruojame');
+
+  }
+  console.log(filtravimas);
+
   res.render('augintiniai', {
     title: "Augintiniai",
     pets: await augintiniuDuomenys
-    .find()
+    .find(filtravimas)
     .sort(rikiavimas.sort)
     .toArray()
   });
@@ -76,6 +98,20 @@ app.get('/seimininkai', async (req, res) => {
     seimininkai: await seimininkuDuomenys.find().toArray()
   });
 });
+
+let rikiuoti = async (query) =>{
+  if(Object.keys(rikiavimas.sort).length === 0){
+    rikiavimas.ascDesc = 1;
+    rikiavimas.sort[query] = rikiavimas.ascDesc;
+  } else if(Object.keys(rikiavimas.sort)[0] === query){
+    rikiavimas.ascDesc = rikiavimas.ascDesc * -1;
+    rikiavimas.sort[query] = rikiavimas.ascDesc;
+  } else if(Object.keys(rikiavimas.sort)[0] !== query){
+    rikiavimas.ascDesc = 1;
+    delete rikiavimas.sort[Object.keys(rikiavimas.sort)[0]];
+    rikiavimas.sort[query] = rikiavimas.ascDesc;
+  }
+}
 
 app.use('/api/augintiniai', routerAug);
 app.use('/api/seimininkai', routerSei);
