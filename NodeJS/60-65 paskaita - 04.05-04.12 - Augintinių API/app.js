@@ -6,7 +6,6 @@ import routerAug from './routes/api/augintiniai.js';
 import routerSei from './routes/api/seimininkai.js';
 import { engine } from 'express-handlebars';
 import { MongoClient, ServerApiVersion } from 'mongodb';
-import { connect } from 'http2';
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -28,7 +27,7 @@ const rikiavimas = {
 }
 const filtravimas = {
   // vardas : {
-  //   $regex : /kr/i
+  //   $regex : /frazė/i
   // },
   // tipas : 'šuo',
   // amzius : {
@@ -55,32 +54,22 @@ app.get('/', async (req, res) => {
 app.get('/augintiniai', async (req, res) => {
   await client.connect();
   console.log(req.query);
-  // rikiavimas
-  if(req.query.sort){
-    rikiuoti(req.query.sort);
-  }
-  // filtravimas
-  if(Object.keys(req.query).length !== 0 && !req.query.sort){
-    console.log('filtruojame');
-    if(req.query.vardas){
-      let regexas = new RegExp(req.query.vardas, 'i');
-      filtravimas.vardas = { $regex : regexas }
+  
+  
+  if(Object.keys(req.query).length !== 0){
+    for (const key in filtravimas) {
+      delete filtravimas[key];
     }
-    if(req.query.tipas){
-      filtravimas.tipas = req.query.tipas;
+    // rikiavimas
+    if(req.query.sort){
+      rikiuoti(req.query.sort);
     }
-    if(req.query.amzius_gt){
-      filtravimas.amzius.$gt = req.query.amzius_gt;
-    }
-    if(req.query.amzius_lt){
-      filtravimas.amzius.$lt = req.query.amzius_lt;
-    }
-    if(req.query.skiepytas){
-      filtravimas.skiepytas = req.query.skiepytas;
-    }
+    // filtravimas
+    filtruoti(req.query);
   } else {
-    console.log('nefiltruojame');
-
+    for (const key in filtravimas) {
+      delete filtravimas[key];
+    }
   }
   console.log(filtravimas);
 
@@ -98,6 +87,33 @@ app.get('/seimininkai', async (req, res) => {
     seimininkai: await seimininkuDuomenys.find().toArray()
   });
 });
+
+let filtruoti = async (query) => {
+  if(query.vardas){
+    let regexas = new RegExp(query.vardas, 'i');
+    filtravimas.vardas = { $regex : regexas };
+  }
+  if(query.tipas){
+    filtravimas.tipas = query.tipas;
+  }
+  if(query.amzius_gt && query.amzius_lt){
+    filtravimas.amzius = {
+      $gt : Number(query.amzius_gt),
+      $lt : Number(query.amzius_lt)
+    };
+  } else if(query.amzius_lt){
+    filtravimas.amzius = {
+      $lt : Number(query.amzius_lt)
+    };
+  } else if(query.amzius_gt){
+    filtravimas.amzius = {
+      $gt : Number(query.amzius_gt)
+    };
+  }
+  if(query.skiepytas){
+    filtravimas.skiepytas = (query.skiepytas === 'true');
+  }
+}
 
 let rikiuoti = async (query) =>{
   if(Object.keys(rikiavimas.sort).length === 0){
