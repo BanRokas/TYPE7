@@ -1,9 +1,39 @@
 <h1>{{title}}</h1>
+<div>
+  <h3>Filtravimas</h3>
+  <form action="/augintiniai" method="GET">
+    <input type="text" name="vardas" placeholder="Įveskite vardą...">
+    <select name="tipas">
+      <option value="">---</option>
+      {{#each tipai}}
+        <option value="{{this}}">{{this}}</option>
+      {{/each}}
+    </select>
+    <input type="number" name="amzius_gt" placeholder="Vyresni negu...">
+    <input type="number" name="amzius_lt" placeholder="Jaunesni negu...">
+    <label>Skiepytas:</label>
+    <input type="radio" name="skiepytas" value="true">
+    <label>Neskiepytas:</label>
+    <input type="radio" name="skiepytas" value="false">
+    <input type="hidden" name="resetFilter" value="1">
+    <input type="submit">
+  </form>
+</div>
+<div>
+  <h3>Rikiavimas</h3>
+  {{!-- <a href="/augintiniai?sort=vardas">Vardas Sort</a> --}}
+  <form action="/augintiniai" method="GET">
+    <input type="submit" name="sort" value="vardas">
+    <input type="submit">
+    <input type="submit">
+    <input type="submit">
+  </form>
+</div>
 <ul>
   {{#each pets}}
     <li> 
-      {{this.tipas}} |
       {{this.vardas}} |
+      {{this.tipas}} |
       {{this.amzius}} |
       {{this.skiepytas}} |
       {{!-- <button id="{{this._id}}">Delete</button> --}}

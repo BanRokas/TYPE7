@@ -25,17 +25,11 @@ const rikiavimas = {
   sort : new Object(),
   ascDesc : 1
 }
-const filtravimas = {
-  // vardas : {
-  //   $regex : /frazė/i
-  // },
-  // tipas : 'šuo',
-  // amzius : {
-  //   $gt : 3,
-  //   $lt : 10
-  // },
-  // skiepytas : true
-};
+const filtravimas = {};
+const puslapiavimas = {
+  praleisti : 0,
+  rodyti : 50
+}
 
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
@@ -54,11 +48,23 @@ app.get('/', async (req, res) => {
 app.get('/augintiniai', async (req, res) => {
   await client.connect();
   console.log(req.query);
-  
-  
+
   if(Object.keys(req.query).length !== 0){
-    for (const key in filtravimas) {
-      delete filtravimas[key];
+    if(req.query.resetFilter){
+      for (const key in filtravimas) {
+        delete filtravimas[key];
+      }
+      rikiavimas.sort = {};
+      puslapiavimas.rodyti = 50;
+      puslapiavimas.praleisti = 0;
+    }
+    if(req.query.rodyti){
+      puslapiavimas.rodyti = Number(req.query.rodyti);
+      puslapiavimas.praleisti = 0;
+    }
+    if(req.query.praleisti){
+      puslapiavimas.praleisti += puslapiavimas.rodyti * Number(req.query.praleisti);
+      puslapiavimas.praleisti < 0 ? puslapiavimas.praleisti = 0 : null;
     }
     // rikiavimas
     if(req.query.sort){
@@ -66,19 +72,25 @@ app.get('/augintiniai', async (req, res) => {
     }
     // filtravimas
     filtruoti(req.query);
-  } else {
+  } /*else {
     for (const key in filtravimas) {
       delete filtravimas[key];
     }
-  }
-  console.log(filtravimas);
+  }*/
+
+  let skirtingiTipai = await augintiniuDuomenys.find().toArray();
+  skirtingiTipai = skirtingiTipai.map(augintinis => augintinis.tipas);
+  skirtingiTipai = [...new Set(skirtingiTipai)];
 
   res.render('augintiniai', {
     title: "Augintiniai",
     pets: await augintiniuDuomenys
     .find(filtravimas)
     .sort(rikiavimas.sort)
-    .toArray()
+    .limit(puslapiavimas.rodyti)
+    .skip(puslapiavimas.praleisti)
+    .toArray(),
+    tipai: skirtingiTipai
   });
 });
 app.get('/seimininkai', async (req, res) => {
