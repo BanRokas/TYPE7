@@ -58,17 +58,13 @@ app.get('/augintiniai', async (req, res) => {
       puslapiavimas.rodyti = 10;
       puslapiavimas.praleisti = 0;
     }
-    // rikiavimas
     if(req.query.sort){
       rikiuoti(req.query.sort);
     }
-    // filtravimas
     filtruoti(req.query);
 
     if(req.query.rodyti || req.query.praleisti){
-      let augintiniai = await augintiniuDuomenys
-        .find(filtravimas)
-        .toArray()
+      let augintiniai = await augintiniuDuomenys.find(filtravimas).toArray();
       if(req.query.rodyti){
         puslapiavimas.rodyti = Number(req.query.rodyti);
         puslapiavimas.praleisti = 0;
@@ -143,7 +139,6 @@ let rikiuoti = async (query) =>{
     delete rikiavimas.sort[Object.keys(rikiavimas.sort)[0]];
     rikiavimas.sort[query] = rikiavimas.ascDesc;
   }
-  puslapiavimas.rodyti = 10;
   puslapiavimas.praleisti = 0;
 }
 
