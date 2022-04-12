@@ -16,7 +16,7 @@
     <label>Neskiepytas:</label>
     <input type="radio" name="skiepytas" value="false">
     <input type="hidden" name="resetFilter" value="1">
-    <input type="submit">
+    <input type="submit" value="Filtruoti">
   </form>
 </div>
 <div>
@@ -24,9 +24,9 @@
   {{!-- <a href="/augintiniai?sort=vardas">Vardas Sort</a> --}}
   <form action="/augintiniai" method="GET">
     <input type="submit" name="sort" value="vardas">
-    <input type="submit">
-    <input type="submit">
-    <input type="submit">
+    <input type="submit" name="sort" value="tipas">
+    <input type="submit" name="sort" value="amzius">
+    <input type="submit" name="sort" value="skiepytas">
   </form>
 </div>
 <ul>
@@ -41,6 +41,19 @@
     </li>
   {{/each}}
 </ul>
+<div>
+  <form action="/augintiniai" method="GET">
+    <div>
+      <input type="submit" name="rodyti" value="10">
+      <input type="submit" name="rodyti" value="20">
+      <input type="submit" name="rodyti" value="30">
+    </div>
+    <div>
+      <input type="submit" name="praleisti" value="-1">
+      <input type="submit" name="praleisti" value="1">
+    </div>
+  </form>
+</div>
 <script>
   /*document.querySelectorAll("button")
   .forEach(button =>

@@ -28,7 +28,7 @@ const rikiavimas = {
 const filtravimas = {};
 const puslapiavimas = {
   praleisti : 0,
-  rodyti : 50
+  rodyti : 10
 }
 
 app.engine('handlebars', engine());
@@ -55,16 +55,8 @@ app.get('/augintiniai', async (req, res) => {
         delete filtravimas[key];
       }
       rikiavimas.sort = {};
-      puslapiavimas.rodyti = 50;
+      puslapiavimas.rodyti = 10;
       puslapiavimas.praleisti = 0;
-    }
-    if(req.query.rodyti){
-      puslapiavimas.rodyti = Number(req.query.rodyti);
-      puslapiavimas.praleisti = 0;
-    }
-    if(req.query.praleisti){
-      puslapiavimas.praleisti += puslapiavimas.rodyti * Number(req.query.praleisti);
-      puslapiavimas.praleisti < 0 ? puslapiavimas.praleisti = 0 : null;
     }
     // rikiavimas
     if(req.query.sort){
@@ -72,11 +64,23 @@ app.get('/augintiniai', async (req, res) => {
     }
     // filtravimas
     filtruoti(req.query);
-  } /*else {
-    for (const key in filtravimas) {
-      delete filtravimas[key];
+
+    if(req.query.rodyti || req.query.praleisti){
+      let augintiniai = await augintiniuDuomenys
+        .find(filtravimas)
+        .toArray()
+      if(req.query.rodyti){
+        puslapiavimas.rodyti = Number(req.query.rodyti);
+        puslapiavimas.praleisti = 0;
+      }
+      if(req.query.praleisti){
+        puslapiavimas.praleisti += puslapiavimas.rodyti * Number(req.query.praleisti);
+        puslapiavimas.praleisti < 0 ? puslapiavimas.praleisti = 0 : null;
+        puslapiavimas.praleisti > augintiniai.length ?
+        puslapiavimas.praleisti -= puslapiavimas.rodyti * Number(req.query.praleisti) : null;
+      }
     }
-  }*/
+  }
 
   let skirtingiTipai = await augintiniuDuomenys.find().toArray();
   skirtingiTipai = skirtingiTipai.map(augintinis => augintinis.tipas);
@@ -139,6 +143,8 @@ let rikiuoti = async (query) =>{
     delete rikiavimas.sort[Object.keys(rikiavimas.sort)[0]];
     rikiavimas.sort[query] = rikiavimas.ascDesc;
   }
+  puslapiavimas.rodyti = 10;
+  puslapiavimas.praleisti = 0;
 }
 
 app.use('/api/augintiniai', routerAug);
