@@ -1,0 +1,9 @@
+Sukurti REST API.
+API dalyje turi būti pagrindiniai metodai (Get, Post, Delete, (nebūtinas)Put/Patch, (nebūtinas)Get pagal id)
+Views dalyje turi būti UI, kuriame galima būtų:
+  Filtravimas,
+  Rikiavimas,
+  Puslapiavimas,
+  Duomenų trinimas,
+  Naujų duomenų kūrimas,
+  (nebūtinas) Duomenų redagavimas.
