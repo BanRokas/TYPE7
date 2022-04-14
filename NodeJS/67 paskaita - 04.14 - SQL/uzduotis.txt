@@ -1,0 +1,5 @@
+1) Sukurti SQL DB kuris turi 6-8 lenteles.
+    Naudoti Excel + paint(ar dar ten ką).
+    Duomenų kurti NEREIKIA, tik lenteles.
+
+2) Daryti CAO (lesson 13) esančioje nuorodoje pateiktas užduotis. (https://sqlzoo.net/wiki/SQL_Tutorial)
