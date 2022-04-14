@@ -1,0 +1,3 @@
+SQL:
+  https://www.sqltutorial.org/
+  https://sqlzoo.net/wiki/SQL_Tutorial
