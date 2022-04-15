@@ -11,4 +11,6 @@ Tutorials:
   https://youtu.be/IK6e1SFCdow - RU
   https://youtu.be/W8jySpfRUDY
   https://youtu.be/xn9ef5pod18
-  
+  https://youtu.be/7S_tz1z_5bA - Mosh (3val)
+  https://youtu.be/EN6Dx22cPRI - Traversy
+  https://youtu.be/fUK94jOFwBc - MySQL workbench
