@@ -1,3 +1,14 @@
+DB Cluster:
+  https://cloud.digitalocean.com/
+
 SQL:
   https://www.sqltutorial.org/
   https://sqlzoo.net/wiki/SQL_Tutorial
+
+  https://sebhastian.com/mysql-command-not-found/
+
+Tutorials:
+  https://youtu.be/IK6e1SFCdow - RU
+  https://youtu.be/W8jySpfRUDY
+  https://youtu.be/xn9ef5pod18
+  
