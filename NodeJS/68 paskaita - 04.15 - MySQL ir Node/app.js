@@ -16,7 +16,50 @@ app.get("/", async (req, res) => {
   try {
     const con = await mysql.createConnection(mysqlConfig);
     console.log("Success: ", con);
-    res.send("Hellou. DB is ONNN");
+    res.send(`Serveris veikia ant ${PORT} porto`);
+  } catch(e) {
+    console.log(e);
+  }
+});
+
+app.get("/shirts/:size?", async (req, res) => {
+  try {
+    console.log(req.query);
+    const limit = req.query.limit < 10 ? 10 : 
+                  req.query.limit > 100 ? 100 : req.query.limit;
+                /*if(req.query.limit < 10){
+                    const limit = 10
+                  } else if(req.query.limit > 100){
+                    limit = 100
+                  } else {
+                    limit = req.query.limit
+                  }
+                */
+    const con = await mysql.createConnection(mysqlConfig);
+    const data = await con.query(`
+      SELECT *
+      FROM shirts
+      ${req.params.size ? `WHERE size = '${req.params.size}'` : ''}
+      ORDER BY price
+      LIMIT ${limit ? limit : 10}
+    `);
+    res.send(data[0]);
+  } catch(e) {
+    console.log(e);
+  }
+});
+
+app.post("/shirts", async (req, res) => {
+  try {
+    const i = req.query;
+    const con = await mysql.createConnection(mysqlConfig);
+    await con.query(`
+      INSERT INTO
+      shirts (brand, model, size, price)
+      VALUES
+      ('${i.brand}', '${i.model}', '${i.size}', ${i.price})
+    `);
+    res.redirect("/shirts");
   } catch(e) {
     console.log(e);
   }
