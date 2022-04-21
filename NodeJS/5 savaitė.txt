@@ -1,2 +1,5 @@
 mysql:
   https://github.com/mysqljs/mysql
+
+handlebars:
+  https://handlebarsjs.com/
