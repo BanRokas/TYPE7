@@ -2,6 +2,7 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import routerApiMarskiniai from './routes/api/marskiniai.js';
+import routerUI_Marskiniai from './routes/ui/marskiniai.js';
 import { engine } from 'express-handlebars';
 import path from 'path';
 
@@ -23,11 +24,7 @@ app.use(express.urlencoded({
   extended: false
 }));
 
-app.get('/', (req, res) => {
-  res.render('home');
-});
-
+app.use('/', routerUI_Marskiniai);
 app.use('/api/marskiniai', routerApiMarskiniai);
-
 
 app.listen(PORT, () => console.log(`Serveris veikia ant ${PORT} porto`));

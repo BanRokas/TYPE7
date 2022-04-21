@@ -2,7 +2,6 @@ import express from 'express';
 import con from '../../SQL_Connect.js';
 
 const router = express.Router();
-const PORT = process.env.PORT || 8080;
 
 router.get("/:size?", async (req, res) => {
   try {
