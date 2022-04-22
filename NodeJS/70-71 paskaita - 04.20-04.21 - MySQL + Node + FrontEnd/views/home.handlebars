@@ -5,7 +5,20 @@
       markė: {{this.brand}} |
       modelis: {{this.model}} |
       dydis: {{this.size}} |
-      kaina: {{this.price}}
+      kaina: {{this.price}} |
+      <span class="delete" id="{{this.id}}">X</span>
     </li>
   {{/each}}
 </ul>
+
+<script>
+  document.querySelectorAll("ul .delete").forEach(btn => {
+    btn.addEventListener("click", e => {
+      fetch(`/api/marskiniai/${e.target.id}`, {
+        method : "DELETE"
+      })
+      .then(e.target.parentElement.remove());
+      //.then(location.reload());
+    });
+  });
+</script>

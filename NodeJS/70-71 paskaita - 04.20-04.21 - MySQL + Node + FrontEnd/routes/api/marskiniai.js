@@ -44,4 +44,16 @@ router.post("/", async (req, res) => {
   }
 });
 
+router.delete("/:id", async (req, res) => {
+  try {
+    await con.query(`
+      DELETE 
+      FROM shirts
+      WHERE id = ?
+    `, req.params.id);
+  } catch(e) {
+    console.log(e);
+  }
+});
+
 export default router;
