@@ -37,15 +37,12 @@ router.get('/:size?', async (req, res) => {
       OFFSET ${puslapiavimas.skip}
     `, [req.params.size]);
 
-    const puslapiai = {
-      duomenuKiekis : showData.length,
-      puslapiuKiekis : Math.ceil(workingData.length / puslapiavimas.limit),
-      rodymoKiekis : puslapiavimas.limit
-    }
-
+    puslapiavimas.puslapiuKiekis = Math.ceil(workingData.length / puslapiavimas.limit);
+    puslapiavimas.esamasPuslapis = puslapiavimas.skip / puslapiavimas.limit + 1;
+    
     res.render('home', {
       marskiniai : showData,
-      puslapiavimas : puslapiai
+      puslapiavimas : puslapiavimas
     });
   } catch(e) {
     console.log(e);

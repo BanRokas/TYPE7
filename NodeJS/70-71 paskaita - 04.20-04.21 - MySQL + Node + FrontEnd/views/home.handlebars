@@ -10,7 +10,7 @@
     </li>
   {{/each}}
 </ul>
-<p>{{puslapiavimas.puslapiuKiekis}}</p>
+<p>{{puslapiavimas.esamasPuslapis}} / {{puslapiavimas.puslapiuKiekis}}</p>
 <div>
   <h3>limits</h3>
   <div>
@@ -26,10 +26,10 @@
 <div>
   <h3>skips</h3>
   <div>
-    <a href="./?skip=-{{puslapiavimas.rodymoKiekis}}">atgal</a>
+    <a href="./?skip=-{{puslapiavimas.limit}}">atgal</a>
   </div>
   <div>
-    <a href="./?skip={{puslapiavimas.rodymoKiekis}}">prieki</a>
+    <a href="./?skip={{puslapiavimas.limit}}">prieki</a>
   </div>
 </div>
 
