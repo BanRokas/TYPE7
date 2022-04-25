@@ -10,6 +10,28 @@
     </li>
   {{/each}}
 </ul>
+<p>{{puslapiavimas.puslapiuKiekis}}</p>
+<div>
+  <h3>limits</h3>
+  <div>
+    <a href="./?limit=3">3</a>
+  </div>
+  <div>
+    <a href="./?limit=5">5</a>
+  </div>
+  <div>
+    <a href="./?limit=10">10</a>
+  </div>
+</div>
+<div>
+  <h3>skips</h3>
+  <div>
+    <a href="./?skip=-{{puslapiavimas.rodymoKiekis}}">atgal</a>
+  </div>
+  <div>
+    <a href="./?skip={{puslapiavimas.rodymoKiekis}}">prieki</a>
+  </div>
+</div>
 
 <script>
   document.querySelectorAll("ul .delete").forEach(btn => {
