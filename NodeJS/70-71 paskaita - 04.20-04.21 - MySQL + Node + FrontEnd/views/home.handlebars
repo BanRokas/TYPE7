@@ -14,22 +14,37 @@
 <div>
   <h3>limits</h3>
   <div>
-    <a href="./?limit=3">3</a>
+    <a
+      {{#if puslapiavimas.minLimit}} class="disabledLink" {{/if}}
+      href="./?limit=3"
+    >3</a>
   </div>
   <div>
-    <a href="./?limit=5">5</a>
+    <a 
+      {{#if puslapiavimas.medLimit}} class="disabledLink" {{/if}}
+      href="./?limit=5"
+    >5</a>
   </div>
   <div>
-    <a href="./?limit=10">10</a>
+    <a 
+      {{#if puslapiavimas.maxLimit}} class="disabledLink" {{/if}}
+      href="./?limit=10"
+    >10</a>
   </div>
 </div>
 <div>
   <h3>skips</h3>
   <div>
-    <a href="./?skip=-{{puslapiavimas.limit}}">atgal</a>
+    <a 
+      href="./?skip=-{{puslapiavimas.limit}}" 
+      {{#if puslapiavimas.pirmasPuslapis}} class="disabledLink" {{/if}}
+    >atgal</a>
   </div>
   <div>
-    <a href="./?skip={{puslapiavimas.limit}}">prieki</a>
+    <a 
+      href="./?skip={{puslapiavimas.limit}}"
+      {{#if puslapiavimas.paskutinisPuslapis}} class="disabledLink" {{/if}}
+    >prieki</a>
   </div>
 </div>
 

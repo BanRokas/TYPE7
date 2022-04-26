@@ -1,3 +1,10 @@
 body{
   background-color: rgb(237, 186, 186);
 }
+
+.disabledLink{
+  pointer-events: none;
+  color: grey;
+  text-decoration: none;
+  /* display: none; */
+}
