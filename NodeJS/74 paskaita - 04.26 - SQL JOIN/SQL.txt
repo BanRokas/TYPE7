@@ -1,0 +1,10 @@
+Task1:
+  SELECT a.id, name, surname, title, year
+  FROM books a
+  LEFT JOIN authors b ON a.author_id=b.id
+
+Task2:
+  SELECT a.name, a.surname, count(b.author_id) as author_id
+  FROM authors a
+  RIGHT JOIN books b ON a.id=b.author_id
+  GROUP BY a.name, a.surname
