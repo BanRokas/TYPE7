@@ -24,7 +24,7 @@ router.post('/', async (req, res) => {
         INSERT INTO user (email, password)
         VALUES (?, ?)
       `, [req.body.email, hashedPass]);
-      res.redirect('/api/register');
+      res.redirect('/');
     } else {
       res.send("Kažkas negerai su registracijos duomenimis.");
     }

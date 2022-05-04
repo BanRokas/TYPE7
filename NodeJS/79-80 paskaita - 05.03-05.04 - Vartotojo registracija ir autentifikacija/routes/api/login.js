@@ -15,7 +15,7 @@ router.post('/', async (req, res) => {
       return res.status(400).send({error: `Netinkamas email arba password.`});
     }
     if(await bcrypt.compare(req.body.pass, data[0].password)){
-      res.send({success: `Prisijungėme`});
+      res.send('Prisijungeme');
     } else {
       res.status(400).send({error : `Netinkamas email arba password.`});
     }

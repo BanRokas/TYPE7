@@ -2,10 +2,14 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
+import { engine } from 'express-handlebars';
+
 import registerUser from './routes/api/registration.js';
 import loginUser from './routes/api/login.js';
-import { engine } from 'express-handlebars';
+
 import homePage from './routes/ui/homePage.js';
+import registerPage from './routes/ui/registerPage.js';
+import loginPage from './routes/ui/loginPage.js';
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -25,7 +29,9 @@ app.use(express.urlencoded({
   extended: false
 }));
 
-app.use('/', homePage)
+app.use('/', homePage);
+app.use('/login', loginPage);
+app.use('/register', registerPage);
 app.use('/api/register', registerUser);
 app.use('/api/login', loginUser);
 
