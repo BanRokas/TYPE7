@@ -1,0 +1,8 @@
+JWT:
+  teorija:
+    https://youtu.be/soGRyl9ztjI - JavaBrains
+    https://youtu.be/GhrvZ5nUWNg - Despa
+    https://youtu.be/7Q17ubqLfaM - WebDev
+  praktika:
+    https://youtu.be/mbsmsi7l3r4 - WebDev
+    https://youtu.be/SjitUCoS_HA - Petro
