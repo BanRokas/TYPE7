@@ -9,3 +9,7 @@ JWT:
   praktika:
     https://youtu.be/mbsmsi7l3r4 - WebDev
     https://youtu.be/SjitUCoS_HA - Petro
+
+Full:
+  praktika:
+    https://youtu.be/2jqok-WgelI - Dev Ed
