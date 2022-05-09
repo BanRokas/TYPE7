@@ -1,0 +1,2 @@
+JWT in cookies:
+  https://dev.to/franciscomendes10866/using-cookies-with-jwt-in-node-js-8fn
