@@ -1,0 +1,42 @@
+SQL tables:
+
+  User:
+    id (PK) - int
+    name - varchar(255)
+    email - varchar(255)
+    fotoURL - varchar(255)
+    password - varchar(255)
+    userLevel - ENUM('admin', 'manager', 'client')
+    createdAt - timestamp
+
+  Bar:
+    id (PK) - int
+    cityId (FK) - int
+    name - varchar(255)
+    address - varchar(255)
+    fotoURL - varchar(255)
+    description - varchar(8000)
+
+  City:
+    id (PK) - int
+    name - varchar(255)
+
+  Comment:
+    id (PK) - int
+    barId (FK) - int
+    userId (FK) - int
+    author - varchar(255)
+    comment - varchar(8000)
+    createdAt - timestamp
+
+  QualityRating:
+    id (PK) - int
+    barId (FK) - int
+    userId (FK) - int
+    rating - float
+
+  PriceRating:
+    id (PK) - int
+    barId (FK) - int
+    userId (FK) - int
+    rating - float
