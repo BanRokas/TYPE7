@@ -2,6 +2,9 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
+import mysql from 'mysql2/promise';
+import sql_config from 'SQL_DB_Config.js';
+
 
 // Variables
 const app = express();
@@ -24,8 +27,19 @@ app.use(express.urlencoded({
 }));
 
 // Routes
-app.use('/', (req, res) => {
-  res.send('Hallo');
+app.use('/', async (req, res) => {
+  try {
+    const con = await mysql.createConnection(sql_config);
+    const [data] = con.query(`
+      SQL COMMANDS
+    `);
+    console.log(data);
+    res.send('Hallo');
+  } catch(err) {
+    res.send({error: err});
+  } finally {
+    con.end(); // close or end?
+  }
 });
 
 // Run Server

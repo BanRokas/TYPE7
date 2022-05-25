@@ -29,6 +29,17 @@ SQL tables:
     comment - varchar(8000)
     createdAt - timestamp
 
+<--
+                Emote:
+                  id
+
+                EmoteRating:
+                  id (PK) - int
+                  commentId (FK) - int
+                  userId (FK) - int
+                  emote - varchar(255)
+-->
+
   QualityRating:
     id (PK) - int
     barId (FK) - int
