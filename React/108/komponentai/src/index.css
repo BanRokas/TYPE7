@@ -26,9 +26,28 @@ code {
   height: 15vh;
   width: 80%;
   padding: 50px 0 20px;
-  margin: 0 auto ;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.Content_Cards{
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  padding-bottom: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Card{
+  width: 200px;
+  height: 200px;
+  border: 3px dashed black;
+}
+
+.Card img{
+  width: inherit;
+  height: 150px;
 }

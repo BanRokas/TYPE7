@@ -8,27 +8,27 @@ const Content = ({title, paragraph, image1, imgText1, image2, imgText2}) => {
         <p>{paragraph}</p>
       </div>
       <div className="Content_Cards">
-        <Card 
+        <Card
           image={image1}
           imageText={imgText1}
         />
-        <Card 
+        <Card
           image={image1}
           imageText={imgText1}
         />
-        <Card 
+        <Card
           image={image1}
           imageText={imgText1}
         />
-        <Card 
+        <Card
           image={image2}
           imageText={imgText2}
         />
-        <Card 
+        <Card
           image={image2}
           imageText={imgText2}
         />
-        <Card 
+        <Card
           image={image2}
           imageText={imgText2}
         />
