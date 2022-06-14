@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Hero{
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Content_Hero{
+  height: 15vh;
+  width: 80%;
+  padding: 50px 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Content_Cards{
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  padding-bottom: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Card{
+  width: 200px;
+  height: 200px;
+  border: 3px dashed black;
+}
+
+.Card img{
+  width: inherit;
+  height: 150px;
+}
