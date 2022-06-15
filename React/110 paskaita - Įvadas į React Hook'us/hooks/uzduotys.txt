@@ -1,0 +1,6 @@
+1) Pasileisti JSON-server su duomenimis
+2) Pakeisti kodą, kad trauktų duomenis iš JSON serverio
+3) Pakeisti kodą, kad trintų iš JSON serverio
+4) Pridėti naujų duomenų kūrimo ir POST'inimo į JSON serverį kodą
+
+extra) viską kiek gražiau pastilizuoti
