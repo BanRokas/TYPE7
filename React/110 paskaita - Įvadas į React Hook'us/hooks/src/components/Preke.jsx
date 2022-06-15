@@ -2,7 +2,7 @@ const Preke = ({...props}) => {
   console.log(props);
   return (
     <>
-      <div> yay prekes...</div>
+      <div> yay prekes... {props.data.title}</div>
     </>
   );
 }
