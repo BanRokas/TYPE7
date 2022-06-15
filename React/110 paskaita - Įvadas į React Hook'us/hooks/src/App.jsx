@@ -2,6 +2,8 @@ import './App.css';
 import Preke from './components/Preke';
 import { useEffect, useState } from 'react';
 
+import loading from './images/Loading_icon.gif';
+
 const App = () => {
 
   const [prekes, setPrekes] = useState([]);
@@ -18,7 +20,11 @@ const App = () => {
     <>
       {
         prekes.length === 0 ? 
-        <div>Loading...</div> :
+        <img 
+          src={loading}
+          alt="loading..."
+          className="loading" 
+        /> :
         prekes.map((preke) => 
           <Preke 
             key={preke.id}
