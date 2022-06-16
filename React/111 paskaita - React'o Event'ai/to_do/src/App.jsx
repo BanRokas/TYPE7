@@ -30,11 +30,13 @@ const App = () => {
 
   const addTodo = e => {
     e.preventDefault();
-    setTodos(todos.concat([{
-      id: uuid(),
-      title: e.target.elements.todo.value
-    }]));
-    e.target.elements.todo.value = null;
+    if(e.target.elements.todo.value){
+      setTodos(todos.concat([{
+        id: uuid(),
+        title: e.target.elements.todo.value
+      }]));
+      e.target.elements.todo.value = null;
+    }
   }
 
   return (
