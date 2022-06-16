@@ -1,0 +1,4 @@
+1) Kažkiek stilizuoti.
+2) Padaryti su JSON serveriu.
+3) Sukurti formos komponentą. (Formos komponentas turi kreiptis į Input komponentą)
+4) Padaryti, kad task'as galėtų būti užbaigtas/neužbaigtas. (perbraukti / pakeisti fono spalvą į žalią)
