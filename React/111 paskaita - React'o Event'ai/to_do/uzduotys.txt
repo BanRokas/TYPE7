@@ -3,3 +3,4 @@
 3) Padaryti su JSON serveriu.
 4) Sukurti formos komponentą. (Formos komponentas turi kreiptis į Input komponentą)
 5) Padaryti, kad task'as galėtų būti užbaigtas/neužbaigtas. (perbraukti / pakeisti fono spalvą į žalią)
+6) Padaryti task'ų redagavimo galimybę.
