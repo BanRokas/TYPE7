@@ -18,14 +18,32 @@ const App = () => {
     }
   ];
 
+  const tableData = [
+    {
+      id : 123,
+      number_of_people: 5,
+      price: 64
+    },{
+      id : 124,
+      number_of_people: 3,
+      price: 20
+    },{
+      id : 125,
+      number_of_people: 1,
+      price: 31
+    }
+  ]
+
   return (
     <>
       <Nav 
-        data={links}
+        data = {links}
       />
       <Routes>
         <Route path="/" element={
-          <Home />
+          <Home 
+            table = {tableData}
+          />
         } />
         <Route path="/add" element={
           <Add />
