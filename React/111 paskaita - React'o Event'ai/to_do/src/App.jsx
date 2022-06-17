@@ -47,8 +47,9 @@ const App = () => {
         </div>
         <div className="todoList">
           {
-            todos.map(todo => {
+            todos.map((todo, i) => {
               return <ToDo 
+                eilesNr = {i+1}
                 key = {todo.id}
                 data = {todo}
                 handleDelete = {handleDelete}

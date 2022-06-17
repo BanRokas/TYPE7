@@ -1,8 +1,8 @@
-const ToDo = ({data, handleDelete}) => {
+const ToDo = ({data, handleDelete, eilesNr}) => {
   const {id, title} = data;
   return (
     <div>
-      <h1>{title}</h1>
+      <h1><span>{eilesNr}</span>{title}</h1>
       <button onClick={() => handleDelete(id)}>Trinti</button>
     </div>
   );
