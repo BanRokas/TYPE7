@@ -1,3 +1,13 @@
+.NavigationTop{
+  display: flex;
+  flex-direction: row;
+}
+
+.NavigationSide{
+  display: flex;
+  flex-direction: column;
+}
+
 .Navigation a{
   margin-left: 20px;
   color: red;

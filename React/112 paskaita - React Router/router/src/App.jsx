@@ -36,7 +36,8 @@ const App = () => {
 
   return (
     <>
-      <Nav 
+      <Nav
+        place="top"
         data = {links}
       />
       <Routes>
