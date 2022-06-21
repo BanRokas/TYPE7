@@ -6,17 +6,19 @@ const App = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch('/api')
+    fetch('/api/pets')
     .then(res => res.json())
-    .then(data => setData(data))
+    .then(data => {
+      setData(data)
+    })
   }, []);
 
   return (
     <div>
       {
         data ?
-        data.pets.map((pet, i) => 
-          <p key={i}>{pet}</p>
+        data.map((pet, i) => 
+          <p key={i}>{pet.id} {pet.name}</p>
         ) :
         <p>Loading...</p>
       }

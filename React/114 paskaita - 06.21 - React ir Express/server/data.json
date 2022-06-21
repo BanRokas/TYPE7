@@ -1,0 +1,34 @@
+{
+  "pets": [
+    {
+      "id" : 1,
+      "name" : "Fat Joe",
+      "dob" : "2000-01-01",
+      "client_email" : "joe@gmail.com"
+    },{
+      "id" : 2,
+      "name" : "Happy",
+      "dob" : "2010-01-01",
+      "client_email" : "natsu@gmail.com"
+    },{
+      "id" : 3,
+      "name" : "Kąppa",
+      "dob" : "2020-01-01",
+      "client_email" : "twotch@gmail.com"
+    },{
+      "id" : 4,
+      "name" : "Pete",
+      "dob" : "2013-01-01",
+      "client_email" : "pot@gmail.com"
+    }
+  ],
+  "logs": [
+    "log"
+  ],
+  "medications":[
+    "med"
+  ],
+  "prescriptions":[
+    "pres"
+  ]
+}
