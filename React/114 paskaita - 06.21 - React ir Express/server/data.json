@@ -1,34 +1,244 @@
 {
   "pets": [
     {
-      "id" : 1,
-      "name" : "Fat Joe",
-      "dob" : "2000-01-01",
-      "client_email" : "joe@gmail.com"
-    },{
-      "id" : 2,
-      "name" : "Happy",
-      "dob" : "2010-01-01",
-      "client_email" : "natsu@gmail.com"
-    },{
-      "id" : 3,
-      "name" : "Kąppa",
-      "dob" : "2020-01-01",
-      "client_email" : "twotch@gmail.com"
-    },{
-      "id" : 4,
-      "name" : "Pete",
-      "dob" : "2013-01-01",
-      "client_email" : "pot@gmail.com"
+      "id": 1,
+      "name": "Fat Joe",
+      "dob": "2000-01-01",
+      "client_email": "joe@gmail.com",
+      "archyvuotas": false
+    },
+    {
+      "id": 2,
+      "name": "Happy",
+      "dob": "2010-01-01",
+      "client_email": "natsu@gmail.com",
+      "archyvuotas": false
+    },
+    {
+      "id": 3,
+      "name": "Kąppa",
+      "dob": "2020-01-01",
+      "client_email": "twotch@gmail.com",
+      "archyvuotas": false
+    },
+    {
+      "id": 4,
+      "name": "Pete",
+      "dob": "2013-01-01",
+      "client_email": "pot@gmail.com",
+      "archyvuotas": false
+    },
+    {
+      "name": "Helicopter",
+      "dob": "2022-06-01",
+      "client_email": "chopChop@gmail.com",
+      "archyvuotas": false,
+      "id": 5
+    },
+    {
+      "name": "123",
+      "dob": "2022-06-03",
+      "client_email": "asd@gmail.com",
+      "archyvuotas": true,
+      "id": 6
+    },
+    {
+      "name": "123d",
+      "dob": "2022-06-03",
+      "client_email": "asd@gmail.com",
+      "archyvuotas": true,
+      "id": 7
+    },
+    {
+      "name": "",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": true,
+      "id": 8
+    },
+    {
+      "name": "123",
+      "dob": "2022-06-03",
+      "client_email": "123",
+      "archyvuotas": true,
+      "id": 9
+    },
+    {
+      "name": "234",
+      "dob": "2022-06-04",
+      "client_email": "asd@gmail.com",
+      "archyvuotas": true,
+      "id": 10
+    },
+    {
+      "name": "234ddd",
+      "dob": "2022-06-04",
+      "client_email": "asd@gmail.com",
+      "archyvuotas": true,
+      "id": 11
+    },
+    {
+      "name": "234ddd",
+      "dob": "2022-06-04",
+      "client_email": "asd@gmail.com",
+      "archyvuotas": true,
+      "id": 12
+    },
+    {
+      "name": "naujas",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": true,
+      "id": 13
+    },
+    {
+      "name": "naujas",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": true,
+      "id": 14
+    },
+    {
+      "name": "Jhonny",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": false,
+      "id": 15
+    },
+    {
+      "name": "asd",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": true,
+      "id": 16
+    },
+    {
+      "name": "asd",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": true,
+      "id": 17
+    },
+    {
+      "name": "",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": true,
+      "id": 18
+    },
+    {
+      "name": "Helicopter",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": false,
+      "id": 19
+    },
+    {
+      "name": "Helicopter",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": true,
+      "id": 20
+    },
+    {
+      "name": "dfg",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": true,
+      "id": 21
+    },
+    {
+      "name": "123",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": true,
+      "id": 22
+    },
+    {
+      "name": "naujasAug",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": true,
+      "id": 23
+    },
+    {
+      "name": "petas be id",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": true,
+      "id": 24
+    },
+    {
+      "name": "petas su id",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": true,
+      "id": 25
+    },
+    {
+      "name": "123",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": false,
+      "id": 26
+    },
+    {
+      "name": "naujas",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": false,
+      "id": 27
+    },
+    {
+      "name": "be id petas",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": false,
+      "id": 28
+    },
+    {
+      "name": "asdf",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": false,
+      "id": 29
+    },
+    {
+      "name": "asdgasdf",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": false,
+      "id": 30
+    },
+    {
+      "name": "Rokas",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": false,
+      "id": 31
+    },
+    {
+      "name": "Helicopter",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": false,
+      "id": 32
+    },
+    {
+      "name": "sddfssdf",
+      "dob": "",
+      "client_email": "",
+      "archyvuotas": false,
+      "id": 33
     }
   ],
   "logs": [
     "log"
   ],
-  "medications":[
+  "medications": [
     "med"
   ],
-  "prescriptions":[
+  "prescriptions": [
     "pres"
   ]
 }
