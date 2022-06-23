@@ -23,7 +23,6 @@ const App = () => {
       client_email : e.target.elements.elPastas.value,
       archyvuotas : false
     }
-    console.log(pet);
     await fetch('/api/pets', {
       method: 'POST',
       headers: {
@@ -37,6 +36,18 @@ const App = () => {
     // fetch('/api/pets')
     // .then(res => res.json())
     // .then(data => setData(data))
+  }
+
+  const archyvuotiAugintini = e => {
+    const id = e.target.parentElement.id;
+    fetch(`/api/pets/${id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body : JSON.stringify({ archyvuotas: true })
+    })
+    .then( () => setData(data.filter(augintinis => augintinis.id !== Number(id))) )
   }
 
   return (
@@ -54,6 +65,7 @@ const App = () => {
         <Route path="showPets" element={
           <ShowPets 
             data = { data }
+            archyvuotiAugintini = { archyvuotiAugintini }
           />
         }/>
       </Routes>

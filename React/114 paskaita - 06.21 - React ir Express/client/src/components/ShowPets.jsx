@@ -1,10 +1,13 @@
-const ShowPets = ({data}) => {
+const ShowPets = ({data, archyvuotiAugintini}) => {
   return (
     <div className="AtvaizduojamiAugintiniai">
       {
         data ?
         data.map((pet, i) => 
-          <p key={i}>{pet.id ? pet.id : 'neturi id'} {pet.name}</p>
+          <div id={pet.id} key={i} style={{display: "flex"}}>
+            <p>{pet.id ? pet.id : 'neturi id'} {pet.name}</p>
+            <button onClick = { archyvuotiAugintini }>Trinti</button>
+          </div>
         ) :
         <p>Loading...</p>
       }

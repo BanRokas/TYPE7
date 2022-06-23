@@ -9,11 +9,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 
-app.get("/api/pets", async (req, res) => {
-  const data = await fetch('http://localhost:8080/pets').then(data => data.json());
-  const dataToReturn = data.filter(pet => 
-    pet.archyvuotas !== true
-  );
+app.get("/api/pets/:id?", async (req, res) => {
+  const data = await fetch(`http://localhost:8080/pets/${req.params.id?req.params.id:''}`).then(data => data.json());
+  const dataToReturn = data.length ? data.filter(pet => pet.archyvuotas !== true) : data;
   res.json(dataToReturn);
 });
 
@@ -24,9 +22,19 @@ app.get("/api/meds", async (req, res) => {
 });
 
 app.post("/api/pets", async (req, res) => {
-  console.log(req.body);
   fetch('http://localhost:8080/pets', {
     method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body : JSON.stringify(req.body)
+  })
+  res.json();
+});
+
+app.patch("/api/pets/:id", async (req, res) => {
+  fetch(`http://localhost:8080/pets/${req.params.id}`, {
+    method: 'PATCH',
     headers: {
       'Content-Type': 'application/json'
     },
