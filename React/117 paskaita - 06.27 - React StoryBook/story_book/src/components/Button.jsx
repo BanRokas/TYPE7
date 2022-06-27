@@ -1,20 +1,6 @@
-const Button = ({type, text}) => {
-  const buttonInfo = { }
-
-  switch(type){
-    case "Primary":
-      buttonInfo.class = 'primary';
-      break;
-    case "Secondary":
-      buttonInfo.class = 'secondary';
-      break;
-    default:
-      buttonInfo.class = 'primary';
-      break;
-  }
-
+const Button = () => {
   return (
-    <button className={buttonInfo.class}>{text}</button>
+    <button>Mygtukas</button>
   );
 }
  
