@@ -1,6 +1,7 @@
-const Button = ({text, type, onClick}) => {
+const Button = ({id, text, type, onClick}) => {
 
   const buttonInfo = {};
+  
   const primary = {
     padding: 10,
     color: 'white',
@@ -46,6 +47,7 @@ const Button = ({text, type, onClick}) => {
 
   return (
     <button 
+      id = { id }
       style = { buttonInfo.class }
       onClick = { onClick ? onClick : null }
     >
