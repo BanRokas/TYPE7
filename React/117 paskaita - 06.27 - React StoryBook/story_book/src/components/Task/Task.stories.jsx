@@ -1,4 +1,3 @@
-import React from 'react';
 import Task from './Task';
 
 export default {
@@ -12,7 +11,7 @@ export const Default = Template.bind({});
 Default.args = {
   task: {
     id: '1',
-    title: 'Test Task',
+    title: 'Default',
     state: 'TASK_INBOX',
   },
 };
@@ -21,6 +20,7 @@ export const Pinned = Template.bind({});
 Pinned.args = {
   task: {
     ...Default.args.task,
+    title: 'Pinned',
     state: 'TASK_PINNED',
   },
 };
@@ -29,6 +29,7 @@ export const Archived = Template.bind({});
 Archived.args = {
   task: {
     ...Default.args.task,
+    title: 'Archived',
     state: 'TASK_ARCHIVED',
   },
 };

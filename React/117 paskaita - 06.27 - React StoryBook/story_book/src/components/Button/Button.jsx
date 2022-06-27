@@ -1,4 +1,4 @@
-const Button = ({id, text, type, onClick}) => {
+const Button = ({text, type, onClick}) => {
 
   const buttonInfo = {};
   
@@ -47,11 +47,10 @@ const Button = ({id, text, type, onClick}) => {
 
   return (
     <button 
-      id = { id }
       style = { buttonInfo.class }
       onClick = { onClick ? onClick : null }
     >
-      {text}
+      { text ? text : "Button"}
     </button>
   );
 }
