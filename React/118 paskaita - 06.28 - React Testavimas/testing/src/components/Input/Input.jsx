@@ -15,7 +15,7 @@ const Input = ({ showDiv }) => {
         }}
       />
 
-      <h1 data-testid="displaySearch"> { searchWord } </h1>
+      <h1 data-testid="displaySearch">{ searchWord }</h1>
 
       {
         showDiv ?
