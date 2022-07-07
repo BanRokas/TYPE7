@@ -1,0 +1,13 @@
+.carousel-container{
+  width: 1000px;
+  height: 310px;
+  margin: 100px auto;
+}
+
+.carousel-item-padding-40-px{
+  height: 300px;
+  line-height: 300px;
+  margin: 0 10px;
+  font-size: 3rem;
+  border: 3px solid black;
+}
